@@ -1,0 +1,89 @@
+.error{
+	color:red !important;
+	border:1px solid #dd4b39 !important;
+}
+.form-error{
+	border:1px solid #dd4b39 !important;
+}
+
+.form-success{
+	border:1px solid green !important;
+}
+tfoot {
+   display: table-header-group !important;
+}
+.error-message{
+	color:red !important;
+}
+.errDiv{
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    z-index: 1000000;
+    padding: 10px;
+}
+.close{
+	padding-left: 10px;
+}
+
+/*------------------*/
+
+#owl-demo .item{
+  padding: 3px 0px;
+  margin-left:15px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+.driver:hover{
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.nav-pills>li.active>a,.nav-pills>li.active>a:focus,.nav-pills>.left1.active {
+ color:#fff;
+ background-color:#56c243;
+  border-top-left-radius: 5em;border-bottom-left-radius: 5em;
+}
+
+
+.right1.active {
+ color:#fff;
+  border:#56c243 1px solid; border-top-right-radius: 10em;border-bottom-right-radius: 10em; border-top-left-radius: 0em;border-bottom-left-radius: 0em;
+  
+ background-color:#56c243;
+}
+.customNavigation{
+  text-align: center;
+}
+//use styles below to disable ugly selection
+.customNavigation a{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+ .img-circle
+ {
+ border-style:groove;border:5px outset #f1f1f1;
+ }
+ .img-circle:hover{
+ border-style:groove;border:5px outset green;
+ 
+ }
+ .driver{
+ border-style:groove;
+ margin-left:50px;
+ }
+ .media{
+ padding:20px 0px;
+ }
+ 
+ 
+ .nav-pills li a{
+color:#56c243;
+ }
