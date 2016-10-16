@@ -78,8 +78,8 @@ class CustomComponent extends Component {
     function sendEmail($title = "BACK_REGISTER", $keyword = "Ganpat,goyal@ga.com,123456", $params=array()){
         //$this-.sendEmail("BACK_REGISTER","ggg,ada,ada",$params)
         $model = ClassRegistry::init('EmailTemplate');
-        $params['to'] = "aman@mailinator.com";
-        $params['from'] = "company@mailinator.com";
+        /*$params['to'] = "aman@mailinator.com";
+        $params['from'] = "company@mailinator.com";*/
         
         $isExist = $model->findByTitle($title);
         if($isExist){

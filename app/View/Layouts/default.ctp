@@ -61,8 +61,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" style="">
 	<?php //echo $this->element('sql_dump'); ?>
-	<?php echo $this->element('header');?>
 	<div class="errDiv"><?=$this->Session->Flash();?></div>
+	<?php echo $this->element('header');?>
 	<?php echo $this->fetch('content'); ?>
 	<?php echo $this->element('footer');?>
 	<?php echo $this->element('modal');?>

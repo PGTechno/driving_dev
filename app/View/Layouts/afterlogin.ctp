@@ -60,6 +60,20 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" style="">
+	<?php 
+		$currentUrl = Router::url(array('controller' => $this->request->params['controller'], 'action' => $this->request->params['action']));
+		$dashboard = Router::url(array('controller' => 'users', 'action' => 'dashboard'));
+		$profile   = Router::url(array('controller' => 'users', 'action' => 'profile'));
+		$inbox 	   = Router::url(array('controller' => 'users', 'action' => 'inbox'));
+		$calender  = Router::url(array('controller' => 'users', 'action' => 'calender'));
+		$booking   = Router::url(array('controller' => 'booking', 'action' => 'booking'));
+		$history   = Router::url(array('controller' => 'booking', 'action' => 'history'));
+		$review    = Router::url(array('controller' => 'users', 'action' => 'review'));
+
+		//echo $currentUrl.'<br>'.$dashboard; exit;
+
+
+	?>
 	<?php //echo $this->element('sql_dump'); ?>
 	<div class="errDiv"><?=$this->Session->Flash();?></div>
 	<?php echo $this->element('al_header');?>
@@ -69,16 +83,16 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	   			<div id="package" class="dash-container" >
    				   	<?php if($authData['role']==2){ ?>
    				   		<ul class="nav nav-tabs nav-tabs-sets" >
-					      	<li  class="active"><a href="instructor_dashboard.html">DASHBOARD</a></li>
-					      	<li><a href="instructor_manage_profile.html">MANAGE PROFILE</a></li>
+					      	<li  class="<?php echo $currentUrl==$dashboard ? 'active' : '';?>"><a href="<?php echo $dashboard;?>">DASHBOARD</a></li>
+					      	<li  class="<?php echo $currentUrl==$profile ? 'active' : '';?>"><a href="<?php echo $profile;?>">MANAGE PROFILE</a></li>
 					      	<li><a href="instructor_manage_inbox.html">INBOX MESSAGE</a></li>
 					      	<li><a href="instructor_manage_calender.html">MANAGE CALENDAR</a></li>
 					      	<li><a href="instructor_manage_booking.html">MANAGE BOOKING</a></li>
 					   	</ul>	
    				   	<?php }else{ ?> 
    				   		<ul class="nav nav-tabs nav-tabs-sets" >
-							<li class="active"><a href="user_dashboard.html">DASHBOARD</a></li>
-							<li><a href="user_manage_profile.html">MANAGE PROFILE</a></li>
+							<li  class="<?php echo $currentUrl==$dashboard ? 'active' : '';?>"><a href="<?php echo $dashboard;?>">DASHBOARD</a></li>
+							<li  class="<?php echo $currentUrl==$profile ? 'active' : '';?>"><a href="<?php echo $profile;?>">MANAGE PROFILE</a></li>
 							<li><a href="user_inbox.html">INBOX MESSAGE</a></li>
 							<li><a href="user_history.html">HISTORY</a></li>
 							<li><a href="user_review.html">REVIEWS</a></li>

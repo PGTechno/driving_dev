@@ -121,7 +121,8 @@ function hideAlert(){
   }
 /*--------------FB function end-------------------*/
 //addMsg("Test messages","alert alert-success")
- function addMsg(msg,cls){
+ 
+function addMsg(msg,cls){ 
     var msg = '<div class="'+cls+'"> <a href="#" class="close" data-dismiss="alert" >&times;</a><strong></strong>'+msg+'</div>';
     var ele = $('.errDiv').append(msg);
     window.setTimeout(function() {

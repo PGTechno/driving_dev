@@ -61,7 +61,14 @@ class UsersController extends AppController {
 			if(empty($isExist)){
 				$res = array('err'=>1,'msg'=>'Invalid user credentials.','data'=>'');
 			}elseif($isExist['User']['status']==0){
-				$res = array('err'=>1,'msg'=>'Soory, Your account is varified. Please varify your email.','data'=>'');
+				/*--------mailvarification start---------*/
+				$url = Router::url(array("controller"=>"pages","action"=>"varify",$isExist['User']['varify_token']),true);
+				$link = "<a href='$url'>VARIFY YOUR EMAIL</a>";
+				$email_params = array('to'=>$req['User']['email'],'from'=>'');
+				$keyword1 = $isExist['User']['fname'].",".$isExist['User']['email'].",".$link;	
+				$this->Custom->sendEmail("EMAIL_VERIFICATION",$keyword1,$email_params);
+				/*--------mailvarification end---------*/
+				$res = array('err'=>1,'msg'=>'Soory, Your account is not varified. Please varify your email.','data'=>'');
 			}elseif($isExist['User']['status']==2){
 				$res = array('err'=>1,'msg'=>'Soory, Your account is disabled. Please contactto administrator.','data'=>'');
 			}elseif(AuthComponent::password($req['User']['password']) != $isExist['User']['password']){
@@ -120,6 +127,22 @@ class UsersController extends AppController {
 			//pr($req); exit;
 			
 		}*/
+	}
+
+	public function profile() {
+		$this->layout = 'afterlogin';
+		if($this->request->is('post') || $this->request->is('put') || $this->request->is('ajax')) {
+			$this->request->data['User']['id'] = $this->authData['id'];
+			if($this->User->save($this->request->data)){
+				$this->Session->setFlash("Your profile updated.",'success');
+				$this->redirect(array('controller' => 'users', 'action' => 'profile'));
+			}else{
+				$this->Session->setFlash("Sorry, There is any problem while saving",'error');
+				//$this->redirect(array('controller' => 'users', 'action' => 'profile'));	
+			}
+		}else{
+			$this->request->data = $this->User->find('first',array('conditions'=>array('User.id'=>$this->authData['id'])));	
+		}		
 	}
 
 	public function logout(){
