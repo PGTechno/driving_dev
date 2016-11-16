@@ -77,6 +77,17 @@ class DATABASE_CONFIG {
 		//'encoding' => 'utf8',
 	);
 
+	/*public $default = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'ganpatgoyal',
+		'password' => 'ganpat@123',
+		'database' => 'web_dm',
+		'prefix' => '',
+		//'encoding' => 'utf8',
+	);*/
+
 	public $test = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,

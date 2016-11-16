@@ -30,7 +30,7 @@ $(function () {
 		var url = $(this).data('url');
 		$.get(url)
 		.done(function(data) {
-	    	$('#myModal').append(data);
+	    	$('#myModal').html(data);
 	  	});
 	})
 
@@ -48,6 +48,23 @@ $(function () {
   }).load(function() {
      calcHeight();
   });
+
+  $('.date, .modal .date').datetimepicker();
+  $('.time,.modal .time').datetimepicker({
+      format: 'LT'
+  });
+
+  $(document).on('focus','.date',function(){
+      $(this).datetimepicker();
+  })
+  
+  $('.file_upload').click(function(){
+      $('.file_upload_hidden').click();
+  })
+
+  $('.file_upload_hidden').change(function(){
+      imagePreview(this);  
+  })
 
 });
 
@@ -70,6 +87,18 @@ function hideAlert(){
 	$(".alert").fadeTo(2000, 500).slideUp(500, function(){
 	    $("#success-alert").alert('close');
 	});
+}
+
+function imagePreview(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('.file_upload').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
 }
 
 /*--------------FB function start-------------------*/

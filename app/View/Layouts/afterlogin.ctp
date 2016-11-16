@@ -36,6 +36,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			'front/owl.theme.default',
 			'front/jquery.nouislider.min',
 			'front/style',
+			'bootstrap-datetimepicker',
+			'jquery.dataTables',
+			'star-rating',
 			'my'
 		));
 
@@ -50,6 +53,12 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			'front/imagesloaded.pkgd.min',
 			'front/jquery.nouislider.all.min',
 			'jquery.validate',
+			'moment.min',
+			'bootstrap-datetimepicker.min',
+			'jquery.dataTables',
+			'star-rating',
+			//'dataTables.bootstrap',
+			//'bootstrap-table.min',
 			'my'
 		));
 
@@ -64,15 +73,12 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		$currentUrl = Router::url(array('controller' => $this->request->params['controller'], 'action' => $this->request->params['action']));
 		$dashboard = Router::url(array('controller' => 'users', 'action' => 'dashboard'));
 		$profile   = Router::url(array('controller' => 'users', 'action' => 'profile'));
-		$inbox 	   = Router::url(array('controller' => 'users', 'action' => 'inbox'));
-		$calender  = Router::url(array('controller' => 'users', 'action' => 'calender'));
-		$booking   = Router::url(array('controller' => 'booking', 'action' => 'booking'));
-		$history   = Router::url(array('controller' => 'booking', 'action' => 'history'));
+		$inbox 	   = Router::url(array('controller' => 'inbox', 'action' => 'index'));
+		$calender  = Router::url(array('controller' => 'bookings', 'action' => 'calendar'));
+		$booking   = Router::url(array('controller' => 'bookings', 'action' => 'index'));
+		$history   = Router::url(array('controller' => 'bookings', 'action' => 'history'));
 		$review    = Router::url(array('controller' => 'users', 'action' => 'review'));
-
 		//echo $currentUrl.'<br>'.$dashboard; exit;
-
-
 	?>
 	<?php //echo $this->element('sql_dump'); ?>
 	<div class="errDiv"><?=$this->Session->Flash();?></div>
@@ -80,31 +86,38 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<section class="section light" >
 	   <div class="inner" >
 	   		<div class="container" height="">
-	   			<div id="package" class="dash-container" >
-   				   	<?php if($authData['role']==2){ ?>
-   				   		<ul class="nav nav-tabs nav-tabs-sets" >
-					      	<li  class="<?php echo $currentUrl==$dashboard ? 'active' : '';?>"><a href="<?php echo $dashboard;?>">DASHBOARD</a></li>
-					      	<li  class="<?php echo $currentUrl==$profile ? 'active' : '';?>"><a href="<?php echo $profile;?>">MANAGE PROFILE</a></li>
-					      	<li><a href="instructor_manage_inbox.html">INBOX MESSAGE</a></li>
-					      	<li><a href="instructor_manage_calender.html">MANAGE CALENDAR</a></li>
-					      	<li><a href="instructor_manage_booking.html">MANAGE BOOKING</a></li>
-					   	</ul>	
-   				   	<?php }else{ ?> 
-   				   		<ul class="nav nav-tabs nav-tabs-sets" >
-							<li  class="<?php echo $currentUrl==$dashboard ? 'active' : '';?>"><a href="<?php echo $dashboard;?>">DASHBOARD</a></li>
-							<li  class="<?php echo $currentUrl==$profile ? 'active' : '';?>"><a href="<?php echo $profile;?>">MANAGE PROFILE</a></li>
-							<li><a href="user_inbox.html">INBOX MESSAGE</a></li>
-							<li><a href="user_history.html">HISTORY</a></li>
-							<li><a href="user_review.html">REVIEWS</a></li>
-						</ul>
-   				   	<?php }?>
-   				   	
-   				   <?php echo $this->fetch('content'); ?>
-   				</div>
+	   			<?php if($this->Session->read('Auth.User')){ ?>
+	   				<div id="package" class="dash-container" >
+	   				   	<?php if($authData['role']==2){ ?>
+	   				   		<ul class="nav nav-tabs nav-tabs-sets" >
+						      	<li  class="<?php echo $currentUrl==$dashboard ? 'active' : '';?>"><a href="<?php echo $dashboard;?>">DASHBOARD</a></li>
+						      	<li  class="<?php echo $currentUrl==$profile ? 'active' : '';?>"><a href="<?php echo $profile;?>">MANAGE PROFILE</a></li>
+						      	<li  class="<?php echo $currentUrl==$inbox ? 'active' : '';?>"><a href="<?php echo $inbox;?>">INBOX MESSAGE</a></li>
+						      	<li  class="<?php echo $currentUrl==$calender ? 'active' : '';?>"><a href="<?php echo $calender;?>">MANAGE CALENDAR</a></li>
+						      	<li  class="<?php echo $currentUrl==$booking ? 'active' : '';?>"><a href="<?php echo $booking;?>">MANAGE BOOKING</a></li>
+						   	</ul>	
+	   				   	<?php }else{ ?> 
+	   				   		<ul class="nav nav-tabs nav-tabs-sets" >
+								<li  class="<?php echo $currentUrl==$dashboard ? 'active' : '';?>"><a href="<?php echo $dashboard;?>">DASHBOARD</a></li>
+								<li  class="<?php echo $currentUrl==$profile ? 'active' : '';?>"><a href="<?php echo $profile;?>">MANAGE PROFILE</a></li>
+								<li  class="<?php echo $currentUrl==$inbox ? 'active' : '';?>"><a href="<?php echo $inbox;?>">INBOX MESSAGE</a></li>
+								<li  class="<?php echo $currentUrl==$history ? 'active' : '';?>"><a href="<?php echo $history;?>">HISTORY</a></li>
+								<li  class="<?php echo $currentUrl==$review ? 'active' : '';?>"><a href="<?php echo $review;?>">REVIEWS</a></li>
+							</ul>
+	   				   	<?php }?>
+	   				   	
+	   				   <?php echo $this->fetch('content'); ?>
+	   				</div>	
+	   			<?php }else {?>
+	   				<div class="page-container" >
+	   					<?php echo $this->fetch('content'); ?>	
+	   				</div>
+	   			<?php } ?>
+	   			
    			</div>
    		</div>		   
 	</section>
 	<?php echo $this->element('al_footer');?>
-	<?php //echo $this->element('modal');?>
+	<?php echo $this->element('modal');?>
 </body>
 </html>

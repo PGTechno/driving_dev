@@ -48,14 +48,15 @@ class CustomHelper extends AppHelper{
 		}
 	}
 
-	function imageUrl($url=''){
+	function imageUrl($url='',$path='images/users/'){
+		//echo $url;exit;
 		$authData = $this->Session->read('Auth.User');
-		if(is_file($url)){
-			return $this->webroot.'images/users/'.$authData['image'];
+		if(is_file($path.$url)){
+			return $this->webroot.'images/users/'.$url;
 		}elseif($authData['fb_token'] !=""){
 			return "http://graph.facebook.com/".$authData['fb_token']."/picture?type=small";
 		}else{
-			return $url."no_profile_image.jpg";
+			return $path."no_profile_image.jpg";
 		}
 	}
 }

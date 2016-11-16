@@ -17,7 +17,7 @@
                                     <div class="media-body" >
                                        <div class="media-left">
                                           <a href="#"> 
-                                             <img class="media-object img-thumbnail" alt="64x64" src="<?php echo $this->Custom->imageUrl(WWW_ROOT.'images/users/'.$this->request->data['User']['image']);?>" style="width: 150px; height: 170px; ">                                              
+                                             <img class="media-object img-thumbnail file_upload" alt="64x64" src="<?php echo $this->Custom->imageUrl($this->request->data['User']['image'],WWW_ROOT.'images/users/');?>" style="width: 150px; height: 170px; ">                                              
                                           </a>
                                        </div>
                                        <div class="media-left" >
@@ -50,7 +50,7 @@
                      <div class="col-sm-12">
                         <div class="card-box">
                            <div class="row">
-                              <?php echo $this->Form->create('User',array('class'=>'form-horizontal')); ?>
+                              <?php echo $this->Form->create('User',array('class'=>'form-horizontal','enctype'=>'multipart/form-data')); ?>
                               <div class="col-lg-6">
                                  <!-- <form class="form-horizontal group-border-dashed" action="#"> -->
                                     <div class="form-group">
@@ -68,13 +68,14 @@
                                     <div class="form-group">
                                        <label class="col-sm-3 control"><b>Address</b></label>
                                        <div class="col-sm-6">
-                                          <?php echo $this->Form->input('address',array('class'=>'form-control','placeholder'=>'Name','div'=>false,'label'=>false));?>
+                                          <?php echo $this->Form->input('address',array('class'=>'form-control','placeholder'=>'Address','div'=>false,'label'=>false));?>
                                        </div>
                                     </div>
                                     <div class="form-group">
                                        <label class="col-sm-3 control"><b>Country</b></label>
                                        <div class="col-sm-6">
-                                          <?php echo $this->Form->input('country',array('class'=>'form-control','placeholder'=>'Name','div'=>false,'label'=>false));?>
+                                          <?php 
+                                          echo $this->Form->input('country',array('options' => $country,'class'=>'form-control','placeholder'=>'Name','div'=>false,'label'=>false));?>
                                        </div>
                                     </div>
                                     <!----<div class="form-group">
@@ -170,15 +171,17 @@
                               </div>
                               <div class="col-lg-6">
                                  <!-- <form class="form-horizontal group-border-dashed" action="#"> -->
+                                    <?php if($authData['role']==2) {?>
                                     <div class="form-group">
                                        <label class="col-sm-3 control"><b>Working Hours</b></label>
                                        <div class="col-sm-3">
-                                          <?php echo $this->Form->input('start_time',array('class'=>'form-control','type'=>'text','placeholder'=>'From','div'=>false,'label'=>false));?>
+                                          <?php echo $this->Form->input('start_time',array('class'=>'form-control time','type'=>'text','placeholder'=>'From','div'=>false,'label'=>false));?>
                                        </div>
                                        <div class="col-sm-3">
-                                          <?php echo $this->Form->input('end_time',array('class'=>'form-control','type'=>'text','placeholder'=>'To','div'=>false,'label'=>false));?>
+                                          <?php echo $this->Form->input('end_time',array('class'=>'form-control time','type'=>'text','placeholder'=>'To','div'=>false,'label'=>false));?>
                                        </div>
                                     </div>
+                                    <?php } ?>
                                     <div class="form-group">
                                        <label class="col-sm-3 control"><b>Facebook URL</b></label>
                                        <div class="col-sm-6">
@@ -203,7 +206,7 @@
                                     <div class="form-group">
                                        <label class="col-sm-3 control">Picture</label>
                                        <div class="col-sm-6">
-                                          <a href="#"><img  src="<?php echo $this->Custom->imageUrl(WWW_ROOT.'images/users/'.$this->request->data['User']['image']);?>" alt="image" class="img-responsive img-rounded" width="150"/></a>
+                                          <a href="#"><img  src="<?php echo $this->Custom->imageUrl($this->request->data['User']['image'],WWW_ROOT.'images/users/');?>" alt="image" class="img-responsive img-rounded file_upload" width="150"/></a>
                                        </div>
                                     </div>
                               </div>
@@ -211,6 +214,7 @@
                               echo  $this->Form->hidden('image');
                               echo  $this->Form->hidden('state');
                               echo  $this->Form->hidden('created');
+                              echo  $this->Form->file('user_image',array('style'=>'display:none','class'=>'file_upload_hidden'));
                               echo $this->Form->end(); ?>
                               <!-- </form> -->
                            </div>

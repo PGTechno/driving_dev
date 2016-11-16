@@ -23,12 +23,14 @@ $contact = Router::url(array('controller' => 'pages', 'action' => 'contact'));
               <li><a href="<?php echo $faq;?>"><b>FAQ</b></a></li>
               <li><a href="<?php echo $contact;?>"><b>CONTACT US</b></a></li>
                <!-- BEGIN USER LOGIN DROPDOWN -->
-             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <img alt="" src="<?php echo $this->Custom->imageUrl(WWW_ROOT.'images/users/'.$authData['image']);?>" class="img-circle" style="height:4em;" ><b><?php echo $authData['fname'];?></b><span class="caret"></span></a>
+              <?php if($this->Session->read('Auth.User')){ ?>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <img alt="" src="<?php echo $this->Custom->imageUrl($authData['image'],WWW_ROOT.'images/users/');?>" class="img-circle" style="height:4em;" ><b><?php echo $authData['fname'];?></b><span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                    <li><a href="<?php echo $logout; ?>"><b>LOGOUT</b></a></li>
                 </ul>
-             </li>
+              </li>
+              <?php } ?>
              <!-- END USER LOGIN DROPDOWN -->
           </ul>
        </nav>

@@ -26,7 +26,8 @@ class CustomComponent extends Component {
     }
 
     function deleteOldImage($url){
-    	if(file_exists($url)){
+        $url = WWW_ROOT.$url;
+        if(file_exists($url)){
     		if(unlink($url)){
     			return true;
     		}else{
@@ -75,6 +76,11 @@ class CustomComponent extends Component {
         return $date->format($format);
     }
 
+    function dateFormatChange($date,$oldFormat="Y-m-d H:i:s",$newFormat="Y-m-d H:i:s"){
+        $myDateTime = DateTime::createFromFormat($oldFormat, $date);
+        return $myDateTime->format($newFormat);
+    }
+
     function sendEmail($title = "BACK_REGISTER", $keyword = "Ganpat,goyal@ga.com,123456", $params=array()){
         //$this-.sendEmail("BACK_REGISTER","ggg,ada,ada",$params)
         $model = ClassRegistry::init('EmailTemplate');
@@ -89,7 +95,7 @@ class CustomComponent extends Component {
             $message = str_replace(explode(",", $isExist['EmailTemplate']['keyword']),explode(",",$keyword),$isExist['EmailTemplate']['content']);
 
             $Email = new CakeEmail();
-            $Email->config('gmail');
+            //$Email->config('gmail');
             //$Email->template('default', 'default');
             $Email->emailFormat('html');
             $Email->from(array($from => Configure::read('Site.title')));

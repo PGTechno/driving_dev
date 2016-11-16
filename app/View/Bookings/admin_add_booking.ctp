@@ -54,7 +54,7 @@
                                             <div class="form-group">
                                                 <?php echo $this->Form->label('Start Time',null,array('class'=>'col-md-3 control-label'));?>
                                                 <div class="col-md-7">
-                                                    <?php echo $this->Form->input('start_time',array('type'=>'text','class'=>'form-control','label'=>false,'div'=>false));?>
+                                                    <?php echo $this->Form->input('start_time',array('type'=>'text','class'=>'form-control date','label'=>false,'div'=>false));?>
                                                 </div>    
                                             </div>
                                             

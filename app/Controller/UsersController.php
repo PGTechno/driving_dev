@@ -37,6 +37,14 @@ class UsersController extends AppController {
  * @var array
  */
 	public $uses = array();
+	/*public $helpers = array('Paginator' => array('Paginator'));*/
+	public $components = array(
+	  'Paginator'
+	);
+
+	public $helpers = array(
+	  'Paginator'
+	);
 
 /**
  * Displays a view
@@ -56,10 +64,12 @@ class UsersController extends AppController {
 		if($this->request->is('post') || $this->request->is('put')) {
 			$req = $this->request->data;
 			$res = array('err'=>0,'msg'=>'','data'=>'');
-			$isExist = $this->User->find("first",array('conditions'=>array('email'=>$req['User']['email'],'role'=>2)));
+			$isExist = $this->User->find("first",array('conditions'=>array('email'=>$req['User']['email'],'role'=>array(2,3))));
 			//pr($isExist); exit;
 			if(empty($isExist)){
 				$res = array('err'=>1,'msg'=>'Invalid user credentials.','data'=>'');
+			}elseif(isset($req['User']['role']) && $req['User']['role']!=$isExist['User']['role']){
+				$res = array('err'=>1,'msg'=>'Soory, Only students can be allowed to place booking.','data'=>'');
 			}elseif($isExist['User']['status']==0){
 				/*--------mailvarification start---------*/
 				$url = Router::url(array("controller"=>"pages","action"=>"varify",$isExist['User']['varify_token']),true);
@@ -93,7 +103,7 @@ class UsersController extends AppController {
 			$req = $this->request->data;
 			$req['User']['varify_token'] = $token;
 			if($this->User->save($req)){
-				$this->Session->setFlash("Register Successfully",'success');
+				$this->Session->setFlash("Register Successfully.We sent you an varification mail to varify your email address. ",'success');
 				$res = array('err'=>0,'msg'=>'You registered successfully.','data'=>'');
 				/*-------SEND EMAIL START---------*/
 				$url = Router::url(array("controller"=>"pages","action"=>"varify",$token),true);
@@ -106,7 +116,11 @@ class UsersController extends AppController {
 				/*-------SEND EMAIL END---------*/
 				echo json_encode($res); exit;	
 			}else{
-
+				if(isset($this->request->data['User']['from'])){
+					$errors = $this->User->validationErrors;
+					$res = array('err'=>1,'msg'=>'Soory, There is an erroron signup.','data'=>$errors);
+					echo json_encode($res); exit;	
+				}
 			}
 			//pr($req); exit;
 			
@@ -131,9 +145,16 @@ class UsersController extends AppController {
 
 	public function profile() {
 		$this->layout = 'afterlogin';
+		$this->loadModel("Country");
+		$country = $this->Country->find('list',array('fields'=>array('Country.id','Country.name')));
 		if($this->request->is('post') || $this->request->is('put') || $this->request->is('ajax')) {
 			$this->request->data['User']['id'] = $this->authData['id'];
+			$req = $this->request->data;
+			$isUpload = $this->Custom->uploadImage($req['User']['user_image'], $destination='images/users/', $prefix="user", $oldImg=$req['User']['image']);
+			if($isUpload) $this->request->data['User']['image'] = $isUpload;
+			
 			if($this->User->save($this->request->data)){
+				$this->updateSession();
 				$this->Session->setFlash("Your profile updated.",'success');
 				$this->redirect(array('controller' => 'users', 'action' => 'profile'));
 			}else{
@@ -142,7 +163,8 @@ class UsersController extends AppController {
 			}
 		}else{
 			$this->request->data = $this->User->find('first',array('conditions'=>array('User.id'=>$this->authData['id'])));	
-		}		
+		}
+		$this->set(compact('country'));		
 	}
 
 	public function logout(){
@@ -179,11 +201,15 @@ class UsersController extends AppController {
 				}else{
 					$res['err'] = 1; $res['msg'] = "Sorry,There is an problem.";
 				}
-			}elseif($isExist['User']['status']==0){
-				$res['err'] = 1; $res['msg'] = "Sorry, Your account is not activated";	
+			}elseif($isExist['User']['status']==2){
+				$res['err'] = 1; $res['msg'] = "Sorry, Your account is deleted";	
 			}else{
 				if($this->Auth->login($isExist['User'])){
 					$res['err'] = 0; $res['msg'] = "Login Successfully";	
+					$sav['User']['id'] = $isExist['User']['id'];
+					$sav['User']['status'] = 1;
+					$sav['User']['fb_token'] = $req['id'];
+					$this->User->save($sav,false);
 				}
 			}
 
@@ -446,5 +472,47 @@ class UsersController extends AppController {
 			}
 			throw new NotFoundException();
 		}
+	}
+
+	public function review() {
+		$this->layout = 'afterlogin';
+		$this->loadModel('Review');
+		/*$options = array(
+		    'conditions' => array(
+		        'Review.user_id' => $this->authData['id']
+		    ),
+		    'fields' => array(
+		        'Post.id',
+		        'Post.title',
+		        'Post.created'
+		    ),
+		    'order' => array(
+		        'Review.created' => 'DESC'
+		    ),
+		    'limit' => 10
+		);
+
+		$this->Paginator->settings = $options;
+		$reviews = $this->Paginator->paginate('Review');
+		prd($reviews);*/
+
+		$this->loadModel('Review');
+		$conditions['Review.user_id'] = $this->authData['id'];
+		$this->Paginator->settings = array(
+	        'conditions' => $conditions,
+	        //'contain'=>array('User','Booking'=>array('Package'=>array('Trainer'))),
+	        'group'=>array('Booking.id'),
+	        'limit' => 10,
+	        'recursive'=>3,
+
+	    );
+	    $data = $this->paginate('Review');
+	    //prd($this);
+	    $this->set(compact('data'));
+		
+		//$isExist = $this->Review->find('all',array('conditions'=>$conditions,'contain'=>array('User','Booking'=>array('Package'=>array('Trainer')))));
+		/*if($isExist){
+			prd($isExist);
+		}*/
 	}
 }

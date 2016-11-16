@@ -210,6 +210,167 @@ class BookingsController extends AppController {
 		//pr($content); exit;
 	}
 
+	public function index() {
+        $this->layout = 'afterlogin';
+        $this->loadModel('Booking');
+        if ($this->request->is('ajax')) {
+            $request = $this->request;
+            $this->layout = 'ajax';
+   			$page = $request->query('draw');
+            $limit = $request->query('length');
+            $start = $request->query('start');
+            
+            //for order
+            $colName=$this->request->query['order'][0]['column'];
+            $orderby[$this->request->query['columns'][$colName]['name']]=$this->request->query['order'][0]['dir'];
+          
+            $condition = array();
+            //$condition ['Package.user_id ='] = $this->authData['id'];
+            $condition ['Booking.status ='] = 1;
+            //$condition ['Message.role !='] = 1;
+           
+            //pr($this->request->query['columns']);
+		    foreach ($this->request->query['columns'] as $column){
+		       if (isset($column['searchable']) && $column['searchable'] == 'true') {
+		        	if(isset($column['name']) && $column['search']['value']!='') {
+				         $condition[$column['name'].' LIKE '] = '%' .trim($column['search']['value']). '%';
+				    }
+			    } 
+		    }
+		    $total_records = $this->Booking->find('count', array('conditions' => $condition));
+            
+            $bookingData = $this->Booking->find('all', array(
+                'conditions' => $condition,
+                //'fields' => $fields,
+                'order' => $orderby,
+                'limit' => $limit,
+                'offset' => $start
+            ));
+
+            //prd($bookingData);
+
+            $return_result['draw'] = $page;
+            $return_result['recordsTotal'] = $total_records;
+            $return_result['recordsFiltered'] = $total_records;
+            
+    
+            $return_result['data']=array();
+            if (isset($bookingData[0])) {
+             $i = $start + 1;
+                foreach ($bookingData as $row) {
+     
+	                 $action = '<span class="label label-table label-success">ACCEPT</span><span class="label label-table label-danger">DECLINE</span>';
+	                 /*$action = '';
+	                 $status = '';
+	                 $role = $row['User']['role']==2 ? "Instroctor" : "User" ;*/
+	                 
+	                 /*if ($row['User']['status']==0)
+	                 {
+	                  $status .= '<i class="fa fa-circle fa-lg clr-red" onclick="changeUserStatus(' . $row['User']['id'] . ',0)" title="Change Status"></i>';
+	                 }
+	                 else if ($row['User']['status']==1)
+	                 {
+	                  $status .= '<i class="fa fa-circle fa-lg clr-green" onclick="changeUserStatus(' . $row['User']['id'] . ',1)" title="Change Status"></i>';
+	                 }*/
+	                 
+	                 /*$action .= '&nbsp;&nbsp;&nbsp;<a href="' . $this->webroot.'admin/users/add_user/'.$row['User']['id']. '" title="Edit User"><i class="fa fa-edit fa-lg"></i></a> ';
+
+	                 $row['User']['role']==2 ? $action .= '&nbsp;&nbsp;&nbsp;<a href="' . $this->webroot.'admin/packages/index/'.$row['User']['id']. '" title="Package Detail"><i class="fa fa-th-list fa-lg"></i></a> ' : "";
+	                 $row['User']['role']==2 ? $action .= '&nbsp;&nbsp;&nbsp;<a href="' . $this->webroot.'admin/bookings/index/'.$row['User']['id']. '" title="Booking Detail"><i class="fa fa-eye fa-lg"></i></a> ' : "";
+	                                
+	                 $action .= '&nbsp;&nbsp;&nbsp; <a href="#" onclick="change_status('.$row['User']['id'].')" title="Delete User"><i class="fa fa-trash fa-lg"></i></a>';                    */
+	                 $date = $this->Custom->dateFormatChange($row['Booking']['created'],$oldFormat="Y-m-d H:i:s",$newFormat="d/m/Y | H:i A");
+                     $return_result['data'][]= array(
+	                     $row['User']['fname'],
+	                     $row['Package']['title'],
+	                     $row['Package']['duration']." MINUTE",
+	                     $date,
+	                     $action
+	                     //date(Configure::read('Site.admin_date_format'), strtotime($row['User']['dob'])),
+	                    //date(Configure::read('Site.admin_date_time_format'), strtotime($row['User']['date_added'])),
+	                     //$role,
+	                     //$action 
+                    );
+
+                    $i++;
+                }
+            }
+           // pr($return_result);
+            echo json_encode($return_result);
+            exit;
+        }    
+    }
+
+	public function calendar() {
+		$this->layout = 'afterlogin';
+		$events = array(); 
+		//$confition['Booking.id'] = $id;
+		$confition['Package.user_id'] = $this->authData['id'];
+		$confition['Booking.status'] = 1;
+		$isExist = $this->Booking->find('all',array(
+			'conditions'=>$confition
+		));
+
+		foreach($isExist as $k => $v){
+			$events[] = array(
+				'id' => $v['Booking']['id'],
+				'title' => ucfirst($v['User']['fname']),//'<b>'.date('H:i A',strtotime($v['Booking']['start_time'])).'</b> '.ucfirst($v['User']['fname']),
+				'start' => $v['Booking']['start_time'],
+				'end' => $v['Booking']['end_time'],
+				'className' => 'my_event',
+				'color' => '#72c35d'
+			);	
+		}
+		$events = json_encode($events);	
+		$this->set(compact('events'));
+	}
+
+	public function add($id=1) {
+		$this->layout = false;
+		$res = array('err'=>1,'msg'=>'');
+		$confition['Booking.id'] = $id;
+		$confition['Package.user_id'] = $this->authData['id'];
+		$isExist = $this->Booking->find('first',array(
+			'conditions'=>$confition
+		));
+		
+		
+		if(empty($isExist)){
+			$res['err'] = 1; $res['msg'] = 'Sorry,This bookingis not belongs to you.';
+			echo json_encode($res,true); exit;
+		}else if(!empty($this->request->data) ){
+			$isExist['Booking']['start_time'] = $this->Custom->dateFormatChange($this->request->data['Booking']['start_time'],Configure::read('Site.front_date_time_format'),'Y-m-d H:i:s');
+			$res = $this->Booking->isBookingConflict($isExist['Booking']);
+			if($res['err']==1){
+
+			}else{
+				$save['Booking']['id'] = $this->request->data['Booking']['id'];
+				$save['Booking']['start_time'] = $isExist['Booking']['start_time'];
+				$save['Booking']['end_time'] = date('Y-m-d H:i:s',strtotime($isExist['Booking']['start_time']." +".$isExist['Package']['duration']." minutes"));
+				//prd($save);
+				if($this->Booking->save($save)){
+					$res['err'] = 0; 
+					$res['msg'] = 'Successfully updated schedule.';
+					$res['event'] = array(
+						'id' => $this->request->data['Booking']['id'],
+						'title' => ucfirst($isExist['User']['fname']),//'<b>'.date('H:i A',strtotime($v['Booking']['start_time'])).'</b> '.ucfirst($v['User']['fname']),
+						'start' => $save['Booking']['start_time'],
+						'end' => $save['Booking']['end_time'],
+						'className' => 'my_event',
+						'color' => '#72c35d'
+					);
+				}else{
+					$res['err'] = 1; $res['msg'] = 'Sorry, There is an error while update. Please try again';
+				}
+				//pr($response); prd($isExist);
+			}
+			echo json_encode($res,true); exit;
+		}else{
+			$this->request->data = $isExist;
+			echo $this->render('/Elements/editEvent'); exit;							
+		}
+	}
+
 	public function display() {
 		$path = func_get_args();
 
@@ -239,4 +400,137 @@ class BookingsController extends AppController {
 			throw new NotFoundException();
 		}
 	}
+
+	public function history() {
+        $this->layout = 'afterlogin';
+        $this->loadModel('Booking');
+        if ($this->request->is('ajax')) {
+            $request = $this->request;
+            $this->layout = 'ajax';
+   			$page = $request->query('draw');
+            $limit = $request->query('length');
+            $start = $request->query('start');
+            
+            //for order
+            $colName=$this->request->query['order'][0]['column'];
+            $orderby[$this->request->query['columns'][$colName]['name']]=$this->request->query['order'][0]['dir'];
+          
+            $condition = array();
+            //$condition ['Package.user_id ='] = $this->authData['id'];
+            $condition ['Booking.status !='] = 0;
+            //$condition ['Message.role !='] = 1;
+           
+            //pr($this->request->query['columns']);
+		    foreach ($this->request->query['columns'] as $column){
+		       if (isset($column['searchable']) && $column['searchable'] == 'true') {
+		        	if(isset($column['name']) && $column['search']['value']!='') {
+				         $condition[$column['name'].' LIKE '] = '%' .trim($column['search']['value']). '%';
+				    }
+			    } 
+		    }
+		    $total_records = $this->Booking->find('count', array('conditions' => $condition));
+            
+            $bookingData = $this->Booking->find('all', array(
+                'contain'=>array('Review','Package'=>array('Trainer'),'User'),
+                'conditions' => $condition,
+                //'fields' => $fields,
+                'order' => $orderby,
+                'limit' => $limit,
+                'offset' => $start
+            ));
+
+            //prd($bookingData);
+
+            $return_result['draw'] = $page;
+            $return_result['recordsTotal'] = $total_records;
+            $return_result['recordsFiltered'] = $total_records;
+            
+    
+            $return_result['data']=array();
+            if (isset($bookingData[0])) {
+             $i = $start + 1;
+                foreach ($bookingData as $row) {
+                	 $isReview = '';
+                	 //prd($row);
+     			     switch($row['Booking']['status']){
+     			     	case 0 : $action = '<span class="label label-table label-warning">PENDING</span>'; break;
+     			     	case 1 : $action='<span class="label label-table label-success">ACCEPT</span>'; break;
+     			     	case 2 : $action='<span class="label label-table label-danger">DECLINE</span>'; break;
+     			     	case 3 : $action='<span class="label label-table label-danger">DELETE</span>'; break;
+     			     }
+
+     			     if(!isset($row['Review']['id'])){
+     			     	$isReview = ' | <span class="label label-table label-success" title="Place Review">REVIEW</span>'; 	
+     			     }
+
+     			     $action.= $isReview;
+     			     
+	                 //$action = '<span class="label label-table label-success">ACCEPT</span><span class="label label-table label-danger">DECLINE</span>';
+	                 /*$action = '';
+	                 $status = '';
+	                 $role = $row['User']['role']==2 ? "Instroctor" : "User" ;*/
+	                 
+	                 /*if ($row['User']['status']==0)
+	                 {
+	                  $status .= '<i class="fa fa-circle fa-lg clr-red" onclick="changeUserStatus(' . $row['User']['id'] . ',0)" title="Change Status"></i>';
+	                 }
+	                 else if ($row['User']['status']==1)
+	                 {
+	                  $status .= '<i class="fa fa-circle fa-lg clr-green" onclick="changeUserStatus(' . $row['User']['id'] . ',1)" title="Change Status"></i>';
+	                 }*/
+	                 
+	                 /*$action .= '&nbsp;&nbsp;&nbsp;<a href="' . $this->webroot.'admin/users/add_user/'.$row['User']['id']. '" title="Edit User"><i class="fa fa-edit fa-lg"></i></a> ';
+
+	                 $row['User']['role']==2 ? $action .= '&nbsp;&nbsp;&nbsp;<a href="' . $this->webroot.'admin/packages/index/'.$row['User']['id']. '" title="Package Detail"><i class="fa fa-th-list fa-lg"></i></a> ' : "";
+	                 $row['User']['role']==2 ? $action .= '&nbsp;&nbsp;&nbsp;<a href="' . $this->webroot.'admin/bookings/index/'.$row['User']['id']. '" title="Booking Detail"><i class="fa fa-eye fa-lg"></i></a> ' : "";
+	                                
+	                 $action .= '&nbsp;&nbsp;&nbsp; <a href="#" onclick="change_status('.$row['User']['id'].')" title="Delete User"><i class="fa fa-trash fa-lg"></i></a>';                    */
+	                 $date = $this->Custom->dateFormatChange($row['Booking']['created'],$oldFormat="Y-m-d H:i:s",$newFormat="d/m/Y | H:i A");
+                     $return_result['data'][]= array(
+	                     $row['Package']['Trainer']['fname'],
+	                     $row['Package']['title'],
+	                     $row['Package']['duration']." MINUTE",
+	                     $date,
+	                     $action
+	                     //date(Configure::read('Site.admin_date_format'), strtotime($row['User']['dob'])),
+	                    //date(Configure::read('Site.admin_date_time_format'), strtotime($row['User']['date_added'])),
+	                     //$role,
+	                     //$action 
+                    );
+
+                    $i++;
+                }
+            }
+           // pr($return_result);
+            echo json_encode($return_result);
+            exit;
+        }    
+    }
+
+    public function wizard() {
+        $this->layout = 'afterlogin';
+        $this->loadModel('Booking');
+        $this->loadModel('Package');
+        $this->loadModel('User');
+        $this->Session->write('CurruntBooking.Trainer', 2);
+        
+        if(isset($this->authData['role']) && $this->authData['role'] !=3){
+        	//prd($this->authData);
+        	$this->Session->setFlash("Soory, Only users can be allowed to place booking.",'error');
+ 			$this->redirect(array('full_base'=>true,'controller'=>'pages','action'=>'home'));
+        }
+        
+        $driver_id = $this->Session->read('CurruntBooking.Trainer');
+        $driverData = $this->User->findById($driver_id);
+        if(empty($driverData)){
+        	//prd($this->authData);
+        	$this->Session->setFlash("Soory, Please select instructor first.",'error');
+ 			$this->redirect(array('full_base'=>true,'controller'=>'pages','action'=>'home'));
+        }
+
+        /*$conditions['Package.user_id'] = $driver_id;
+        $packageData = $this->Package->find('all',array('conditions'=>$conditions));
+		prd($driverData);*/
+        $this->set(compact('driverData'));
+    }
 }

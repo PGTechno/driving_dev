@@ -1,0 +1,12 @@
+INSERT INTO `driving`.`settings` (`id`, `keyword`, `title`, `desscription`, `created`, `modified`) VALUES (NULL, 'Site.front_date_format', 'd-m-Y', '', '2016-10-23 00:00:00', '2016-10-23 00:00:00'), (NULL, 'Site.front_date_time_format', 'd-m-Y H:i A', '', '2016-10-23 00:00:00', '2016-10-23 00:00:00');
+====================================
+
+ALTER TABLE `messages` ADD `sender_delete` TINYINT( 3 ) NOT NULL DEFAULT '0' COMMENT '0=>No;  1=>yes' AFTER `receiver_read` ,
+ADD `receiver_delete` TINYINT( 3 ) NOT NULL DEFAULT '0' COMMENT '0=>No;  1=>yes' AFTER `sender_delete` ;
+
+===================================
+
+ALTER TABLE `bookings` CHANGE `status` `status` TINYINT( 3 ) NOT NULL COMMENT '0=>Pending; 1=>accept; 2=>Decline; 3=>delete';
+ALTER TABLE `bookings` ADD `payment_status` TINYINT( 3 ) NOT NULL DEFAULT '0' COMMENT '0=>Unpaid; 1=>Paid' AFTER `status` ;
+
+==================================

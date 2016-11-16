@@ -36,6 +36,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			'front/owl.theme.default',
 			'front/jquery.nouislider.min',
 			'front/style',
+			'bootstrap-datetimepicker',
 			'my'
 		));
 
@@ -50,6 +51,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			'front/imagesloaded.pkgd.min',
 			'front/jquery.nouislider.all.min',
 			'jquery.validate',
+			'moment.min',
+			'bootstrap-datetimepicker.min',
 			'my'
 		));
 

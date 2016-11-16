@@ -2,12 +2,24 @@
 App::uses('AuthComponent', 'Controller/Component');
 App::uses('Model', 'Model');
 class Booking extends AppModel {
-    public $hasMany = array(
-        /*'Country' => array(
-            'className' => 'Package',
-            'foreignKey' => 'user_id'
-        )*/
+    public $actsAs = array('Containable'); 
+    /*public $hasMany = array(
+        'Review' => array(
+            'className' => 'Review',
+            'foreignKey' => 'booking_id'
+        )
+    );*/
+    
+    public $hasOne = array(
+        'Review' => array(
+            'className' => 'Review',
+            'foreignKey' => 'booking_id'
+        )
     );
+
+    /*public $virtualFields = array(
+        'bookingDate' => "strtotime(Booking.start_time)"
+    );*/
 
     public $belongsTo = array(
         'Package' => array(
@@ -72,23 +84,23 @@ class Booking extends AppModel {
             if(empty($package)){
                 $res = array('err'=>1,'msg'=>'Please select valid package.');    
             }else{
-                $uStartTime =   strtotime(substr($data['start'],-8));
-                $uEndTime   =   strtotime(date("H:i:s",strtotime(substr($data['start'],-8).' +'.$package['Package']['duration'].'minutes')));
+                $uStartTime =   strtotime(substr($data['start_time'],-8));
+                $uEndTime   =   strtotime(date("H:i:s",strtotime(substr($data['start_time'],-8).' +'.$package['Package']['duration'].'minutes')));
                 $tStartTime =   strtotime($package['Trainer']['start_time']);
                 $tEndTime   =   strtotime($package['Trainer']['end_time']);
                 if($uStartTime < $tStartTime || $uStartTime > $tEndTime || $uEndTime > $tEndTime || $uEndTime < $tStartTime){
-                    $res = array('err'=>1,'msg'=>'Soory, Trainer is not available on this time schedule.');        
+                    $res = array('err'=>1,'msg'=>'Soory, This time is not available.');        
                 }else{
                     $this->virtualFields = array(
-                        'start'=>"'".$data['start']."'",
-                        'end'=>"DATE_ADD('".$data['start']."',INTERVAL ".$package['Package']['duration']." MINUTE)"
+                        'start'=>"'".$data['start_time']."'",
+                        'end'=>"DATE_ADD('".$data['start_time']."',INTERVAL ".$package['Package']['duration']." MINUTE)"
                     );
                     $booking = $this->find("all",array(
                         'conditions'=>array(
                             'Booking.status'=>1,
                             'OR'=>array(
-                                '"'.$data['start'].'" BETWEEN Booking.start_time and Booking.end_time',
-                                'DATE_ADD("'.$data["start"].'", INTERVAL '.$package["Package"]["duration"].' MINUTE) BETWEEN Booking.start_time and Booking.end_time',
+                                '"'.$data['start_time'].'" BETWEEN Booking.start_time and Booking.end_time',
+                                'DATE_ADD("'.$data["start_time"].'", INTERVAL '.$package["Package"]["duration"].' MINUTE) BETWEEN Booking.start_time and Booking.end_time',
                             )
                         )
                     )); 
@@ -102,7 +114,7 @@ class Booking extends AppModel {
             }
             
             if($_POST){
-                return json_encode($res);
+                return $res;
             }else{
                 echo json_encode($res);exit;
             }
@@ -117,4 +129,9 @@ class Booking extends AppModel {
             $this->data['Booking']['modified'] = date('Y-m-d H:i:s');
             //prd($this->data['User']);
         }
+
+        /*public function afterFind($results, $primary = false){
+            //echo "<pre>"; print_r($results);exit;
+            //Configure::read('Site.front_date_time_format')
+        }*/
 }

@@ -40,6 +40,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			//'dataTables.bootstrap',
 			'responsive.dataTables.min',
 			//'datepicker3'
+			'bootstrap-datetimepicker',
 			'blueChk',
 			'my'
 		));
@@ -61,6 +62,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			'jquery.slimscroll',
 			'app',
 			'bootbox.min',
+			'moment.min',
+			'bootstrap-datetimepicker.min',
 			'my'
 			//'dashboard',
 			//'demo'

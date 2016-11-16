@@ -55,7 +55,7 @@ class AppController extends Controller{
 	public function beforeFilter(){
 		parent::beforeFilter();
         //$this->Auth->allow(array('admin_login', 'admin_logout','home'));
-        $this->Auth->allow(array('admin_login', 'admin_logout','home','login','logout','register','fblogin','about','faq','contact','varify'));
+        $this->Auth->allow(array('admin_login', 'admin_logout','home','login','logout','register','fblogin','about','faq','contact','varify','wizard'));
         $this->Auth->authorize = 'Controller';
 		
 		if(isset($this->request->params['admin'])){
@@ -71,6 +71,8 @@ class AppController extends Controller{
 			$this->Auth->logoutRedirect = array('controller'=>'pages','action'=>'home');
 			
 		}
+
+ 
 		/*$this->loadModel('Booking');
 		$this->Booking->isBookingConflict($data =array('package_id'=>1,'start'=>'2016-09-08 09:44:00'));*/
 
@@ -134,6 +136,11 @@ class AppController extends Controller{
 		foreach($setting as $k=>$v){
 			Configure::write($v['Setting']['keyword'], $v['Setting']['title']);
 		}	
+	}
+
+	public function updateSession(){
+		$updatedUser = $this->User->read(null, $this->Session->read('Auth.User.id'));
+ 		$this->Session->write('Auth.User', $updatedUser['User']);
 	}
 
 }

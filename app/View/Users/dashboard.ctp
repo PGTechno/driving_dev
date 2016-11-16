@@ -17,7 +17,7 @@
                                     <div class="media" style="margin-top:-7%;">
                                        <div class="media-body" >
                                           <div class="media-left">
-                                             <a href="#"> <img class="media-object img-thumbnail" alt="64x64" src="<?php echo $this->Custom->imageUrl(WWW_ROOT.'images/users/'.$authData['image']);?>" style="width: 150px; height: 170px; "> </a>
+                                             <a href="#"> <img class="media-object img-thumbnail" alt="64x64" src="<?php echo $this->Custom->imageUrl($authData['image'],WWW_ROOT.'images/users/');?>" style="width: 150px; height: 170px; "> </a>
                                           </div>
                                           <div class="media-left" >
                                              <h4 class="media-heading" ><a href="#" class="text-muted" style="color: #124b6d;" ><?php echo $authData['fname'];?></a></h4>
