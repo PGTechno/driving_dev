@@ -45,9 +45,11 @@
    <br><br>
 </div>
 
+
+
 <script type="text/javascript">
-   $(document).ready(function() {
-       table = $('#bookingGrid').DataTable( {
+    $(document).ready(function() {
+        table = $('#bookingGrid').DataTable( {
            "processing": true,
            "serverSide": true,
            "responsive":true,
@@ -63,8 +65,15 @@
                            { "name": "Booking.common" ,"orderable":false,"searchable":false,'width':'20%', 'sClass': 'text-center'}
                        ],
            "order": [[3, "desc"]],  
-       });
+        });
        
-       $(".dataTables_filter").remove(); 
-   });
+        $(".dataTables_filter").remove();         
+    });
+    
+    $(document).on('click','.review',function(){
+        var booking_id = $(this).data('bookingid');
+        //alert(booking_id);        
+    })
+
+    
 </script>

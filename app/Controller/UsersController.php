@@ -502,6 +502,25 @@ class UsersController extends AppController {
 	        'conditions' => $conditions,
 	        //'contain'=>array('User','Booking'=>array('Package'=>array('Trainer'))),
 	        'group'=>array('Booking.id'),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	        'order'=>array('Review.created'=>'desc'),
 	        'limit' => 10,
 	        'recursive'=>3,
 

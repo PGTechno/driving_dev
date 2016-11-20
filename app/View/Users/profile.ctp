@@ -54,9 +54,15 @@
                               <div class="col-lg-6">
                                  <!-- <form class="form-horizontal group-border-dashed" action="#"> -->
                                     <div class="form-group">
-                                       <label class="col-sm-3 control"><b>Full Name</b></label>
+                                       <label class="col-sm-3 control"><b>First Name</b></label>
                                        <div class="col-sm-6">
-                                          <?php echo $this->Form->input('fname',array('class'=>'form-control','placeholder'=>'Name','div'=>false,'label'=>false));?>
+                                          <?php echo $this->Form->input('fname',array('class'=>'form-control','placeholder'=>'First Name','div'=>false,'label'=>false));?>
+                                       </div>
+                                    </div>
+                                    <div class="form-group">
+                                       <label class="col-sm-3 control"><b>Last Name</b></label>
+                                       <div class="col-sm-6">
+                                          <?php echo $this->Form->input('lname',array('class'=>'form-control','placeholder'=>'Last Name','div'=>false,'label'=>false));?>
                                        </div>
                                     </div>
                                     <div class="form-group">

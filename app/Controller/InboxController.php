@@ -37,6 +37,9 @@ class InboxController extends AppController {
  * @var array
  */
 	public $uses = array();
+    public $components = array(
+      'Paginator'
+    );
 
 /**
  * Displays a view
@@ -129,6 +132,7 @@ class InboxController extends AppController {
 	                     //$row['User']['lname'],
 	                     $row['Message']['message'],
 	                     $date,
+                         'DT_RowClass'=>'friend '.$row['Message']['other_uid']
 
 	                     //date(Configure::read('Site.admin_date_format'), strtotime($row['User']['dob'])),
 	                    //date(Configure::read('Site.admin_date_time_format'), strtotime($row['User']['date_added'])),
@@ -143,6 +147,39 @@ class InboxController extends AppController {
             echo json_encode($return_result);
             exit;
         }    
+    }
+
+    public function messages($friend_id='') {
+        $this->layout = 'afterlogin';
+        $this->loadModel('Message');
+        $this->loadModel('Review');
+        //$conditions['Review.user_id'] = $this->authData['id'];
+        $condition = array();
+        $condition ['OR']['Message.sender ='] = $this->authData['id'];
+        $condition ['OR']['Message.receiver ='] = $this->authData['id'];
+        
+        $condition ['Message.receiver_delete ='] = 0;
+
+        $condition1 ['OR']['Message.sender ='] = $friend_id;
+        $condition1 ['OR']['Message.receiver ='] = $friend_id;
+
+        $condition['AND'] = $condition1;
+        $this->Paginator->settings = array(
+            'conditions' => $condition,
+            //'contain'=>array('User','Booking'=>array('Package'=>array('Trainer'))),
+            //'group'=>array('Booking.id'),
+            'order'=>array('Message.created'=>'desc'),
+            'limit' => 10,
+            'recursive'=>3,
+        );
+        $this->Message->virtualFields=array(
+            'isSender'=>'if(Message.sender='.$this->authData['id'].',1,0)',
+            'other_uid'=>'if(Message.sender='.$this->authData['id'].',Message.receiver,Message.sender)',
+        );
+
+        $data = $this->paginate('Message');
+        //prd($data);
+        $this->set(compact('data'));
     }
 
     public function deleteMessage(){

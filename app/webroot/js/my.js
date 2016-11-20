@@ -26,13 +26,13 @@ $(function () {
 	  }
 	});*/
 
-	$(".openModal").click(function(){
-		var url = $(this).data('url');
-		$.get(url)
-		.done(function(data) {
-	    	$('#myModal').html(data);
-	  	});
-	})
+	$(document).on('click','.openModal',function(){
+        var url = $(this).data('url');
+        $.get(url)
+        .done(function(data) {
+            $('#myModal').html(data);
+        });
+    });
 
 
 	$('#myModal').on('hidden.bs.modal', function (e) {

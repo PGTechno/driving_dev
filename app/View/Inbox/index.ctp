@@ -69,4 +69,11 @@ var delUrl = '<?php echo $this->Html->url(array("controller" => "inbox","action"
             console.log(searchIDs);
         })
    });
+
+    $(document).on('click','.friend',function(){
+        var messagesUrl = '<?php echo $this->Html->url(array("controller" => "inbox","action" => "messages",));?>';
+        var allClass = $(this).attr("class").split(' ');
+        window.location = messagesUrl+'/'+allClass[1];
+    })
+  
 </script>

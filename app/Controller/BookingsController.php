@@ -460,7 +460,7 @@ class BookingsController extends AppController {
      			     }
 
      			     if(!isset($row['Review']['id'])){
-     			     	$isReview = ' | <span class="label label-table label-success" title="Place Review">REVIEW</span>'; 	
+     			     	$isReview = ' | <span class="label label-table label-success review openModal" data-toggle="modal" data-target="#myModal" data-bookingid="'.$row['Booking']['id'].'" data-url="'.Router::url(array('controller' => 'bookings', 'action' => 'review',$row['Booking']['id'])).'" title="Place Review">REVIEW</span>'; 	
      			     }
 
      			     $action.= $isReview;
@@ -505,6 +505,41 @@ class BookingsController extends AppController {
             echo json_encode($return_result);
             exit;
         }    
+    }
+
+    public function review($id='') {
+    	$this->layout = false;
+    	$this->loadModel('Review');
+    	$isExist = $this->Booking->find('first',array('contain'=>array('Package'=>array('Trainer'),'User','Review'),'conditions'=>array('Booking.id'=>$id,'Booking.user_id'=>$this->authData['id'])));	
+    	
+    	if($this->request->is('post') && $this->request->is('ajax')){
+    		if(isset($isExist['Review']['id'])){
+    			$res['err'] = 1; $res['msg'] = 'Sorry,This bookingis already rated.';
+				echo json_encode($res,true); exit;
+    		}
+    		if(!empty($isExist)){
+    			$save['Review']['rating'] = $this->request->data['rate'];
+    			$save['Review']['description'] = $this->request->data['description'];
+    			$save['Review']['booking_id'] = $id;
+    			$save['Review']['user_id'] = $this->authData['id'];
+    			if($this->Review->save($save,false)){
+    				$res['err'] = 0; $res['msg'] = 'Thank You.';
+					echo json_encode($res,true); exit;	
+    			}else{
+    				$res['err'] = 1; $res['msg'] = 'Sorry, There is an error.';
+					echo json_encode($res,true); exit;		
+    			}
+    			
+    		}
+    	}
+
+    	if($isExist){
+
+    	}else{
+    		$res['err'] = 1; $res['msg'] = 'Sorry,This bookingis not belongs to you.';
+			echo json_encode($res,true); exit;
+    	}
+    	$this->set('data',$isExist);
     }
 
     public function wizard() {
