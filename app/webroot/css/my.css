@@ -85,6 +85,16 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
  }
  
  
- .nav-pills li a{
-color:#56c243;
- }
+.nav-pills li a{
+  color:#56c243;
+}
+
+.myCustbtn{
+  background-color: green;
+  border: 0 none;
+  border-radius: 5px;
+  color: yellow;
+  margin: 13px 0;
+  padding: 10px;
+}
+

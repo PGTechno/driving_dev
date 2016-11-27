@@ -146,12 +146,26 @@ class UsersController extends AppController {
 	public function profile() {
 		$this->layout = 'afterlogin';
 		$this->loadModel("Country");
+		$this->loadModel("Service");
+		$this->loadModel("Car");
+		$this->loadModel("DriveExperience");
+		$services = $this->Service->find('list');
+		$cars = $this->Car->find('list');
+		$drive_experiences = $this->DriveExperience->find('list');
+
 		$country = $this->Country->find('list',array('fields'=>array('Country.id','Country.name')));
 		if($this->request->is('post') || $this->request->is('put') || $this->request->is('ajax')) {
 			$this->request->data['User']['id'] = $this->authData['id'];
 			$req = $this->request->data;
 			$isUpload = $this->Custom->uploadImage($req['User']['user_image'], $destination='images/users/', $prefix="user", $oldImg=$req['User']['image']);
 			if($isUpload) $this->request->data['User']['image'] = $isUpload;
+
+			$isUploadDl = $this->Custom->uploadImage($req['User']['driving_licence_file'], $destination='images/docs/', $prefix="dl", $oldImg=$req['User']['driving_licence'],true);
+			if($isUploadDl) $this->request->data['User']['driving_licence'] = $isUploadDl;
+			//prd($req['User']['driving_licence_file']);
+
+			$isUploadAdi = $this->Custom->uploadImage($req['User']['adi_certificate_file'], $destination='images/docs/', $prefix="adi", $oldImg=$req['User']['adi_certificate'],true);
+			if($isUploadAdi) $this->request->data['User']['adi_certificate'] = $isUploadAdi;
 			
 			if($this->User->save($this->request->data)){
 				$this->updateSession();
@@ -164,7 +178,7 @@ class UsersController extends AppController {
 		}else{
 			$this->request->data = $this->User->find('first',array('conditions'=>array('User.id'=>$this->authData['id'])));	
 		}
-		$this->set(compact('country'));		
+		$this->set(compact('country','cars','services','drive_experiences'));		
 	}
 
 	public function logout(){

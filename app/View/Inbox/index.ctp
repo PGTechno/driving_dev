@@ -4,7 +4,7 @@
          <div class="col-sm-12">
             <div class="card-box">
                <div class="pull-right" style="margin-top:7%;">
-                  <a><img class="del" src="<?php echo $this->webroot?>img/front/delete.png"></a>
+                  <!-- <a><img class="del" src="<?php echo $this->webroot?>img/front/delete.png"></a> -->
                </div>
             </div>
             <table id="userGrid" class="display responsive nowrap" cellspacing="0" width="100%">
@@ -28,14 +28,14 @@ var delUrl = '<?php echo $this->Html->url(array("controller" => "inbox","action"
            //"filter":false,        
            "ajax": '<?php echo $this->Html->url(array("controller" => "inbox","action" => "index"));?>',
            "columns": [
-                           { "name": "Message.id", "orderable":false,"searchable":false,'width':'2%', 'sClass': 'text-center'},
+                           //{ "name": "Message.id", "orderable":false,"searchable":false,'width':'2%', 'sClass': 'text-center'},
                            { "name": "Message.subject", "orderable":false,"searchable":false,'width':'20%', 'sClass': 'text-center'},
                            { "name": "Message.message", "orderable":false,"searchable":false,'width':'65%', 'sClass': 'text-center'},
                            //{ "name": "Message.lname", 'width':'13%'},
                            { "name": "Message.created", "orderable":false,"searchable":false,'width':'10%', 'sClass': 'text-center'},
                            
                        ],
-           "order": [[3, "desc"]],  
+           "order": [[2, "desc"]],  
        });
        
        $(".dataTables_filter").remove(); 

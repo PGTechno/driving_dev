@@ -127,7 +127,7 @@ class InboxController extends AppController {
 	                 $chkBox = '<input type="checkbox" data-id="'.$row['Message']['id'].'"/>';
                      $date = $this->Custom->dateFormatChange($row['Message']['created'],$oldFormat="Y-m-d H:i:s",$newFormat="d M Y");
                      $return_result['data'][]= array(
-	                     $chkBox,//$row['User']['id'],
+	                     //$chkBox,//$row['User']['id'],
 	                     $row['Message']['subject'],
 	                     //$row['User']['lname'],
 	                     $row['Message']['message'],
@@ -153,6 +153,18 @@ class InboxController extends AppController {
         $this->layout = 'afterlogin';
         $this->loadModel('Message');
         $this->loadModel('Review');
+        $this->loadModel('User');
+        $isExist = $this->User->findById($friend_id);
+        if(empty($isExist) || $isExist['User']['role']==1 || $isExist['User']['status']!=1 || $isExist['User']['id']==$this->authData['id']){
+            $this->Session->setFlash("Sorry, There is no user to send message",'error');
+            $this->redirect(array('controller' => 'inbox', 'action' => 'index')); 
+        }
+        if($this->request->is('post')){
+            $this->request->data['Message']['sender'] = $this->authData['id'];
+            $this->request->data['Message']['receiver'] = $friend_id;
+            $this->Message->save($this->request->data,false);
+            $this->request->data = array();
+        }
         //$conditions['Review.user_id'] = $this->authData['id'];
         $condition = array();
         $condition ['OR']['Message.sender ='] = $this->authData['id'];
@@ -168,7 +180,7 @@ class InboxController extends AppController {
             'conditions' => $condition,
             //'contain'=>array('User','Booking'=>array('Package'=>array('Trainer'))),
             //'group'=>array('Booking.id'),
-            'order'=>array('Message.created'=>'desc'),
+            'order'=>array('Message.created'=>'asc'),
             'limit' => 10,
             'recursive'=>3,
         );

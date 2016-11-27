@@ -7,13 +7,15 @@ class CustomComponent extends Component {
         exit;
     }
 
-    function uploadImage($newImg, $destination='images/users/', $prefix="user", $oldImg=""){
-    	if($newImg){
+    function uploadImage($newImg, $destination='images/users/', $prefix="user", $oldImg="",$isPdf=false){
+    	//prd($newImg);
+        if($newImg){
     		$allowedTypes = array('jpg','jpeg','png');
+            if($isPdf) $allowedTypes = array('jpg','jpeg','png','pdf');
     		$ext = strtolower(pathinfo($newImg['name'], PATHINFO_EXTENSION));
     		if (in_array($ext, $allowedTypes)) {
 			    $imgName = uniqid($prefix.'_').".".$ext;
-			    if(copy($newImg['tmp_name'],$destination.$imgName)){
+                if(copy($newImg['tmp_name'],$destination.$imgName)){
 			    	$this->deleteOldImage($destination.$oldImg);
 			    	return	$imgName;
 			    }else{
@@ -22,7 +24,8 @@ class CustomComponent extends Component {
 			}else{
 				return false;
 			}    			
-    	}    	
+    	}
+        return false;    	
     }
 
     function deleteOldImage($url){

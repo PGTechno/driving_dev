@@ -33,6 +33,27 @@ class User extends AppModel {
             'foreignKey' => 'country'
         )
     );
+
+     public $hasAndBelongsToMany = array(
+        'Car' => array(
+            'className' => 'Car',
+            'joinTable' => 'car_relations',
+            'foreignKey' =>'u_id',
+            'associationForeignKey' => 'c_id'
+        ),
+        'Service' => array(
+            'className' => 'Service',
+            'joinTable' => 'service_relations',
+            'foreignKey' =>'u_id',
+            'associationForeignKey' => 's_id'
+        ),
+        'DriveExperience' => array(
+            'className' => 'DriveExperience',
+            'joinTable' => 'drive_exp_relations',
+            'foreignKey' =>'u_id',
+            'associationForeignKey' => 'd_id'
+        )
+    );
    /* public function beforeSave($options = array()) {
         $this->data['User']['password'] = AuthComponent::password(
           $this->data['User']['password']
@@ -86,54 +107,95 @@ class User extends AppModel {
                         'rule'=>'comparepwd',
                         'message'=>'Password does not match'
                 )
-            )   
-            /*'email'=>array(
-                'required'=>array(
-                    'rule'=>'notEmpty',
-                    'message'=>'Field is required'
+            ),
+            'phone'=>array(
+                array(
+                    'rule'=>'notBlank',
+                    'message'=>'This field is required.'
                 ),
-                'email'=>array(
-                    'rule'=>'email',
-                    'message'=>'Enter valid email'
+                array(
+                    'rule'=>'phone',
+                    'message'=>'Please enter valid phone numbers.'
+                )
+            ),   
+            'address'=>array(
+                array(
+                    'rule'=>'notBlank',
+                    'message'=>'This field is required.'
                 )
             ),
-            
-            'password'=>array(
-                'required'=>array(
-                    'rule'=>'notEmpty',
-                    'message'=>'Field is required'
+            'city'=>array(
+                array(
+                    'rule'=>'notBlank',
+                    'message'=>'This field is required.'
+                )
+            ),
+            'zip'=>array(
+                array(
+                    'rule'=>'notBlank',
+                    'message'=>'This field is required.'
                 ),
-                'length'=>array(
-                    'rule'=>array('minLength',6),
-                    'message'=>'Field is required'
-                ),
-                'number'=>array(
-                    'rule'=>'numeric',
-                    'message'=>'Field is required'
+                array(
+                    'rule'=>array('postal', null, 'us'),
+                    'message'=>'Please enter valid zip code. (US)'
                 )
             ),
-            
-            'confirm_password'=>array(
-                'compare'=>array(
-                    'rule'=>'myvalid',
-                    'message'=>'Confirm password must be same as password'
+            'services'=>array(
+                array(
+                    'rule'=>'notBlank',
+                    'message'=>'This field is required.'
                 )
             ),
-            
-            'fname'=>array(
-                'required'=>array(
-                    'rule'=>'notEmpty',
-                    'message'=>'Field is required'
-                )
+            'user_image' => array(
+                'allowEmpty'=>true,
+                'rule' => array('chkImageExtension'),
+                'message' => 'Please Upload Valid Image.'
+            ),
+            'adi_certificate_file' => array(
+                'allowEmpty'=>true,
+                'rule' => array('chkImageExtension'),
+                'message' => 'Please Upload Valid File.'
+            ),
+            'driving_licence_file' => array(
+                'allowEmpty'=>true,
+                'rule' => array('chkImageExtension'),
+                'message' => 'Please Upload Valid File.'
             ),
             
-            'lname'=>array(
-                'required'=>array(
-                    'rule'=>'notEmpty',
-                    'message'=>'Field is required'
-                )
-            )*/
         );
+
+        public function chkImageExtension($data) {
+            $return = false;
+            $ext = array(
+                'user_image'=>array('jpeg', 'png', 'jpg'),
+                'adi_certificate_file'=>array('jpeg', 'png', 'jpg','pdf'),
+                'driving_licence_file'=>array('jpeg', 'png', 'jpg','pdf')
+            );
+
+            $fileFields = array(
+                'user_image'=>'image',
+                'adi_certificate_file'=>'adi_certificate',
+                'driving_licence_file'=>'driving_licence'
+            );
+            $allowExtension = $ext[key($data)];
+
+            if($data[key($data)]['error']){
+                if($this->data['User'][$fileFields[key($data)]]){
+                    $return = true;
+                }else{
+                    $return = false;
+                }
+            }else{
+                $fileData   = pathinfo($data[key($data)]['name']);
+                $ext        = $fileData['extension'];
+                if(in_array($ext, $allowExtension)) {
+                    $return = true; 
+                } else {
+                    $return = false;
+                }
+            }
+            return $return;
+        } 
         
         public function isUniquee($dd){
             $e_data = $this->find('first',array('conditions'=>array('email'=>$this->data['User']['email'])));

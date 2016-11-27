@@ -39,7 +39,7 @@
 
                 <div class="form-group">
                    <div class="col-sm-6">
-                        <button id="rate-it" class="" style="display:none;">Click here to rate this booking</button>   
+                        <button id="rate-it" class="myCustbtn" style="display:none;">Click here to rate this booking</button>   
                    </div>
                 </div>
 
@@ -57,14 +57,7 @@
 .rating-container .filled-stars{
    color: #72c35d;   
 }
-#rate-it{
-    background-color: green;
-    border: 0 none;
-    border-radius: 5px;
-    color: yellow;
-    margin: 13px 0;
-    padding: 10px;
-}
+
 
 </style>
 
