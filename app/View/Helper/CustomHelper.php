@@ -56,7 +56,7 @@ class CustomHelper extends AppHelper{
 		}elseif($authData['fb_token'] !=""){
 			return "http://graph.facebook.com/".$authData['fb_token']."/picture?type=small";
 		}else{
-			return $path."no_profile_image.jpg";
+			return $this->webroot."images/users/no_profile_image.jpg";
 		}
 	}
 }

@@ -15,7 +15,7 @@ class User extends AppModel {
     //         'order' => 'Recipe.created DESC'*/
     //     )
     //);
-
+    
     public $hasMany = array(
         /*'Country' => array(
             'className' => 'Country',
@@ -40,6 +40,12 @@ class User extends AppModel {
             'joinTable' => 'car_relations',
             'foreignKey' =>'u_id',
             'associationForeignKey' => 'c_id'
+        ),
+        'Day' => array(
+            'className' => 'Day',
+            'joinTable' => 'day_relations',
+            'foreignKey' =>'u_id',
+            'associationForeignKey' => 'd_id'
         ),
         'Service' => array(
             'className' => 'Service',
@@ -140,6 +146,16 @@ class User extends AppModel {
                     'message'=>'Please enter valid zip code. (US)'
                 )
             ),
+            'start_time'=>array(
+                'allowEmpty'=>false,
+                'rule' => array('timeCompare'),
+                'message' => 'Please enter valid time.'
+            ),
+            'end_time'=>array(
+                'allowEmpty'=>false,
+                'rule' => array('timeCompare'),
+                'message' => 'Please enter valid time.'
+            ),
             'services'=>array(
                 array(
                     'rule'=>'notBlank',
@@ -161,8 +177,34 @@ class User extends AppModel {
                 'rule' => array('chkImageExtension'),
                 'message' => 'Please Upload Valid File.'
             ),
+            'hourly_rate' => array(
+                array(
+                    'rule'=>'notBlank',
+                    'message'=>'This field is required.'
+                ),
+                array(
+                    'rule' => array('money', 'left'),
+                    'message' => 'Please supply a valid monetary amount.'
+                )
+            ),
             
         );
+
+        public function timeCompare($data){
+            //prd($this->data);
+            $return = false;
+            $format = "/(2[0-3]|[01][0-9]|[0-9]):([0-5][0-9]) (A|P)M/";
+            //$format = "/([0-9]):([0-5][0-9]) (A|P)M/";
+            if(preg_match($format,$data[key($data)])) {
+                if(strtotime($this->data['User']['start_time']) >= strtotime($this->data['User']['end_time'])){
+                    //$this->validationErrors['end_time'] = "start time should be less then end time";            
+                    $return = "Start time should be less then end time";
+                }else{
+                    $return = true;
+                }                
+            }
+            return $return;
+        }
 
         public function chkImageExtension($data) {
             $return = false;
@@ -228,5 +270,11 @@ class User extends AppModel {
             else
                 unset($this->data['User']['password']);
             //prd($this->data['User']);
+            if(isset($this->data['User']['start_time']) && $this->data['User']['start_time'] !=""){
+                $this->data['User']['start_time'] = date('H:i:s',strtotime($this->data['User']['start_time']));   
+            }
+            if(isset($this->data['User']['end_time']) && $this->data['User']['end_time'] !=""){
+                $this->data['User']['end_time'] = date('H:i:s',strtotime($this->data['User']['end_time']));   
+            }
         }
 }

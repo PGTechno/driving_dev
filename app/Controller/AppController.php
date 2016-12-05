@@ -65,6 +65,7 @@ class AppController extends Controller{
 			$this->Auth->loginRedirect = array('admin'=>true,'controller'=>'users','action'=>'dashboard');
 			$this->Auth->logoutRedirect = array('admin'=>true,'controller'=>'users','action'=>'login');
 		}else{
+			$this->defaultData();
 			$this->layout = "default";
 			$this->Auth->loginAction = array('controller'=>'pages','action'=>'home');
 			$this->Auth->loginRedirect = array('controller'=>'users','action'=>'dashboard');
@@ -87,6 +88,12 @@ class AppController extends Controller{
 		//prd($this->Custom->timeZone());
 		//prd($this->Custom->convertDate('2016-08-27 14:08:00'));
 		$authData = $this->authData = $this->Session->read('Auth.User');
+		
+		if(!empty($authData) && $this->request->action !='profile' && $authData['profile_update']==0){
+			$this->Session->setFlash("Sorry, You have to fill your profile first.",'error');
+			$this->redirect(array('controller' => 'users', 'action' => 'profile'));
+		}
+		
 		$params = $this->request->params;
 		$title_for_layout = $this->request->params['action'];
 		$currUrl = $params['controller'].'/'.$params['action'];
@@ -141,6 +148,16 @@ class AppController extends Controller{
 	public function updateSession(){
 		$updatedUser = $this->User->read(null, $this->Session->read('Auth.User.id'));
  		$this->Session->write('Auth.User', $updatedUser['User']);
+	}
+
+	public function defaultData(){
+		$this->loadModel("Service");
+		$this->loadModel("Car");
+		$this->loadModel("DriveExperience");
+		$service = $this->Service->find('list',array('conditions'=>array('status'=>1)));
+		$car = $this->Car->find('list',array('conditions'=>array('status'=>1)));
+		$drive_dxperience = $this->DriveExperience->find('list',array('conditions'=>array('status'=>1)));
+		$this->set(compact('service','car','drive_dxperience'));
 	}
 
 }

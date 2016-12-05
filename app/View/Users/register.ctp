@@ -129,7 +129,7 @@
     });
 	
 	$(".role").click(function(){
-		$('#UserRole').val($(this).data('role'));
+		$('#UserRole').val($(this).find('a').data('role'));
 	})
 
 	if(isUser) $('.right1 .right').click();

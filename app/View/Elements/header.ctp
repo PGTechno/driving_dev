@@ -63,49 +63,45 @@ $contact = Router::url(array('controller' => 'pages', 'action' => 'contact'));
 			<div class="tabpanel border section-tab" role="tabpanel">
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane fade in active" id="search-cars">
-						<form action="" method="post" class="banner-form">
+						<!-- <form action="" method="post" class="banner-form"> -->
+						<?php  echo $this->Form->create('User',array('class'=>'banner-form','enctype'=>'multipart/form-data','validate'));?>	
 							<div class="item" style="border:none;" >
 								<div class="select-wrapper"  >
 								<div class="section-tab-headingstyle" >I am a</div>
-									<select class="selectpicker">
-										<option>Brand 1</option>
-										<option>Brand 2</option>
-									</select>
-									
+									<?php 
+									echo $this->Form->input('drive',array('options' => $drive_dxperience,'class'=>'selectpicker','div'=>false,'label'=>false));
+									?>									
 								</div> <!-- end .select-wrapper -->
 							</div> <!-- end .item -->
 							
 							<div class="item" style="border:none;">
 							<div class="section-tab-headingstyle">Seeking</div>
 								<div class="select-wrapper">
-									<select class="selectpicker">
-										<!--<option>Select Model</option>-->
-										<option>Model 1</option>
-										<option>Model 2</option>
-									</select>
-									
+									<?php 
+									echo $this->Form->input('service',array('options' => $service,'class'=>'selectpicker','div'=>false,'label'=>false));
+									?>									
 								</div> <!-- end .select-wrapper -->
 							</div> <!-- end .item -->
 							<div class="item" style="border:none;">
 								<div class="section-tab-headingstyle">In a</div>
 								
 								<div class="select-wrapper" >
-									<select class="selectpicker" >
-										
-										<option>Year 1</option>
-										<option>Year 2</option>
-									</select>
-									
+									<?php 
+									echo $this->Form->input('car',array('options' => $car,'class'=>'selectpicker','div'=>false,'label'=>false));
+									?>																		
 								</div> <!-- end .select-wrapper -->
 							</div> <!-- end .item -->
 							<div class="item" style="border:none;">
 								<div class="section-tab-headingstyle" >Near by</div>
-									<input type="" name="" value="" placeholder="Enter Postcode" required>
+									<?php 
+									echo $this->Form->input('pincode',array('class'=>'','div'=>false,'label'=>false,'placeholder'=>'Postal Code'));
+									?>
 								</div> <!-- end .item --><br><br>
 							<div class="item">
 								<button type="submit" class="button solid light-blue">Search</button>
 							</div> <!-- end .item -->
-						</form> <!-- end .banner-form -->
+						<!-- </form> --> <!-- end .banner-form -->
+						<?php echo $this->Form->end();?> 
 					</div> <!-- end .tab-panel -->
 					<div role="tabpanel" class="tab-pane fade" id="sell-car">
 						<form action="" method="post" class="banner-form">

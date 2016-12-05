@@ -1,3 +1,4 @@
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <div class="tab-content">
    <div id="menu1" class="tab-pane fade fade in active">
       <div id="home" class="tab-pane fade in active ">
@@ -173,6 +174,18 @@
 
                                     <?php if($authData['role']==2) {?>
                                     <div class="form-group">
+                                       <label class="col-sm-3 control"><b>Working Days</b></label>
+                                       <div class="col-sm-6">
+                                          <?php echo $this->Form->input('Day', array(
+                                             'multiple' => 'multiple',
+                                             'type' => 'select',
+                                             'options'=>$days,
+                                             'div'=>false,'label'=>false
+                                          ));?>
+                                       </div>
+                                    </div>
+
+                                    <div class="form-group">
                                        <label class="col-sm-3 control"><b>Company Name</b></label>
                                        <div class="col-sm-6">
                                           <?php echo $this->Form->input('company_name',array('class'=>'form-control','placeholder'=>'Company Name','div'=>false,'label'=>false));?>
@@ -267,6 +280,7 @@
                               echo  $this->Form->hidden('image');
                               echo  $this->Form->hidden('state');
                               echo  $this->Form->hidden('created');
+                              echo  $this->Form->hidden('profile_update',array('value'=>1));
                               echo  $this->Form->file('user_image',array('style'=>'display:none','class'=>'file_upload_hidden'));
                               echo $this->Form->end(); ?>
                               <!-- </form> -->
@@ -280,4 +294,20 @@
       </div>
    </div>            
 </div>
+
+<script type="text/javascript">
+ function GetLocation() {
+   var geocoder = new google.maps.Geocoder();
+   var address = document.getElementById("UserZip").value;
+   geocoder.geocode({ 'address': address }, function (results, status) {
+       if (status == google.maps.GeocoderStatus.OK) {
+           var latitude = results[0].geometry.location.lat();
+           var longitude = results[0].geometry.location.lng();
+           alert("Latitude: " + latitude + "\nLongitude: " + longitude);
+       } else {
+           alert("Request failed.")
+       }
+   });
+};
+</script>
 

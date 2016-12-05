@@ -148,10 +148,13 @@ class UsersController extends AppController {
 		$this->loadModel("Country");
 		$this->loadModel("Service");
 		$this->loadModel("Car");
+		$this->loadModel("Day");
 		$this->loadModel("DriveExperience");
+		
 		$services = $this->Service->find('list');
 		$cars = $this->Car->find('list');
 		$drive_experiences = $this->DriveExperience->find('list');
+		$days = $this->Day->find('list');
 
 		$country = $this->Country->find('list',array('fields'=>array('Country.id','Country.name')));
 		if($this->request->is('post') || $this->request->is('put') || $this->request->is('ajax')) {
@@ -166,7 +169,7 @@ class UsersController extends AppController {
 
 			$isUploadAdi = $this->Custom->uploadImage($req['User']['adi_certificate_file'], $destination='images/docs/', $prefix="adi", $oldImg=$req['User']['adi_certificate'],true);
 			if($isUploadAdi) $this->request->data['User']['adi_certificate'] = $isUploadAdi;
-			
+			//prd($this->request->data);
 			if($this->User->save($this->request->data)){
 				$this->updateSession();
 				$this->Session->setFlash("Your profile updated.",'success');
@@ -178,7 +181,7 @@ class UsersController extends AppController {
 		}else{
 			$this->request->data = $this->User->find('first',array('conditions'=>array('User.id'=>$this->authData['id'])));	
 		}
-		$this->set(compact('country','cars','services','drive_experiences'));		
+		$this->set(compact('country','cars','services','drive_experiences','days'));		
 	}
 
 	public function logout(){
@@ -512,32 +515,14 @@ class UsersController extends AppController {
 
 		$this->loadModel('Review');
 		$conditions['Review.user_id'] = $this->authData['id'];
+		
 		$this->Paginator->settings = array(
 	        'conditions' => $conditions,
 	        //'contain'=>array('User','Booking'=>array('Package'=>array('Trainer'))),
 	        'group'=>array('Booking.id'),
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	        'order'=>array('Review.created'=>'desc'),
 	        'limit' => 10,
 	        'recursive'=>3,
-
 	    );
 	    $data = $this->paginate('Review');
 	    //prd($this);

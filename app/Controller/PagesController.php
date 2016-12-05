@@ -37,6 +37,14 @@ class PagesController extends AppController {
  */
 	public $uses = array();
 
+	public $components = array(
+	  'Paginator'
+	);
+
+	public $helpers = array(
+	  'Paginator'
+	);
+
 /**
  * Displays a view
  *
@@ -80,7 +88,118 @@ class PagesController extends AppController {
 	}
 
 	public function home() {
-		//echo "Called"; exit;
+		if($this->request->is('post') || isset($this->request->params['named']['page'])){
+			$req = $this->request->data; 
+			$this->loadModel('User');
+			$this->loadModel('CarRelation');
+			$this->loadModel('DriveExpRelation');
+			$this->loadModel('ServiceRelation');
+			//$this->User->Behaviors->load('Containable');
+
+			$conditions['User.role'] = 2;
+			$conditions['User.status'] = 1;
+
+			$Lat = '26.233453';
+			$long = '72.233453';
+			//$this->User->virtualFields = array('distance'=>'3956 * 2 * ASIN(SQRT( POWER(SIN(($Lat - Lat) * pi()/180 / 2), 2) + COS($Lat * pi()/180) * COS(Lat * pi()/180) *POWER(SIN(($long - long) * pi()/180 / 2), 2) ))');
+			$this->User->virtualFields = array('distance'=>'3956 * 2 * ASIN(SQRT( POWER(SIN(('.$Lat.' - 26.2) * pi()/180 / 2), 2) + COS('.$Lat.' * pi()/180) * COS(26.2 * pi()/180) *POWER(SIN(('.$long.' - 72.1) * pi()/180 / 2), 2) ))');
+
+			$this->Paginator->settings = array(
+		        'joins' => array(
+			        array(
+			            'table' => 'car_relations',
+			            'alias' => 'CarRelation',
+			            'type' => 'INNER',
+			            'conditions' => array(
+			                'User.id = CarRelation.u_id',
+			                'CarRelation.c_id='.$req['User']['car'],
+			            )
+			        ),
+			        array(
+			            'table' => 'service_relations',
+			            'alias' => 'ServiceRelation',
+			            'type' => 'INNER',
+			            'conditions' => array(
+			                'User.id = ServiceRelation.u_id',
+			                'ServiceRelation.s_id='.$req['User']['service'],
+			            )
+			        ),
+			        array(
+			            'table' => 'drive_exp_relations',
+			            'alias' => 'DriveExpRelation',
+			            'type' => 'INNER',
+			            'conditions' => array(
+			                'User.id = CarRelation.u_id',
+			                'DriveExpRelation.d_id='.$req['User']['drive'],
+			            )
+			        )
+			    ),
+				'conditions'=>$conditions,
+				'group'=>array('User.id'),
+				'order'=>array('User.fname'=>'asc'),
+				'limit' => 1,
+		    );
+
+			/*$data = $this->User->find('all',array(
+				'joins' => array(
+			        array(
+			            'table' => 'car_relations',
+			            'alias' => 'CarRelation',
+			            'type' => 'INNER',
+			            'conditions' => array(
+			                'User.id = CarRelation.u_id',
+			                'CarRelation.c_id='.$req['User']['car'],
+			            )
+			        ),
+			        array(
+			            'table' => 'service_relations',
+			            'alias' => 'ServiceRelation',
+			            'type' => 'INNER',
+			            'conditions' => array(
+			                'User.id = ServiceRelation.u_id',
+			                'ServiceRelation.s_id='.$req['User']['service'],
+			            )
+			        ),
+			        array(
+			            'table' => 'drive_exp_relations',
+			            'alias' => 'DriveExpRelation',
+			            'type' => 'INNER',
+			            'conditions' => array(
+			                'User.id = CarRelation.u_id',
+			                'DriveExpRelation.d_id='.$req['User']['drive'],
+			            )
+			        )
+			    ),
+				'conditions'=>$conditions,
+				'group'=>array('User.id'),
+				'order'=>array('User.fname'=>'asc'),
+				'limit' => 10,
+			));*/
+			
+			//$this->request->data['User']['response'] = $data;
+			$this->request->data['User']['response'] = $this->paginate('User');
+			prd($this->paginate('User'));
+
+
+			/*$conditions['User.role'] = 2;
+			$conditions['User.status'] = 1;
+			
+			$data = $this->User->find('all',array(
+				'conditions'=>$conditions,
+				'contain'=>array(
+					'Car'=>array(
+						'conditions'=>array('Car.id'=>$req['User']['car'])
+					),
+					'Service'=>array(
+						'conditions'=>array('Service.id'=>$req['User']['service'])
+					),
+					'DriveExperience'=>array(
+						'conditions'=>array('DriveExperience.id'=>$req['User']['drive'])
+					)
+				)
+			));
+			prd($data);*/
+		}
 	}
 
 	public function about() {
