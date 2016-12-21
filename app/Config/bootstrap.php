@@ -96,6 +96,7 @@ Configure::write('Dispatcher.filters', array(
 	'CacheDispatcher'
 ));
 
+Configure::write('GoogleKey','AIzaSyBzharwvRVBYr-0ueI7sooldJnZXM4vpy8');
 /**
  * Configures default file logging options
  */

@@ -142,8 +142,8 @@ class User extends AppModel {
                     'message'=>'This field is required.'
                 ),
                 array(
-                    'rule'=>array('postal', null, 'us'),
-                    'message'=>'Please enter valid zip code. (US)'
+                    'rule'=>array('postal', null, 'uk'),
+                    'message'=>'Please enter valid zip code. (UK)'
                 )
             ),
             'start_time'=>array(

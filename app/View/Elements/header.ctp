@@ -64,7 +64,8 @@ $contact = Router::url(array('controller' => 'pages', 'action' => 'contact'));
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane fade in active" id="search-cars">
 						<!-- <form action="" method="post" class="banner-form"> -->
-						<?php  echo $this->Form->create('User',array('class'=>'banner-form','enctype'=>'multipart/form-data','validate'));?>	
+						<?php  echo $this->Form->create('User',array('url'=>array('controller'=>'pages','action'=>'home'),
+						'class'=>'banner-form','enctype'=>'multipart/form-data','validate'));?>	
 							<div class="item" style="border:none;" >
 								<div class="select-wrapper"  >
 								<div class="section-tab-headingstyle" >I am a</div>

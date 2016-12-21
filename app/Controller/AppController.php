@@ -93,6 +93,7 @@ class AppController extends Controller{
 			$this->Session->setFlash("Sorry, You have to fill your profile first.",'error');
 			$this->redirect(array('controller' => 'users', 'action' => 'profile'));
 		}
+
 		
 		$params = $this->request->params;
 		$title_for_layout = $this->request->params['action'];

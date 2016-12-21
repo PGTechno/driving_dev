@@ -371,6 +371,63 @@ class BookingsController extends AppController {
 		}
 	}
 
+	public function uwizard($id='@') {
+		$this->layout = false;
+		$this->loadModel('Package');
+		$this->loadModel('User');
+		$isExist = $this->User->find('first',array('fields'=>array('*'),'conditions'=>array('User.id'=>$id)));
+		//$this->set(compact('isExist'));
+
+		if($this->request->is('ajax') && $this->request->is('post')){
+			$req = $this->request->data;
+			$res['err'] = 1; $res['msg'] = 'Error.';
+			if(	
+				($req['Booking']['package_id']==''  && $req['Booking']['lession_id']=='') ||
+				($req['Booking']['package_id']!=''  && $req['Booking']['lession_id']!='')
+			){
+				$res['err'] = 1; $res['msg'] = 'Please select Package OR Lession';
+			}elseif($id=='@' || $id==''){
+				$res['err'] = 1; $res['msg'] = 'Please select instructor.';
+			}else{
+				$req['Booking']['u_id'] = $id;
+				echo $this->payment($req['Booking']); exit;
+			}
+			echo json_encode($res,true); exit;
+			//pr($this->request->data); exit;
+		}
+
+		if(empty($isExist)){
+			$res['err'] = 1; $res['msg'] = 'Sorry,This instructor is not available.';
+			echo json_encode($res,true); exit;
+		}else{
+			$res['err'] = 0; 
+			$res['msg'] = 'Instructor available.';
+			$data['Package'] = Hash::combine($isExist['Package'], '{n}.id', '{n}.title');
+			$data['PackageData'] = json_encode(Hash::combine($isExist['Package'], '{n}.id', '{n}'));
+			$data['UserData'] = $isExist['User'];
+			for($i=1;$i<=30;$i++){ $data['LessionData'][$i] = $i." Hours"; };
+		}		
+		$this->set(compact('data'));		
+	}
+
+	public function payment($data) {
+		$this->layout = false;
+		$this->loadModel('Package');
+		$this->loadModel('User');
+		if($data['package_id']!=""){
+			$package = $this->Package->find('first',array('conditions'=>array('Package.id'=>$data['package_id'])));
+			$mydata['price'] = $package['Package']['price'];
+			$mydata['title'] = $package['Package']['title'];
+		}else if($data['lession_id']!=""){
+			$inst = $this->User->find('first',array('conditions'=>array('User.id'=>$data['u_id'])));
+			$mydata['price']  = $inst['User']['hourly_rate'] * $data['lession_id'];
+			$mydata['title'] = $data['lession_id'].' hours lession';
+		}		
+
+		$this->set(compact('mydata','data'));
+		return $this->render('payment');
+	}
+
 	public function display() {
 		$path = func_get_args();
 

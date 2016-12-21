@@ -54,7 +54,7 @@ class PagesController extends AppController {
  */
 	public function beforeFilter() {
         parent::beforeFilter();
-        $this->Auth->allow('home');
+        $this->Auth->allow('home','search');
     }
 
 	public function display() {
@@ -88,6 +88,93 @@ class PagesController extends AppController {
 	}
 
 	public function home() {
+		$req['User']['drive'] = "";
+		$req['User']['service'] ="";
+		$req['User']['car'] ="";
+		$req['User']['pincode'] ="";
+		if($this->request->is('post')){
+			$req['User'] = $this->request->data['User']; 
+			$this->Session->write('Search', $req['User']);
+		}else if($this->Session->check('Search')){
+			$req['User'] = $this->Session->read('Search');
+		}
+		//pr($req);
+		$this->request->data['User'] = $req['User'];
+		/*else if($this->Session->check('Search') || isset($this->request->params['named']['page'])){
+			$this->Session->write('Search', $req['User']);
+		}*/
+
+		$req = $this->request->data; 
+		$this->loadModel('User');
+		$this->loadModel('CarRelation');
+		$this->loadModel('DriveExpRelation');
+		$this->loadModel('ServiceRelation');
+		//$this->User->Behaviors->load('Containable');
+
+		$conditions['User.role'] = 2;
+		$conditions['User.status'] = 1;
+		
+		if($req['User']['pincode'] !=""){
+			try{
+				$location = $this->Custom->getLnt($req['User']['pincode']);
+			}
+			catch(customException $e){
+				$location = array('lat'=>'0.0','lng'=>'0.0');
+			}
+		}else{
+			$location = array('lat'=>'0.0','lng'=>'0.0');
+		}
+		
+		$Lat = $location['lat'];//'26.233453';
+		$long = $location['lng'];//'72.233453';
+		//$this->User->virtualFields = array('distance'=>'3956 * 2 * ASIN(SQRT( POWER(SIN(($Lat - Lat) * pi()/180 / 2), 2) + COS($Lat * pi()/180) * COS(Lat * pi()/180) *POWER(SIN(($long - long) * pi()/180 / 2), 2) ))');
+		$this->User->virtualFields = array('distance'=>'3956 * 2 * ASIN(SQRT( POWER(SIN(('.$Lat.' - 26.2) * pi()/180 / 2), 2) + COS('.$Lat.' * pi()/180) * COS(26.2 * pi()/180) *POWER(SIN(('.$long.' - 72.1) * pi()/180 / 2), 2) ))');
+
+		$this->Paginator->settings = array(
+	        'joins' => array(
+		        array(
+		            'table' => 'car_relations',
+		            'alias' => 'CarRelation',
+		            'type' => 'INNER',
+		            'conditions' => array(
+		                'User.id = CarRelation.u_id',
+		                'CarRelation.c_id'=>$req['User']['car'],
+		            )
+		        ),
+		        array(
+		            'table' => 'service_relations',
+		            'alias' => 'ServiceRelation',
+		            'type' => 'INNER',
+		            'conditions' => array(
+		                'User.id = ServiceRelation.u_id',
+		                'ServiceRelation.s_id'=>$req['User']['service'],
+		            )
+		        ),
+		        array(
+		            'table' => 'drive_exp_relations',
+		            'alias' => 'DriveExpRelation',
+		            'type' => 'INNER',
+		            'conditions' => array(
+		                'User.id = CarRelation.u_id',
+		                'DriveExpRelation.d_id'=>$req['User']['drive'],
+		            )
+		        )
+		    ),
+			'conditions'=>$conditions,
+			'group'=>array('User.id'),
+			'order'=>array('User.fname'=>'asc'),
+			'limit' => 1,
+	    );	
+		
+		$this->request->data['User']['response'] = $this->paginate('User');
+		if(empty($this->request->data['User']['response'])){
+			$this->Session->setFlash("Sorry, There is not record.",'error');
+		}
+		//prd($this->paginate('User'));			
+		
+	}
+
+	public function search() {
 		if($this->request->is('post') || isset($this->request->params['named']['page'])){
 			$req = $this->request->data; 
 			$this->loadModel('User');
@@ -102,7 +189,7 @@ class PagesController extends AppController {
 			$Lat = '26.233453';
 			$long = '72.233453';
 			//$this->User->virtualFields = array('distance'=>'3956 * 2 * ASIN(SQRT( POWER(SIN(($Lat - Lat) * pi()/180 / 2), 2) + COS($Lat * pi()/180) * COS(Lat * pi()/180) *POWER(SIN(($long - long) * pi()/180 / 2), 2) ))');
-			$this->User->virtualFields = array('distance'=>'3956 * 2 * ASIN(SQRT( POWER(SIN(('.$Lat.' - 26.2) * pi()/180 / 2), 2) + COS('.$Lat.' * pi()/180) * COS(26.2 * pi()/180) *POWER(SIN(('.$long.' - 72.1) * pi()/180 / 2), 2) ))');
+			$this->User->virtualFields = array('distance'=>'3956 * 2 * ASIN(SQRT( POWER(SIN(('.$Lat.' - User.lat) * pi()/180 / 2), 2) + COS('.$Lat.' * pi()/180) * COS(User.lat * pi()/180) *POWER(SIN(('.$long.' - User.long) * pi()/180 / 2), 2) ))');
 
 			$this->Paginator->settings = array(
 		        'joins' => array(

@@ -1,67 +1,9 @@
-INSERT INTO `driving`.`settings` (`id`, `keyword`, `title`, `desscription`, `created`, `modified`) VALUES (NULL, 'Site.front_date_format', 'd-m-Y', '', '2016-10-23 00:00:00', '2016-10-23 00:00:00'), (NULL, 'Site.front_date_time_format', 'd-m-Y H:i A', '', '2016-10-23 00:00:00', '2016-10-23 00:00:00');
-====================================
+ALTER TABLE `users`  ADD `lat` VARCHAR(50) NOT NULL DEFAULT '0.0' AFTER `zip`,  ADD `long` VARCHAR(50) NOT NULL DEFAULT '0.0' AFTER `lat`;
+=============================================
 
-ALTER TABLE `messages` ADD `sender_delete` TINYINT( 3 ) NOT NULL DEFAULT '0' COMMENT '0=>No;  1=>yes' AFTER `receiver_read` ,
-ADD `receiver_delete` TINYINT( 3 ) NOT NULL DEFAULT '0' COMMENT '0=>No;  1=>yes' AFTER `sender_delete` ;
+INSERT INTO `driving`.`acoos` (`aro_rule`, `user_role`, `created`) VALUES ('BookingsUwizard', '3', '2016-12-10 00:00:00');
+==============================================
 
-===================================
+INSERT INTO `driving`.`acoos` (`aro_rule`, `user_role`, `created`) VALUES ('BookingsPayment', '3', '2016-12-18 00:00:00');
 
-ALTER TABLE `bookings` CHANGE `status` `status` TINYINT( 3 ) NOT NULL COMMENT '0=>Pending; 1=>accept; 2=>Decline; 3=>delete';
-ALTER TABLE `bookings` ADD `payment_status` TINYINT( 3 ) NOT NULL DEFAULT '0' COMMENT '0=>Unpaid; 1=>Paid' AFTER `status` ;
-
-==================================
-
-ALTER TABLE `users`  ADD `company_name` VARCHAR(200) NOT NULL AFTER `end_time`,  ADD `phone` VARCHAR(10) NOT NULL AFTER `company_name`,  ADD `address1` VARCHAR(200) NOT NULL AFTER `phone`,  ADD `city` VARCHAR(200) NOT NULL AFTER `address1`,  ADD `website` VARCHAR(255) NOT NULL AFTER `city`,  ADD `gender` ENUM('Male','Female') NOT NULL AFTER `website`,  ADD `hourly_rate` INT(10) NOT NULL AFTER `gender`,  ADD `credit_balance` FLOAT(10,2) NOT NULL AFTER `hourly_rate`,  ADD `driving_licence` VARCHAR(100) NOT NULL AFTER `credit_balance`,  ADD `adi_certificate` VARCHAR(100) NOT NULL AFTER `driving_licence`,  ADD `cancellation_rate` FLOAT(10,2) NOT NULL AFTER `adi_certificate`,  ADD `strikes` TINYINT(3) NOT NULL AFTER `cancellation_rate`;
-=========================================
-ALTER TABLE `users` CHANGE `gender` `gender` TINYINT( 3 ) NOT NULL ;
-
-=================================
-
-
-CREATE TABLE IF NOT EXISTS `services` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(200) NOT NULL,
-  `status` tinyint(3) NOT NULL COMMENT '0=>Inactive; 1=> Active',
-  `created` datetime NOT NULL,
-  `modified` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
-
-INSERT INTO `services` (`id`, `name`, `status`, `created`, `modified`) VALUES
-(1, 'Beginner Lessons', 1, '2016-11-23 11:28:00', '2016-11-23 11:28:00'),
-(2, 'Refresher Lessons', 1, '2016-11-23 11:28:00', '2016-11-23 11:28:00'),
-(3, 'Intensive Lessons', 1, '2016-11-23 11:28:00', '2016-11-23 11:28:00'),
-(4, 'Pass Plus Course', 1, '2016-11-23 11:28:00', '2016-11-23 11:28:00'),
-(5, 'Approved Driving Instructor (ADI) Course', 1, '2016-11-23 11:28:00', '2016-11-23 11:28:00'),
-(6, 'Driving Test Preparation', 1, '2016-11-23 11:28:00', '2016-11-23 11:28:00');
-
-===================================
-
-CREATE TABLE IF NOT EXISTS `drive_experiences` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(200) NOT NULL,
-  `status` tinyint(3) NOT NULL COMMENT '0=>Inactive; 1=> Active',
-  `created` datetime NOT NULL,
-  `modified` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
-
-INSERT INTO `drive_experiences` (`id`, `name`, `status`, `created`, `modified`) VALUES
-(1, 'New Driver', 1, '2016-11-23 11:28:00', '2016-11-23 11:28:00'),
-(2, 'Experienced Driver', 1, '2016-11-23 11:28:00', '2016-11-23 11:28:00');
-
-===================================
-
-CREATE TABLE IF NOT EXISTS `cars` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(200) NOT NULL,
-  `status` tinyint(3) NOT NULL COMMENT '0=>Inactive; 1=> Active',
-  `created` datetime NOT NULL,
-  `modified` datetime NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
-
-INSERT INTO `cars` (`id`, `name`, `status`, `created`, `modified`) VALUES
-(1, 'Automatic', 1, '2016-11-23 11:28:00', '2016-11-23 11:28:00'),
-(2, 'Manual', 1, '2016-11-23 11:28:00', '2016-11-23 11:28:00');
-=======================================
+===============================================

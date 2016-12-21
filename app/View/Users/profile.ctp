@@ -1,4 +1,5 @@
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=<?php echo Configure::read('GoogleKey');?>"
+    async defer></script>
 <div class="tab-content">
    <div id="menu1" class="tab-pane fade fade in active">
       <div id="home" class="tab-pane fade in active ">
@@ -280,6 +281,8 @@
                               echo  $this->Form->hidden('image');
                               echo  $this->Form->hidden('state');
                               echo  $this->Form->hidden('created');
+                              echo  $this->Form->hidden('lat');
+                              echo  $this->Form->hidden('long');
                               echo  $this->Form->hidden('profile_update',array('value'=>1));
                               echo  $this->Form->file('user_image',array('style'=>'display:none','class'=>'file_upload_hidden'));
                               echo $this->Form->end(); ?>
@@ -296,18 +299,18 @@
 </div>
 
 <script type="text/javascript">
- function GetLocation() {
-   var geocoder = new google.maps.Geocoder();
-   var address = document.getElementById("UserZip").value;
-   geocoder.geocode({ 'address': address }, function (results, status) {
-       if (status == google.maps.GeocoderStatus.OK) {
-           var latitude = results[0].geometry.location.lat();
-           var longitude = results[0].geometry.location.lng();
-           alert("Latitude: " + latitude + "\nLongitude: " + longitude);
-       } else {
-           alert("Request failed.")
-       }
-   });
-};
+   $(document).on('blur','#UserAddress, #UserAddress1, #UserCity',function(){
+      var address = $('#UserAddress').val()+' '+$('#UserAddress1').val()+' '+$('#UserCity').val();
+      var geocoder = new google.maps.Geocoder();
+      geocoder.geocode({ 'address': address }, function (results, status) {
+          if (status == google.maps.GeocoderStatus.OK) {
+               $('#UserLat').val(results[0].geometry.location.lat());
+               $('#UserLong').val(results[0].geometry.location.lng());                 
+          } else {
+              //alert("Request failed.")
+          }
+      });
+
+   })  
 </script>
 

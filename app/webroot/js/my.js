@@ -36,7 +36,7 @@ $(function () {
 
 
 	$('#myModal').on('hidden.bs.modal', function (e) {
-	  $('#myModal .modal-dialog').remove();
+    $('#myModal .modal-dialog').remove();
 	})
 	
 	selectLeftBar();
@@ -67,6 +67,8 @@ $(function () {
   })
 
 });
+
+
 
 function getPartialView(obj){
 	var url = $(obj).data('url');

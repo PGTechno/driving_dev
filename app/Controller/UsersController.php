@@ -163,18 +163,22 @@ class UsersController extends AppController {
 			$isUpload = $this->Custom->uploadImage($req['User']['user_image'], $destination='images/users/', $prefix="user", $oldImg=$req['User']['image']);
 			if($isUpload) $this->request->data['User']['image'] = $isUpload;
 
-			$isUploadDl = $this->Custom->uploadImage($req['User']['driving_licence_file'], $destination='images/docs/', $prefix="dl", $oldImg=$req['User']['driving_licence'],true);
-			if($isUploadDl) $this->request->data['User']['driving_licence'] = $isUploadDl;
-			//prd($req['User']['driving_licence_file']);
-
-			$isUploadAdi = $this->Custom->uploadImage($req['User']['adi_certificate_file'], $destination='images/docs/', $prefix="adi", $oldImg=$req['User']['adi_certificate'],true);
-			if($isUploadAdi) $this->request->data['User']['adi_certificate'] = $isUploadAdi;
+			if(isset($req['User']['driving_licence_file'])){
+				$isUploadDl = $this->Custom->uploadImage($req['User']['driving_licence_file'], $destination='images/docs/', $prefix="dl", $oldImg=$req['User']['driving_licence'],true);
+				if($isUploadDl) $this->request->data['User']['driving_licence'] = $isUploadDl;
+			}	
+				//prd($req['User']['driving_licence_file']);
+			if(isset($req['User']['adi_certificate_file'])){
+				$isUploadAdi = $this->Custom->uploadImage($req['User']['adi_certificate_file'], $destination='images/docs/', $prefix="adi", $oldImg=$req['User']['adi_certificate'],true);
+				if($isUploadAdi) $this->request->data['User']['adi_certificate'] = $isUploadAdi;
+			}	
 			//prd($this->request->data);
 			if($this->User->save($this->request->data)){
 				$this->updateSession();
 				$this->Session->setFlash("Your profile updated.",'success');
 				$this->redirect(array('controller' => 'users', 'action' => 'profile'));
 			}else{
+				//$errors = $this->User->validationErrors; prd($errors);
 				$this->Session->setFlash("Sorry, There is any problem while saving",'error');
 				//$this->redirect(array('controller' => 'users', 'action' => 'profile'));	
 			}

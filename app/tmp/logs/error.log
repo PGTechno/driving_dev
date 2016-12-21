@@ -48139,3 +48139,3336 @@ Request URL: /driving/js/front/bootstrap-select.js.map
 Stack Trace:
 #0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-12-06 22:53:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-06 22:53:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-06 22:54:34 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-06 22:56:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-06 22:58:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-06 23:01:30 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-06 23:08:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-06 23:09:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-06 23:09:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-06 23:12:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-06 23:15:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 22:05:41 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') INNER JOIN `driving`.`service_relations` AS `ServiceRelation` ON (`User`.`id` ' at line 1
+Request URL: /driving/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(145): Controller->paginate('User')
+#9 [internal function]: PagesController->home('home')
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-07 22:05:41 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') INNER JOIN `driving`.`service_relations` AS `ServiceRelation` ON (`User`.`id` ' at line 1
+Request URL: /driving/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(145): Controller->paginate('User')
+#9 [internal function]: PagesController->home('home')
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-07 22:27:14 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') INNER JOIN `driving`.`service_relations` AS `ServiceRelation` ON (`User`.`id` ' at line 1
+Request URL: /driving/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(155): Controller->paginate('User')
+#9 [internal function]: PagesController->home('home')
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-07 22:27:14 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') INNER JOIN `driving`.`service_relations` AS `ServiceRelation` ON (`User`.`id` ' at line 1
+Request URL: /driving/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(155): Controller->paginate('User')
+#9 [internal function]: PagesController->home('home')
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-07 22:58:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'on clause'
+Request URL: /driving/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(154): Controller->paginate('User')
+#9 [internal function]: PagesController->home('home')
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-07 22:58:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'on clause'
+Request URL: /driving/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(154): Controller->paginate('User')
+#9 [internal function]: PagesController->home('home')
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-07 23:06:11 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') INNER JOIN `driving`.`service_relations` AS `ServiceRelation` ON (`User`.`id` ' at line 1
+Request URL: /driving/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(154): Controller->paginate('User')
+#9 [internal function]: PagesController->home('home')
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-07 23:07:17 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') INNER JOIN `driving`.`service_relations` AS `ServiceRelation` ON (`User`.`id` ' at line 1
+Request URL: /driving/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(154): Controller->paginate('User')
+#9 [internal function]: PagesController->home('home')
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-07 23:12:19 Error: [MissingControllerException] Controller class AssestController could not be found.
+Exception Attributes: array (
+  'class' => 'AssestController',
+  'plugin' => NULL,
+)
+Request URL: /driving/assest/images/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:12:19 Error: [MissingControllerException] Controller class AssestController could not be found.
+Exception Attributes: array (
+  'class' => 'AssestController',
+  'plugin' => NULL,
+)
+Request URL: /driving/assest/images/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:18:59 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(155): Controller->paginate('User')
+#2 [internal function]: PagesController->home('home')
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-07 23:19:42 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(155): Controller->paginate('User')
+#2 [internal function]: PagesController->home('home')
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-07 23:30:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:30:30 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:31:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:31:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:32:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:32:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:32:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:34:07 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:34:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:34:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:35:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:36:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:36:16 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(155): Controller->paginate('User')
+#2 [internal function]: PagesController->home('home')
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-07 23:36:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:36:26 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(155): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-07 23:36:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:36:51 Error: [MissingControllerException] Controller class Page:2Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Page:2Controller',
+  'plugin' => NULL,
+)
+Request URL: /driving/page:2
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:36:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:36:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:36:59 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(155): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-07 23:37:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:44:49 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(155): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-07 23:44:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:44:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:44:59 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(155): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-07 23:45:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:45:53 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(155): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-07 23:45:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:46:17 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(155): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-07 23:46:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:49:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:49:41 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:49:44 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:49:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:49:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:50:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:50:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:50:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:51:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-07 23:52:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-09 22:28:40 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/home/page:3
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(155): Controller->paginate('User')
+#2 [internal function]: PagesController->home('home')
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-09 23:10:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-09 23:10:06 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') INNER JOIN `driving`.`drive_exp_relations` AS `DriveExpRelation` ON (`User`.`i' at line 1
+Request URL: /driving/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(155): Controller->paginate('User')
+#9 [internal function]: PagesController->home('home')
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-09 23:10:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-09 23:11:30 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') INNER JOIN `driving`.`drive_exp_relations` AS `DriveExpRelation` ON (`User`.`i' at line 1
+Request URL: /driving/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(155): Controller->paginate('User')
+#9 [internal function]: PagesController->home('home')
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-09 23:11:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-09 23:12:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-09 23:12:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-09 23:12:44 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-09 23:12:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-09 23:55:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-09 23:56:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-09 23:56:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-09 23:57:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-09 23:57:41 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-09 23:57:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 00:08:30 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') INNER JOIN `driving`.`service_relations` AS `ServiceRelation` ON (`User`.`id` ' at line 1
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#9 [internal function]: PagesController->home()
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-10 00:16:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') INNER JOIN `driving`.`service_relations` AS `ServiceRelation` ON (`User`.`id` ' at line 1
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(158): Controller->paginate('User')
+#9 [internal function]: PagesController->home()
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-10 00:16:12 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') INNER JOIN `driving`.`service_relations` AS `ServiceRelation` ON (`User`.`id` ' at line 1
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(158): Controller->paginate('User')
+#9 [internal function]: PagesController->home()
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-10 00:21:02 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') INNER JOIN `driving`.`service_relations` AS `ServiceRelation` ON (`User`.`id` ' at line 1
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#9 [internal function]: PagesController->home()
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-10 00:21:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') INNER JOIN `driving`.`service_relations` AS `ServiceRelation` ON (`User`.`id` ' at line 1
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#9 [internal function]: PagesController->home()
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-10 00:22:23 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') INNER JOIN `driving`.`service_relations` AS `ServiceRelation` ON (`User`.`id` ' at line 1
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#9 [internal function]: PagesController->home()
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-10 00:23:36 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 00:25:57 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 00:26:18 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 00:26:31 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 00:27:01 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 00:27:01 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 00:27:57 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 00:28:35 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 00:28:38 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 00:28:53 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') INNER JOIN `driving`.`service_relations` AS `ServiceRelation` ON (`User`.`id` ' at line 1
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#9 [internal function]: PagesController->home()
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-10 00:29:27 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 00:29:43 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 00:34:58 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(162): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 00:35:52 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(160): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 00:54:25 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(161): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 00:55:18 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(161): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 00:55:36 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(161): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 01:00:17 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(157): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-10 18:03:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 18:38:24 Error: Fatal Error (4): syntax error, unexpected ')', expecting identifier (T_STRING) or namespace (T_NAMESPACE) or \\ (T_NS_SEPARATOR) in [/var/www/html/driving/app/Controller/Component/CustomComponent.php, line 136]
+2016-12-10 18:38:24 Error: [FatalErrorException] syntax error, unexpected ')', expecting identifier (T_STRING) or namespace (T_NAMESPACE) or \\ (T_NS_SEPARATOR)
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 136)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 136, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 136, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-10 18:38:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 18:38:25 Error: Fatal Error (4): syntax error, unexpected ')', expecting identifier (T_STRING) or namespace (T_NAMESPACE) or \\ (T_NS_SEPARATOR) in [/var/www/html/driving/app/Controller/Component/CustomComponent.php, line 136]
+2016-12-10 18:38:25 Error: [FatalErrorException] syntax error, unexpected ')', expecting identifier (T_STRING) or namespace (T_NAMESPACE) or \\ (T_NS_SEPARATOR)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 136)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 136, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 136, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-10 18:39:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 19:26:06 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* pi()/180) * COS(26.2 * pi()/180) *POWER(SIN(( - 72.1) * pi()/180 / 2), 2) ))) ' at line 1
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(163): Controller->paginate('User')
+#9 [internal function]: PagesController->home()
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-10 19:26:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 19:26:48 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* pi()/180) * COS(26.2 * pi()/180) *POWER(SIN(( - 72.1) * pi()/180 / 2), 2) ))) ' at line 1
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(163): Controller->paginate('User')
+#9 [internal function]: PagesController->home()
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-10 19:26:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 19:27:02 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* pi()/180) * COS(26.2 * pi()/180) *POWER(SIN(( - 72.1) * pi()/180 / 2), 2) ))) ' at line 1
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('all', Array)
+#6 /var/www/html/driving/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#8 /var/www/html/driving/app/Controller/PagesController.php(163): Controller->paginate('User')
+#9 [internal function]: PagesController->home()
+#10 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#13 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2016-12-10 19:27:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 19:27:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 19:39:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 19:39:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 19:39:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 19:41:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 19:41:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 19:43:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 19:43:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 19:52:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 19:53:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 20:01:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 20:03:07 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 20:03:31 Error: Fatal Error (4): syntax error, unexpected 'message' (T_STRING), expecting ')' in [/var/www/html/driving/app/View/Pages/home.ctp, line 28]
+2016-12-10 20:03:31 Error: [FatalErrorException] syntax error, unexpected 'message' (T_STRING), expecting ')'
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 28, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 28, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-10 20:03:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 20:03:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 20:04:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 20:28:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 20:28:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:01:25 Error: Fatal Error (4): syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in [/var/www/html/driving/app/View/Pages/home.ctp, line 28]
+2016-12-10 23:01:25 Error: [FatalErrorException] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 28, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 28, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-10 23:02:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:03:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:04:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:04:12 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:04:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:07:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:07:15 Error: [MissingActionException] Action InboxController::11() could not be found.
+Exception Attributes: array (
+  'controller' => 'InboxController',
+  'action' => '11',
+)
+Request URL: /driving/inbox/11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(InboxController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-12-10 23:07:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:08:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:08:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:08:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:08:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:08:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:09:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:09:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:09:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:09:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:10:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:10:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:10:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:10:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:11:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:11:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:11:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:12:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:12:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:12:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:21:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:22:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:36:21 Error: Fatal Error (64): Cannot redeclare BookingsController::wizard() in [/var/www/html/driving/app/Controller/BookingsController.php, line 591]
+2016-12-10 23:36:21 Error: [FatalErrorException] Cannot redeclare BookingsController::wizard()
+Request URL: /driving/bookings/wizard/11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/d...', 591)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/d...', 591, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/d...', 591, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-10 23:36:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:36:25 Error: Fatal Error (64): Cannot redeclare BookingsController::wizard() in [/var/www/html/driving/app/Controller/BookingsController.php, line 591]
+2016-12-10 23:36:25 Error: [FatalErrorException] Cannot redeclare BookingsController::wizard()
+Request URL: /driving/bookings/wizard/11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/d...', 591)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/d...', 591, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/d...', 591, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-10 23:36:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:36:53 Error: Fatal Error (64): Cannot redeclare BookingsController::wizard() in [/var/www/html/driving/app/Controller/BookingsController.php, line 591]
+2016-12-10 23:36:53 Error: [FatalErrorException] Cannot redeclare BookingsController::wizard()
+Request URL: /driving/bookings/wizard/11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/var/www/html/d...', 591)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/var/www/html/d...', 591, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/var/www/html/d...', 591, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-10 23:39:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-10 23:39:41 Error: [MissingViewException] View file "Bookings/wizard.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Bookings/wizard.ctp',
+)
+Request URL: /driving/bookings/wizard/11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/driving/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BookingsController), Object(CakeRequest))
+#4 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2016-12-10 23:40:12 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 13:42:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 13:42:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 13:45:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 13:45:41 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 13:51:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 13:52:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 13:52:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 13:59:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:00:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:00:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:01:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:01:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:02:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:02:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:03:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:03:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:10:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:12:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:14:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:15:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:15:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:15:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:16:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:20:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:21:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:21:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:29:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 14:31:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 23:21:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 23:21:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 23:28:53 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'Package'
+Request URL: /driving/bookings/uwizard/2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.*...', Array)
+#2 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(664): DboSource->execute('SELECT `User`.*...', Array, Array)
+#3 /var/www/html/driving/lib/Cake/Model/Datasource/DboSource.php(1113): DboSource->fetchAll('SELECT `User`.*...', false)
+#4 /var/www/html/driving/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /var/www/html/driving/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /var/www/html/driving/app/Controller/BookingsController.php(378): Model->find('first', Array)
+#7 [internal function]: BookingsController->uwizard('2')
+#8 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(BookingsController), Array)
+#9 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BookingsController), Object(CakeRequest))
+#11 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-12-11 23:45:44 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 23:46:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 23:46:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 23:48:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 23:51:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 23:51:41 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 23:54:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 23:56:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 23:56:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 23:57:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-11 23:57:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-12 00:02:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-12 00:06:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-12 00:07:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-12 00:08:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-12 00:08:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-12 00:10:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-12 00:10:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-12 00:11:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-12 00:12:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-12 00:12:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-12 00:13:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-12 00:14:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-12 00:15:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-12 00:16:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-12 00:17:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-12 00:19:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:11:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:12:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:15:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:16:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:21:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:38:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:40:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:43:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:50:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:50:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:51:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:52:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:52:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:52:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:53:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:53:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:54:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:55:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:55:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:56:27 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:58:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-15 23:58:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-16 00:00:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-16 00:03:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-16 00:07:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 21:38:10 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(169): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-17 22:43:15 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(169): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-17 22:43:29 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(169): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-17 22:48:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 22:50:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 22:50:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 22:51:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 22:51:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 22:51:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 22:51:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 22:52:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 22:53:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 22:54:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 22:54:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 22:54:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 22:56:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 22:56:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 22:57:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 22:58:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:06:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:06:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:06:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:06:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:06:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:07:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:07:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:07:20 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:07:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:07:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:08:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:08:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:09:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:09:34 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:10:07 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:10:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-17 23:31:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-18 19:03:12 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-18 19:03:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-19 23:30:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:09:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:09:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:09:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:10:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:12:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:13:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:13:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:13:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:13:41 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:14:29 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:15:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:15:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:15:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:18:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:20:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:20:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:21:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:32:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:35:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:38:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:38:52 Error: [MissingViewException] View file "payment.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'payment.ctp',
+)
+Request URL: /driving/bookings/uwizard/2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/View/View.php(470): View->_getViewFileName('/payment')
+#1 /var/www/html/driving/lib/Cake/Controller/Controller.php(963): View->render('/payment', NULL)
+#2 /var/www/html/driving/app/Controller/BookingsController.php(395): Controller->render('/payment')
+#3 [internal function]: BookingsController->uwizard('2')
+#4 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(BookingsController), Array)
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BookingsController), Object(CakeRequest))
+#7 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-12-20 22:39:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:40:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:41:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:43:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:43:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:43:50 Error: [MissingViewException] View file "payment.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'payment.ctp',
+)
+Request URL: /driving/bookings/uwizard/2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/View/View.php(470): View->_getViewFileName('/payment')
+#1 /var/www/html/driving/lib/Cake/Controller/Controller.php(963): View->render('/payment', NULL)
+#2 /var/www/html/driving/app/Controller/BookingsController.php(395): Controller->render('/payment')
+#3 [internal function]: BookingsController->uwizard('2')
+#4 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(BookingsController), Array)
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BookingsController), Object(CakeRequest))
+#7 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2016-12-20 22:52:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:52:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:55:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-20 22:59:12 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-21 22:00:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-21 22:00:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-21 22:01:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-21 22:04:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-21 22:04:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-21 22:09:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-21 23:43:08 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(169): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-21 23:43:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-21 23:44:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-21 23:47:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-21 23:48:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-21 23:50:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-21 23:50:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-21 23:51:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-21 23:52:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-21 23:54:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-21 23:55:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
