@@ -51472,3 +51472,1777 @@ Request URL: /driving/js/front/bootstrap-select.js.map
 Stack Trace:
 #0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2016-12-22 21:35:04 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(169): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-22 21:56:49 Error: Fatal Error (1): Class 'Stripe' not found in [/var/www/html/driving/app/Controller/AppController.php, line 77]
+2016-12-22 21:56:49 Error: [FatalErrorException] Class 'Stripe' not found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 22:02:40 Error: Fatal Error (1): Class 'Stripe' not found in [/var/www/html/driving/app/Controller/AppController.php, line 77]
+2016-12-22 22:02:40 Error: [FatalErrorException] Class 'Stripe' not found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 22:21:13 Error: Fatal Error (1): Class 'Stripe' not found in [/var/www/html/driving/app/Controller/AppController.php, line 77]
+2016-12-22 22:21:13 Error: [FatalErrorException] Class 'Stripe' not found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 22:21:14 Error: Fatal Error (1): Class 'Stripe' not found in [/var/www/html/driving/app/Controller/AppController.php, line 77]
+2016-12-22 22:21:14 Error: [FatalErrorException] Class 'Stripe' not found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 22:21:18 Error: Fatal Error (1): Class 'Stripe' not found in [/var/www/html/driving/app/Controller/AppController.php, line 77]
+2016-12-22 22:21:18 Error: [FatalErrorException] Class 'Stripe' not found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 22:21:19 Error: Fatal Error (1): Class 'Stripe' not found in [/var/www/html/driving/app/Controller/AppController.php, line 77]
+2016-12-22 22:21:19 Error: [FatalErrorException] Class 'Stripe' not found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 22:21:26 Error: Fatal Error (4): syntax error, unexpected '/' in [/var/www/html/driving/app/Controller/AppController.php, line 77]
+2016-12-22 22:21:26 Error: [FatalErrorException] syntax error, unexpected '/'
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 77)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 77, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 77, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 22:22:27 Error: Fatal Error (1): Class 'Stripe' not found in [/var/www/html/driving/app/Controller/AppController.php, line 77]
+2016-12-22 22:22:27 Error: [FatalErrorException] Class 'Stripe' not found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 22:22:30 Error: Fatal Error (1): Class 'Stripe' not found in [/var/www/html/driving/app/Controller/AppController.php, line 77]
+2016-12-22 22:22:30 Error: [FatalErrorException] Class 'Stripe' not found
+Request URL: /driving/pages/home/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 22:22:54 Error: Fatal Error (1): Class 'Stripe' not found in [/var/www/html/driving/app/Controller/AppController.php, line 77]
+2016-12-22 22:22:54 Error: [FatalErrorException] Class 'Stripe' not found
+Request URL: /driving/pages/home/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 22:23:03 Error: Fatal Error (1): Class 'Stripe' not found in [/var/www/html/driving/app/Controller/AppController.php, line 77]
+2016-12-22 22:23:03 Error: [FatalErrorException] Class 'Stripe' not found
+Request URL: /driving/pages/home/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 22:23:04 Error: Fatal Error (1): Class 'Stripe' not found in [/var/www/html/driving/app/Controller/AppController.php, line 77]
+2016-12-22 22:23:04 Error: [FatalErrorException] Class 'Stripe' not found
+Request URL: /driving/pages/home/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 22:23:04 Error: Fatal Error (1): Class 'Stripe' not found in [/var/www/html/driving/app/Controller/AppController.php, line 77]
+2016-12-22 22:23:04 Error: [FatalErrorException] Class 'Stripe' not found
+Request URL: /driving/pages/home/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 22:23:20 Error: Fatal Error (4): syntax error, unexpected '/' in [/var/www/html/driving/app/Controller/AppController.php, line 77]
+2016-12-22 22:23:20 Error: [FatalErrorException] syntax error, unexpected '/'
+Request URL: /driving/pages/home/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 77)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 77, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 77, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 22:23:32 Error: Fatal Error (4): syntax error, unexpected '\' (T_NS_SEPARATOR), expecting identifier (T_STRING) in [/var/www/html/driving/app/Controller/AppController.php, line 77]
+2016-12-22 22:23:32 Error: [FatalErrorException] syntax error, unexpected '\' (T_NS_SEPARATOR), expecting identifier (T_STRING)
+Request URL: /driving/pages/home/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 77)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 77, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 77, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 22:23:35 Error: Fatal Error (1): Class 'Stripe' not found in [/var/www/html/driving/app/Controller/AppController.php, line 77]
+2016-12-22 22:23:35 Error: [FatalErrorException] Class 'Stripe' not found
+Request URL: /driving/pages/home/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe' ...', '/var/www/html/d...', 77, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:10:45 Error: Fatal Error (1): Class 'Stripe_Charge' not found in [/var/www/html/driving/app/Controller/BookingsController.php, line 420]
+2016-12-22 23:10:45 Error: [FatalErrorException] Class 'Stripe_Charge' not found
+Request URL: /driving/bookings/uwizard/11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe_C...', '/var/www/html/d...', 420)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe_C...', '/var/www/html/d...', 420, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe_C...', '/var/www/html/d...', 420, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:10:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-22 23:10:50 Error: Fatal Error (1): Class 'Stripe_Charge' not found in [/var/www/html/driving/app/Controller/BookingsController.php, line 420]
+2016-12-22 23:10:50 Error: [FatalErrorException] Class 'Stripe_Charge' not found
+Request URL: /driving/bookings/uwizard/11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe_C...', '/var/www/html/d...', 420)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe_C...', '/var/www/html/d...', 420, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe_C...', '/var/www/html/d...', 420, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:11:19 Error: Fatal Error (1): Class 'Stripe\Stripe_Charge' not found in [/var/www/html/driving/app/Controller/BookingsController.php, line 420]
+2016-12-22 23:11:19 Error: [FatalErrorException] Class 'Stripe\Stripe_Charge' not found
+Request URL: /driving/bookings/uwizard/11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 420)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 420, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\S...', '/var/www/html/d...', 420, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:11:21 Error: Fatal Error (1): Class 'Stripe\Stripe_Charge' not found in [/var/www/html/driving/app/Controller/BookingsController.php, line 420]
+2016-12-22 23:11:21 Error: [FatalErrorException] Class 'Stripe\Stripe_Charge' not found
+Request URL: /driving/bookings/uwizard/11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 420)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 420, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\S...', '/var/www/html/d...', 420, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:11:37 Error: Fatal Error (1): Class 'Stripe_Charge' not found in [/var/www/html/driving/app/Controller/BookingsController.php, line 420]
+2016-12-22 23:11:37 Error: [FatalErrorException] Class 'Stripe_Charge' not found
+Request URL: /driving/bookings/uwizard/11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe_C...', '/var/www/html/d...', 420)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe_C...', '/var/www/html/d...', 420, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe_C...', '/var/www/html/d...', 420, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:14:40 Error: Fatal Error (1): Class 'Stripe\Stripe_Charge' not found in [/var/www/html/driving/app/Controller/BookingsController.php, line 420]
+2016-12-22 23:14:40 Error: [FatalErrorException] Class 'Stripe\Stripe_Charge' not found
+Request URL: /driving/bookings/uwizard/11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 420)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 420, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\S...', '/var/www/html/d...', 420, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:14:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-22 23:14:55 Error: Fatal Error (1): Class 'Stripe\Stripe_Charge' not found in [/var/www/html/driving/app/Controller/BookingsController.php, line 420]
+2016-12-22 23:14:55 Error: [FatalErrorException] Class 'Stripe\Stripe_Charge' not found
+Request URL: /driving/bookings/uwizard/11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 420)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 420, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\S...', '/var/www/html/d...', 420, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:15:26 Error: Fatal Error (1): Class 'Stripe_Charge' not found in [/var/www/html/driving/app/Controller/BookingsController.php, line 420]
+2016-12-22 23:15:26 Error: [FatalErrorException] Class 'Stripe_Charge' not found
+Request URL: /driving/bookings/uwizard/11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe_C...', '/var/www/html/d...', 420)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe_C...', '/var/www/html/d...', 420, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe_C...', '/var/www/html/d...', 420, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:15:37 Error: Fatal Error (1): Class 'Stripe\Stripe_Charge' not found in [/var/www/html/driving/app/Controller/BookingsController.php, line 420]
+2016-12-22 23:15:37 Error: [FatalErrorException] Class 'Stripe\Stripe_Charge' not found
+Request URL: /driving/bookings/uwizard/11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 420)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 420, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\S...', '/var/www/html/d...', 420, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:16:53 Error: Fatal Error (1): Class 'Stripe\Charge' not found in [/var/www/html/driving/app/Controller/BookingsController.php, line 420]
+2016-12-22 23:16:53 Error: [FatalErrorException] Class 'Stripe\Charge' not found
+Request URL: /driving/bookings/uwizard/11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\C...', '/var/www/html/d...', 420)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\C...', '/var/www/html/d...', 420, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\C...', '/var/www/html/d...', 420, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:17:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-22 23:17:14 Error: Fatal Error (1): Class 'Stripe\Charge' not found in [/var/www/html/driving/app/Controller/BookingsController.php, line 420]
+2016-12-22 23:17:14 Error: [FatalErrorException] Class 'Stripe\Charge' not found
+Request URL: /driving/bookings/uwizard/11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\C...', '/var/www/html/d...', 420)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\C...', '/var/www/html/d...', 420, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\C...', '/var/www/html/d...', 420, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:17:36 Error: Fatal Error (1): Class 'Stripe\Charge' not found in [/var/www/html/driving/app/Controller/AppController.php, line 78]
+2016-12-22 23:17:36 Error: [FatalErrorException] Class 'Stripe\Charge' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\C...', '/var/www/html/d...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\C...', '/var/www/html/d...', 78, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\C...', '/var/www/html/d...', 78, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:19:16 Error: Fatal Error (1): Class 'Stripe\Charge' not found in [/var/www/html/driving/app/Controller/AppController.php, line 78]
+2016-12-22 23:19:16 Error: [FatalErrorException] Class 'Stripe\Charge' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\C...', '/var/www/html/d...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\C...', '/var/www/html/d...', 78, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\C...', '/var/www/html/d...', 78, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:19:25 Error: Fatal Error (1): Class 'Stripe\Stripe\Charge' not found in [/var/www/html/driving/app/Controller/AppController.php, line 78]
+2016-12-22 23:19:25 Error: [FatalErrorException] Class 'Stripe\Stripe\Charge' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 78, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\S...', '/var/www/html/d...', 78, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:19:40 Error: Fatal Error (1): Class 'Stripe\Stripe\Stripe_Charge' not found in [/var/www/html/driving/app/Controller/AppController.php, line 78]
+2016-12-22 23:19:40 Error: [FatalErrorException] Class 'Stripe\Stripe\Stripe_Charge' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 78, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\S...', '/var/www/html/d...', 78, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:20:46 Error: Fatal Error (1): Class 'Stripe\Charge' not found in [/var/www/html/driving/app/Controller/AppController.php, line 79]
+2016-12-22 23:20:46 Error: [FatalErrorException] Class 'Stripe\Charge' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\C...', '/var/www/html/d...', 79)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\C...', '/var/www/html/d...', 79, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\C...', '/var/www/html/d...', 79, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:21:33 Error: Fatal Error (1): Class 'Stripe\Charge' not found in [/var/www/html/driving/app/Controller/AppController.php, line 79]
+2016-12-22 23:21:33 Error: [FatalErrorException] Class 'Stripe\Charge' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\C...', '/var/www/html/d...', 79)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\C...', '/var/www/html/d...', 79, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\C...', '/var/www/html/d...', 79, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:21:34 Error: Fatal Error (1): Class 'Stripe\Charge' not found in [/var/www/html/driving/app/Controller/AppController.php, line 79]
+2016-12-22 23:21:34 Error: [FatalErrorException] Class 'Stripe\Charge' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\C...', '/var/www/html/d...', 79)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\C...', '/var/www/html/d...', 79, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\C...', '/var/www/html/d...', 79, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:22:00 Error: Fatal Error (1): Class 'Stripe\Charge' not found in [/var/www/html/driving/app/Controller/AppController.php, line 79]
+2016-12-22 23:22:00 Error: [FatalErrorException] Class 'Stripe\Charge' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\C...', '/var/www/html/d...', 79)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\C...', '/var/www/html/d...', 79, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\C...', '/var/www/html/d...', 79, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:22:57 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:22:57 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:23:32 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:23:32 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:23:36 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:23:36 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:26:35 Error: Fatal Error (1): Class 'ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 41]
+2016-12-22 23:26:35 Error: [FatalErrorException] Class 'ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'ApiResou...', '/var/www/html/d...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'ApiResou...', '/var/www/html/d...', 41, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'ApiResou...', '/var/www/html/d...', 41, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:26:49 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:26:49 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:27:48 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:27:48 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:28:42 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:28:42 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:30:29 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:30:29 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:31:38 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:31:38 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:31:57 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:31:57 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:31:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-22 23:31:58 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:31:58 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:34:50 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:34:50 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:34:55 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:34:55 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:34:59 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:34:59 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:35:26 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:35:26 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:38:19 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:38:19 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:38:20 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:38:20 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:40:42 Error: Fatal Error (1): Class 'Stripe\Stripe' not found in [/var/www/html/driving/app/Controller/AppController.php, line 78]
+2016-12-22 23:40:42 Error: [FatalErrorException] Class 'Stripe\Stripe' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 78, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\S...', '/var/www/html/d...', 78, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:40:43 Error: Fatal Error (1): Class 'Stripe\Stripe' not found in [/var/www/html/driving/app/Controller/AppController.php, line 78]
+2016-12-22 23:40:43 Error: [FatalErrorException] Class 'Stripe\Stripe' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\S...', '/var/www/html/d...', 78, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\S...', '/var/www/html/d...', 78, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:44:57 Error: Fatal Error (1): Class 'Stripe\ApiResource' not found in [/var/www/html/driving/app/Vendor/Stripe/lib/Charge.php, line 42]
+2016-12-22 23:44:57 Error: [FatalErrorException] Class 'Stripe\ApiResource' not found
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Class 'Stripe\A...', '/var/www/html/d...', 42, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-22 23:48:51 Error: [Stripe\Error\InvalidRequest] You cannot use a Stripe token more than once: tok_19Tar9At11ylz9mKamddVTJV.
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/app/Vendor/Stripe/lib/ApiRequestor.php(266): Stripe\ApiRequestor->handleApiError('{?  "error": {?...', 400, Array, Array)
+#1 /var/www/html/driving/app/Vendor/Stripe/lib/ApiRequestor.php(65): Stripe\ApiRequestor->_interpretResponse('{?  "error": {?...', 400, Array)
+#2 /var/www/html/driving/app/Vendor/Stripe/lib/ApiResource.php(120): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#3 /var/www/html/driving/app/Vendor/Stripe/lib/ApiResource.php(160): Stripe\ApiResource::_staticRequest('post', '/v1/charges', Array, NULL)
+#4 /var/www/html/driving/app/Vendor/Stripe/lib/Charge.php(73): Stripe\ApiResource::_create(Array, NULL)
+#5 /var/www/html/driving/app/Controller/AppController.php(84): Stripe\Charge::create(Array)
+#6 /var/www/html/driving/app/Controller/PagesController.php(56): AppController->beforeFilter()
+#7 [internal function]: PagesController->beforeFilter(Object(CakeEvent))
+#8 /var/www/html/driving/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/html/driving/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-12-22 23:48:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-22 23:49:24 Error: [Stripe\Error\Authentication] Invalid API Key provided: sk_test_********************qwjW
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/app/Vendor/Stripe/lib/ApiRequestor.php(266): Stripe\ApiRequestor->handleApiError('{?  "error": {?...', 401, Array, Array)
+#1 /var/www/html/driving/app/Vendor/Stripe/lib/ApiRequestor.php(65): Stripe\ApiRequestor->_interpretResponse('{?  "error": {?...', 401, Array)
+#2 /var/www/html/driving/app/Vendor/Stripe/lib/ApiResource.php(120): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#3 /var/www/html/driving/app/Vendor/Stripe/lib/ApiResource.php(160): Stripe\ApiResource::_staticRequest('post', '/v1/charges', Array, NULL)
+#4 /var/www/html/driving/app/Vendor/Stripe/lib/Charge.php(73): Stripe\ApiResource::_create(Array, NULL)
+#5 /var/www/html/driving/app/Controller/AppController.php(84): Stripe\Charge::create(Array)
+#6 /var/www/html/driving/app/Controller/PagesController.php(56): AppController->beforeFilter()
+#7 [internal function]: PagesController->beforeFilter(Object(CakeEvent))
+#8 /var/www/html/driving/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/html/driving/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-12-22 23:49:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-22 23:49:39 Error: [Stripe\Error\InvalidRequest] You cannot use a Stripe token more than once: tok_19Tar9At11ylz9mKamddVTJV.
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/app/Vendor/Stripe/lib/ApiRequestor.php(266): Stripe\ApiRequestor->handleApiError('{?  "error": {?...', 400, Array, Array)
+#1 /var/www/html/driving/app/Vendor/Stripe/lib/ApiRequestor.php(65): Stripe\ApiRequestor->_interpretResponse('{?  "error": {?...', 400, Array)
+#2 /var/www/html/driving/app/Vendor/Stripe/lib/ApiResource.php(120): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#3 /var/www/html/driving/app/Vendor/Stripe/lib/ApiResource.php(160): Stripe\ApiResource::_staticRequest('post', '/v1/charges', Array, NULL)
+#4 /var/www/html/driving/app/Vendor/Stripe/lib/Charge.php(73): Stripe\ApiResource::_create(Array, NULL)
+#5 /var/www/html/driving/app/Controller/AppController.php(84): Stripe\Charge::create(Array)
+#6 /var/www/html/driving/app/Controller/PagesController.php(56): AppController->beforeFilter()
+#7 [internal function]: PagesController->beforeFilter(Object(CakeEvent))
+#8 /var/www/html/driving/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/html/driving/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-12-22 23:49:41 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-22 23:50:30 Error: [Stripe\Error\InvalidRequest] No such token: tok_19Tar9At11ylz9mKamddVTJW
+Request URL: /driving/pages/home
+Stack Trace:
+#0 /var/www/html/driving/app/Vendor/Stripe/lib/ApiRequestor.php(266): Stripe\ApiRequestor->handleApiError('{?  "error": {?...', 400, Array, Array)
+#1 /var/www/html/driving/app/Vendor/Stripe/lib/ApiRequestor.php(65): Stripe\ApiRequestor->_interpretResponse('{?  "error": {?...', 400, Array)
+#2 /var/www/html/driving/app/Vendor/Stripe/lib/ApiResource.php(120): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#3 /var/www/html/driving/app/Vendor/Stripe/lib/ApiResource.php(160): Stripe\ApiResource::_staticRequest('post', '/v1/charges', Array, NULL)
+#4 /var/www/html/driving/app/Vendor/Stripe/lib/Charge.php(73): Stripe\ApiResource::_create(Array, NULL)
+#5 /var/www/html/driving/app/Controller/AppController.php(84): Stripe\Charge::create(Array)
+#6 /var/www/html/driving/app/Controller/PagesController.php(56): AppController->beforeFilter()
+#7 [internal function]: PagesController->beforeFilter(Object(CakeEvent))
+#8 /var/www/html/driving/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /var/www/html/driving/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#11 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#12 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2016-12-22 23:50:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-23 22:07:16 Error: [Stripe\Error\InvalidRequest] You cannot use a Stripe token more than once: tok_19TarFAt11ylz9mKuzwpSEoy.
+Request URL: /driving/bookings/uwizard/2
+Stack Trace:
+#0 /var/www/html/driving/app/Vendor/Stripe/lib/ApiRequestor.php(266): Stripe\ApiRequestor->handleApiError('{?  "error": {?...', 400, Array, Array)
+#1 /var/www/html/driving/app/Vendor/Stripe/lib/ApiRequestor.php(65): Stripe\ApiRequestor->_interpretResponse('{?  "error": {?...', 400, Array)
+#2 /var/www/html/driving/app/Vendor/Stripe/lib/ApiResource.php(120): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#3 /var/www/html/driving/app/Vendor/Stripe/lib/ApiResource.php(160): Stripe\ApiResource::_staticRequest('post', '/v1/charges', Array, NULL)
+#4 /var/www/html/driving/app/Vendor/Stripe/lib/Charge.php(73): Stripe\ApiResource::_create(Array, NULL)
+#5 /var/www/html/driving/app/Controller/BookingsController.php(425): Stripe\Charge::create(Array)
+#6 /var/www/html/driving/app/Controller/BookingsController.php(393): BookingsController->payment(Array)
+#7 [internal function]: BookingsController->uwizard('2')
+#8 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(BookingsController), Array)
+#9 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BookingsController), Object(CakeRequest))
+#11 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-12-23 22:07:20 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-23 22:07:23 Error: [Stripe\Error\InvalidRequest] You cannot use a Stripe token more than once: tok_19TarFAt11ylz9mKuzwpSEoy.
+Request URL: /driving/bookings/uwizard/2
+Stack Trace:
+#0 /var/www/html/driving/app/Vendor/Stripe/lib/ApiRequestor.php(266): Stripe\ApiRequestor->handleApiError('{?  "error": {?...', 400, Array, Array)
+#1 /var/www/html/driving/app/Vendor/Stripe/lib/ApiRequestor.php(65): Stripe\ApiRequestor->_interpretResponse('{?  "error": {?...', 400, Array)
+#2 /var/www/html/driving/app/Vendor/Stripe/lib/ApiResource.php(120): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#3 /var/www/html/driving/app/Vendor/Stripe/lib/ApiResource.php(160): Stripe\ApiResource::_staticRequest('post', '/v1/charges', Array, NULL)
+#4 /var/www/html/driving/app/Vendor/Stripe/lib/Charge.php(73): Stripe\ApiResource::_create(Array, NULL)
+#5 /var/www/html/driving/app/Controller/BookingsController.php(425): Stripe\Charge::create(Array)
+#6 /var/www/html/driving/app/Controller/BookingsController.php(393): BookingsController->payment(Array)
+#7 [internal function]: BookingsController->uwizard('2')
+#8 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(BookingsController), Array)
+#9 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BookingsController), Object(CakeRequest))
+#11 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-12-23 22:16:15 Error: [Stripe\Error\InvalidRequest] You cannot use a Stripe token more than once: tok_19TarFAt11ylz9mKuzwpSEoy.
+Request URL: /driving/bookings/uwizard/2
+Stack Trace:
+#0 /var/www/html/driving/app/Vendor/Stripe/lib/ApiRequestor.php(266): Stripe\ApiRequestor->handleApiError('{?  "error": {?...', 400, Array, Array)
+#1 /var/www/html/driving/app/Vendor/Stripe/lib/ApiRequestor.php(65): Stripe\ApiRequestor->_interpretResponse('{?  "error": {?...', 400, Array)
+#2 /var/www/html/driving/app/Vendor/Stripe/lib/ApiResource.php(120): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#3 /var/www/html/driving/app/Vendor/Stripe/lib/ApiResource.php(160): Stripe\ApiResource::_staticRequest('post', '/v1/charges', Array, NULL)
+#4 /var/www/html/driving/app/Vendor/Stripe/lib/Charge.php(73): Stripe\ApiResource::_create(Array, NULL)
+#5 /var/www/html/driving/app/Controller/BookingsController.php(425): Stripe\Charge::create(Array)
+#6 /var/www/html/driving/app/Controller/BookingsController.php(393): BookingsController->payment(Array)
+#7 [internal function]: BookingsController->uwizard('2')
+#8 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(BookingsController), Array)
+#9 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BookingsController), Object(CakeRequest))
+#11 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-12-23 22:17:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-23 22:17:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-23 22:18:04 Error: [Stripe\Error\InvalidRequest] You cannot use a Stripe token more than once: tok_19TarFAt11ylz9mKuzwpSEoy.
+Request URL: /driving/bookings/uwizard/2
+Stack Trace:
+#0 /var/www/html/driving/app/Vendor/Stripe/lib/ApiRequestor.php(266): Stripe\ApiRequestor->handleApiError('{?  "error": {?...', 400, Array, Array)
+#1 /var/www/html/driving/app/Vendor/Stripe/lib/ApiRequestor.php(65): Stripe\ApiRequestor->_interpretResponse('{?  "error": {?...', 400, Array)
+#2 /var/www/html/driving/app/Vendor/Stripe/lib/ApiResource.php(120): Stripe\ApiRequestor->request('post', '/v1/charges', Array, Array)
+#3 /var/www/html/driving/app/Vendor/Stripe/lib/ApiResource.php(160): Stripe\ApiResource::_staticRequest('post', '/v1/charges', Array, NULL)
+#4 /var/www/html/driving/app/Vendor/Stripe/lib/Charge.php(73): Stripe\ApiResource::_create(Array, NULL)
+#5 /var/www/html/driving/app/Controller/BookingsController.php(425): Stripe\Charge::create(Array)
+#6 /var/www/html/driving/app/Controller/BookingsController.php(393): BookingsController->payment(Array)
+#7 [internal function]: BookingsController->uwizard('2')
+#8 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(BookingsController), Array)
+#9 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BookingsController), Object(CakeRequest))
+#11 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2016-12-23 22:39:34 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-23 23:38:53 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(169): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-23 23:38:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-23 23:38:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-23 23:39:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-23 23:39:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-23 23:39:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-23 23:39:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-23 23:41:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-23 23:46:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 00:21:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 00:23:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 00:24:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 00:30:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 00:30:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 11:53:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 11:55:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 11:56:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 11:57:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:00:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:00:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:15:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:17:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:29:41 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:46:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:46:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:48:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:49:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:52:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:52:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:53:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:57:37 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:57:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:58:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:59:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:59:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 12:59:42 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/html/driving/app/Controller/BookingsController.php, line 419]
+2016-12-24 12:59:42 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /driving/bookings/uwizard/2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 419)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 419, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 419, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-24 12:59:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 13:01:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 13:15:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 13:15:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 13:16:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 13:25:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 13:25:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 13:26:44 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 13:33:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 13:53:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 13:55:07 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 13:55:14 Error: [MissingControllerException] Controller class BookingSController could not be found.
+Exception Attributes: array (
+  'class' => 'BookingSController',
+  'plugin' => NULL,
+)
+Request URL: /driving/BookingS/payment?package_id=&lession_id=1&amount=10.34&u_id=2
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 13:56:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 13:56:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 13:58:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 13:59:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 13:59:29 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:01:07 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:02:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:02:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:02:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:04:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:18:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:19:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:21:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:22:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:22:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:23:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:25:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:26:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:33:12 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:33:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:38:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:39:30 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:40:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:42:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:43:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:44:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:51:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:51:14 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/var/www/html/driving/app/View/Bookings/payment.ctp, line 61]
+2016-12-24 14:51:14 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /driving/Bookings/payment?package_id=&lession_id=1&amount=10.34&u_id=2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 61, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 61, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-24 14:51:30 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:53:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:53:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 14:58:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 15:00:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 15:01:30 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 15:10:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 15:14:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 15:21:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 15:23:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 16:17:47 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(169): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-24 16:17:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 16:17:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 16:17:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 16:18:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 16:18:07 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 16:18:13 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/html/driving/app/View/Bookings/payment.ctp, line 16]
+2016-12-24 16:18:13 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /driving/Bookings/payment?package_id=&lession_id=1&amount=10.34&u_id=2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 16, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 16, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-24 16:59:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 16:59:21 Error: Fatal Error (4): syntax error, unexpected ']' in [/var/www/html/driving/app/Controller/BookingsController.php, line 461]
+2016-12-24 16:59:21 Error: [FatalErrorException] syntax error, unexpected ']'
+Request URL: /driving/bookings/uwizard/2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 461)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 461, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 461, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2016-12-24 16:59:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 18:11:26 Error: [NotFoundException] Not Found
+Request URL: /driving/pages/home/page:2
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate('User', Array, Array)
+#1 /var/www/html/driving/app/Controller/PagesController.php(169): Controller->paginate('User')
+#2 [internal function]: PagesController->home()
+#3 /var/www/html/driving/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#4 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2016-12-24 18:17:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 18:17:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 18:17:20 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 18:17:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 18:17:28 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 18:34:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 18:46:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 18:47:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 18:48:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-12-24 18:50:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

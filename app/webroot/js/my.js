@@ -34,6 +34,36 @@ $(function () {
         });
     });
 
+    $(document).on('submit','#BookingUwizardForm',function(e){
+        e.preventDefault();
+        //alert($(this).attr('action')); exit;
+        var URL = $(this).attr('action');
+        $.ajax({
+            url : URL,
+            type: "POST",
+            data : $(this).serialize(),
+            dataType : 'JSON',
+            success : function(data){ 
+                if(data.err ==1 ) {    
+                    addMsg(data.msg,"alert alert-danger");
+                }else {
+                    $.ajax({
+                        url : paymntUrl,
+                        type: "GET",
+                        data : data.data,
+                        success : function(data){ 
+                            $('#myModal').html('');
+                            $('#myModal').html(data);
+                            //$('#myModal').modal();
+                            
+                        }
+                    });               
+                }
+            }
+        });
+    })
+    /**/
+
 
 	$('#myModal').on('hidden.bs.modal', function (e) {
     $('#myModal .modal-dialog').remove();
@@ -160,7 +190,7 @@ function addMsg(msg,cls){
         $(".alert").fadeTo(1500, 0).slideUp(500, function(){
             $(this).remove(); 
         });
-    }, 2000);
+    }, 3000);
 }
 
 var calcHeight = function() {

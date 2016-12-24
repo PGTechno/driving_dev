@@ -69,11 +69,9 @@ class AppController extends Controller{
 			$this->layout = "default";
 			$this->Auth->loginAction = array('controller'=>'pages','action'=>'home');
 			$this->Auth->loginRedirect = array('controller'=>'users','action'=>'dashboard');
-			$this->Auth->logoutRedirect = array('controller'=>'pages','action'=>'home');
-			
+			$this->Auth->logoutRedirect = array('controller'=>'pages','action'=>'home');			
 		}
 
- 
 		/*$this->loadModel('Booking');
 		$this->Booking->isBookingConflict($data =array('package_id'=>1,'start'=>'2016-09-08 09:44:00'));*/
 

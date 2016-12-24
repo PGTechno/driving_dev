@@ -7,3 +7,11 @@ INSERT INTO `driving`.`acoos` (`aro_rule`, `user_role`, `created`) VALUES ('Book
 INSERT INTO `driving`.`acoos` (`aro_rule`, `user_role`, `created`) VALUES ('BookingsPayment', '3', '2016-12-18 00:00:00');
 
 ===============================================
+
+ALTER TABLE `bookings` ADD `lession_id` VARCHAR( 10 ) NOT NULL AFTER `payment_status` ,
+ADD `amount` VARCHAR( 10 ) NOT NULL AFTER `lession_id` ,
+ADD `payment_token` VARCHAR( 100 ) NOT NULL AFTER `amount` ;
+
+==============================================
+ALTER TABLE `bookings` ADD `instructor_id` INT( 11 ) NOT NULL AFTER `user_id` ;
+==============================================

@@ -386,11 +386,12 @@ class BookingsController extends AppController {
 				($req['Booking']['package_id']!=''  && $req['Booking']['lession_id']!='')
 			){
 				$res['err'] = 1; $res['msg'] = 'Please select Package OR Lession';
-			}elseif($id=='@' || $id==''){
+			}elseif(empty($isExist)){
 				$res['err'] = 1; $res['msg'] = 'Please select instructor.';
 			}else{
 				$req['Booking']['u_id'] = $id;
-				echo $this->payment($req['Booking']); exit;
+				$res['err'] = 0; $res['msg'] = 'Success.'; $res['data'] = $req['Booking'];
+				//echo $this->payment($req['Booking']); exit;
 			}
 			echo json_encode($res,true); exit;
 			//pr($this->request->data); exit;
@@ -410,10 +411,114 @@ class BookingsController extends AppController {
 		$this->set(compact('data'));		
 	}
 
-	public function payment($data) {
+	public function payment() {
 		$this->layout = false;
 		$this->loadModel('Package');
+		$this->loadModel('Booking');
 		$this->loadModel('User');
+		$data = $_REQUEST;
+		
+		if($this->request->is('post') && $this->request->action=='payment'){
+			App::import('Vendor','Stripe', array('file' => 'Stripe' . DS . 'init.php'));
+			\Stripe\Stripe::setApiKey("sk_test_1BpRd66KA7yUPqEDMOwTqwjT");
+			
+			$req = $this->request->data;
+			$isExist = $this->User->find('first',array('fields'=>array('*'),'conditions'=>array('User.id'=>$req['Booking']['u_id'])));
+			$res['err'] = 1; $res['msg'] = 'Error.';
+			if(	
+				($req['Booking']['package_id']==''  && $req['Booking']['lession_id']=='') ||
+				($req['Booking']['package_id']!=''  && $req['Booking']['lession_id']!='')
+			){
+				$res['err'] = 1; $res['msg'] = 'Please select Package OR Lession';
+			}elseif(empty($isExist)){
+				$res['err'] = 1; $res['msg'] = 'Please select instructor.';
+			}else{
+				try{
+
+					$token = \Stripe\Token::create(array(
+						"card" => array(
+							"number" => $req['Booking']['card'],
+							"exp_month" => $req['Booking']['month'],
+							"exp_year" => $req['Booking']['year'],
+							"cvc" => $req['Booking']['cvv']
+							/*"number" => "4242424242424242",
+							"exp_month" => 1,
+							"exp_year" => 2017,
+							"cvc" => "314"*/
+						)
+					));			
+					
+					$amount = 50;//$req['Booking']['amount']*100;
+					$charge = \Stripe\Charge::create(array(
+						"amount" => $amount,
+						"currency" => "usd",
+						"source" => $token['id'],
+						"description" => "Charge Paib by ".$this->Session->read('Auth.User.email')."|".$req['Booking']['amount'] ,
+						"metadata" => array("user" => $this->Session->read('Auth.User.email'),'amount'=>$req['Booking']['amount'],'date'=>date('Y-m-d H:i:s'))
+					));
+
+					if($charge->status=="paid"){
+						$save['Booking']['user_id'] = $this->Session->read('Auth.User.id');
+						$save['Booking']['instructor_id'] = $req['Booking']['u_id'];
+						$save['Booking']['package_id'] = $req['Booking']['package_id'];
+						$save['Booking']['lession_id'] = $req['Booking']['lession_id'];
+						$save['Booking']['booking_amount'] = $req['Booking']['amount'];
+						$save['Booking']['payment_token'] = $charge->id;
+						$save['Booking']['status'] = 1;
+						$save['Booking']['payment_status'] =1;
+						$save['Booking']['created'] = date('Y-m-d H:i:s');
+						$save['Booking']['modified'] = date('Y-m-d H:i:s');
+						if($this->Booking->save($save,false)){
+							$res['err'] = 0; $res['msg'] = 'Booking Confirmed.'; $res['data'] = $req['Booking'];	
+						}else{
+							$res['err'] = 1; $res['msg'] = 'If Your payment is deducted, Please contact to admin.';	
+						}
+						
+					}
+					
+				} catch(\Stripe\Error\Card $e) {
+					$body = $e->getJsonBody();
+					$err  = $body['error'];
+					$res['err'] = 1; $res['msg'] = $body['error']['message'];
+					/*print('Status is:' . $e->getHttpStatus() . "\n");
+					print('Type is:' . $err['type'] . "\n");
+					print('Code is:' . $err['code'] . "\n");
+					// param is '' in this case
+					print('Param is:' . $err['param'] . "\n");
+					print('Message is:' . $err['message'] . "\n");*/
+				} catch (\Stripe\Error\RateLimit $e) {
+				  	$body = $e->getJsonBody();
+					$err  = $body['error'];
+					$res['err'] = 1; $res['msg'] = $body['error']['message'];
+				} catch (\Stripe\Error\InvalidRequest $e) {
+				    $body = $e->getJsonBody();
+					$err  = $body['error'];
+					$res['err'] = 1; $res['msg'] = $body['error']['message'];
+				} catch (\Stripe\Error\Authentication $e) {
+				  	$body = $e->getJsonBody();
+					$err  = $body['error'];
+					$res['err'] = 1; $res['msg'] = $body['error']['message'];
+				} catch (\Stripe\Error\ApiConnection $e) {
+				  	$body = $e->getJsonBody();
+					$err  = $body['error'];
+					$res['err'] = 1; $res['msg'] = $body['error']['message'];
+				} catch (\Stripe\Error\Base $e) {
+					$body = $e->getJsonBody();
+					$err  = $body['error'];
+					$res['err'] = 1; $res['msg'] = $body['error']['message'];  
+				} catch (Exception $e) {
+				  	$body = $e->getJsonBody();
+					$err  = $body['error'];
+					$res['err'] = 1; $res['msg'] = $body['error']['message'];
+				}
+				
+				//echo $this->payment($req['Booking']); exit;
+			}
+			echo json_encode($res,true); exit;
+
+			pr($charge);exit;
+		}
+
 		if($data['package_id']!=""){
 			$package = $this->Package->find('first',array('conditions'=>array('Package.id'=>$data['package_id'])));
 			$mydata['price'] = $package['Package']['price'];
@@ -425,7 +530,7 @@ class BookingsController extends AppController {
 		}		
 
 		$this->set(compact('mydata','data'));
-		return $this->render('payment');
+		//$this->render('payment');
 	}
 
 	public function display() {
