@@ -432,6 +432,14 @@ class BookingsController extends AppController {
 				$res['err'] = 1; $res['msg'] = 'Please select Package OR Lession';
 			}elseif(empty($isExist)){
 				$res['err'] = 1; $res['msg'] = 'Please select instructor.';
+			}elseif($req['Booking']['card']==""){
+				$res['err'] = 1; $res['msg'] = 'Please fill card number.';
+			}elseif($req['Booking']['month']==""){
+				$res['err'] = 1; $res['msg'] = 'Please fill expiry month of card.';
+			}elseif($req['Booking']['year']==""){
+				$res['err'] = 1; $res['msg'] = 'Please fill expiry year of card.';
+			}elseif($req['Booking']['cvv']==""){
+				$res['err'] = 1; $res['msg'] = 'Please fill cvv number';
 			}else{
 				try{
 
@@ -448,7 +456,7 @@ class BookingsController extends AppController {
 						)
 					));			
 					
-					$amount = 50;//$req['Booking']['amount']*100;
+					$amount = $req['Booking']['amount']*100;
 					$charge = \Stripe\Charge::create(array(
 						"amount" => $amount,
 						"currency" => "usd",
@@ -480,12 +488,6 @@ class BookingsController extends AppController {
 					$body = $e->getJsonBody();
 					$err  = $body['error'];
 					$res['err'] = 1; $res['msg'] = $body['error']['message'];
-					/*print('Status is:' . $e->getHttpStatus() . "\n");
-					print('Type is:' . $err['type'] . "\n");
-					print('Code is:' . $err['code'] . "\n");
-					// param is '' in this case
-					print('Param is:' . $err['param'] . "\n");
-					print('Message is:' . $err['message'] . "\n");*/
 				} catch (\Stripe\Error\RateLimit $e) {
 				  	$body = $e->getJsonBody();
 					$err  = $body['error'];
@@ -511,12 +513,8 @@ class BookingsController extends AppController {
 					$err  = $body['error'];
 					$res['err'] = 1; $res['msg'] = $body['error']['message'];
 				}
-				
-				//echo $this->payment($req['Booking']); exit;
 			}
 			echo json_encode($res,true); exit;
-
-			pr($charge);exit;
 		}
 
 		if($data['package_id']!=""){
@@ -593,7 +591,7 @@ class BookingsController extends AppController {
 		    $total_records = $this->Booking->find('count', array('conditions' => $condition));
             
             $bookingData = $this->Booking->find('all', array(
-                'contain'=>array('Review','Package'=>array('Trainer'),'User'),
+                'contain'=>array('Review','Instructor','Package'=>array('Trainer'),'User'),
                 'conditions' => $condition,
                 //'fields' => $fields,
                 'order' => $orderby,
@@ -620,6 +618,9 @@ class BookingsController extends AppController {
      			     	case 2 : $action='<span class="label label-table label-danger">DECLINE</span>'; break;
      			     	case 3 : $action='<span class="label label-table label-danger">DELETE</span>'; break;
      			     }
+
+     			     $package_title = isset($row['Package']['title']) ? $row['Package']['title']:$row['Booking']['lession_id'].' hours lession' ;
+     			     $duration = isset($row['Package']['duration']) ? $row['Package']['duration']." Hours": $row['Booking']['lession_id']." hours";
 
      			     if(!isset($row['Review']['id'])){
      			     	$isReview = ' | <span class="label label-table label-success review openModal" data-toggle="modal" data-target="#myModal" data-bookingid="'.$row['Booking']['id'].'" data-url="'.Router::url(array('controller' => 'bookings', 'action' => 'review',$row['Booking']['id'])).'" title="Place Review">REVIEW</span>'; 	
@@ -649,9 +650,9 @@ class BookingsController extends AppController {
 	                 $action .= '&nbsp;&nbsp;&nbsp; <a href="#" onclick="change_status('.$row['User']['id'].')" title="Delete User"><i class="fa fa-trash fa-lg"></i></a>';                    */
 	                 $date = $this->Custom->dateFormatChange($row['Booking']['created'],$oldFormat="Y-m-d H:i:s",$newFormat="d/m/Y | H:i A");
                      $return_result['data'][]= array(
-	                     $row['Package']['Trainer']['fname'],
-	                     $row['Package']['title'],
-	                     $row['Package']['duration']." MINUTE",
+	                     $row['Instructor']['fname'],
+	                     $package_title,
+	                     $duration,
 	                     $date,
 	                     $action
 	                     //date(Configure::read('Site.admin_date_format'), strtotime($row['User']['dob'])),
@@ -672,7 +673,7 @@ class BookingsController extends AppController {
     public function review($id='') {
     	$this->layout = false;
     	$this->loadModel('Review');
-    	$isExist = $this->Booking->find('first',array('contain'=>array('Package'=>array('Trainer'),'User','Review'),'conditions'=>array('Booking.id'=>$id,'Booking.user_id'=>$this->authData['id'])));	
+    	$isExist = $this->Booking->find('first',array('contain'=>array('Instructor','Package'=>array('Trainer'),'User','Review'),'conditions'=>array('Booking.id'=>$id,'Booking.user_id'=>$this->authData['id'])));	
     	
     	if($this->request->is('post') && $this->request->is('ajax')){
     		if(isset($isExist['Review']['id'])){

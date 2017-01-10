@@ -29,7 +29,12 @@ class Booking extends AppModel {
         'User' => array(
             'className' => 'User',
             'foreignKey' => 'user_id'
-        )
+        ),
+        'Instructor' => array(
+            'className' => 'User',
+            'foreignKey' => 'instructor_id'
+        ),
+
     );
   
 

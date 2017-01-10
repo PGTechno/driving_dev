@@ -125,11 +125,11 @@ class PagesController extends AppController {
 			$location = array('lat'=>'0.0','lng'=>'0.0');
 		}
 		
-		$Lat = $location['lat'];//'26.233453';
-		$long = $location['lng'];//'72.233453';
-		//$this->User->virtualFields = array('distance'=>'3956 * 2 * ASIN(SQRT( POWER(SIN(($Lat - Lat) * pi()/180 / 2), 2) + COS($Lat * pi()/180) * COS(Lat * pi()/180) *POWER(SIN(($long - long) * pi()/180 / 2), 2) ))');
-		$this->User->virtualFields = array('distance'=>'3956 * 2 * ASIN(SQRT( POWER(SIN(('.$Lat.' - 26.2) * pi()/180 / 2), 2) + COS('.$Lat.' * pi()/180) * COS(26.2 * pi()/180) *POWER(SIN(('.$long.' - 72.1) * pi()/180 / 2), 2) ))');
-
+		$Lat = $location['lat'];
+		$long = $location['lng'];
+		$distance = 50;//Miles
+		
+		$this->User->virtualFields = array('distance'=>'3959 * acos( cos( radians('.$Lat.') ) * cos( radians( User.lat ) ) * cos( radians( User.long ) - radians('.$long.') ) + sin( radians('.$Lat.') ) * sin(radians(User.lat)) ) ');
 		$this->Paginator->settings = array(
 	        'joins' => array(
 		        array(
@@ -160,11 +160,13 @@ class PagesController extends AppController {
 		            )
 		        )
 		    ),
+
 			'conditions'=>$conditions,
-			'group'=>array('User.id'),
+			'group'=>array('User.id HAVING User__distance < '.$distance),
 			'order'=>array('User.fname'=>'asc'),
-			'limit' => 1,
-	    );	
+			//'limit' => 10,
+	    );
+		
 		
 		$this->request->data['User']['response'] = $this->paginate('User');
 		if(empty($this->request->data['User']['response'])){
@@ -221,8 +223,8 @@ class PagesController extends AppController {
 			            )
 			        )
 			    ),
-				'conditions'=>$conditions,
-				'group'=>array('User.id'),
+			    'conditions'=>$conditions,
+				'group'=>array('User.id HAVING User.distancee < 45'),
 				'order'=>array('User.fname'=>'asc'),
 				'limit' => 1,
 		    );

@@ -30,7 +30,7 @@ class CustomComponent extends Component {
 
     function deleteOldImage($url){
         $url = WWW_ROOT.$url;
-        if(file_exists($url)){
+        if(is_file($url)){
     		if(unlink($url)){
     			return true;
     		}else{
@@ -112,6 +112,20 @@ class CustomComponent extends Component {
         }else{
             return false;
         }
+    }
+
+    function sendNotification($sender , $receiver, $message, $params=array()){
+        $model = ClassRegistry::init('Notification');
+        //$isExist = $model->findByTitle($title);
+        $model->sender = $sender;
+        $model->receiver = $receiver;      
+        $model->message = $message;
+        $model->is_read = 0;
+        $model->created = date('Y-m-d H:i:s');
+        if($model->save()){
+            return true;
+        }
+        return false;
     }
 
     function generateRandomString($length = 10) {

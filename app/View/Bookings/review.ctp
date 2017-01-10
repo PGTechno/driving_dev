@@ -18,8 +18,8 @@
                 
                 <div class="form-group">
                    <div class="col-sm-5">
-                        <img alt="" width="140" height="140" src="<?php echo $this->Custom->imageUrl($data['Package']['Trainer']['image'],WWW_ROOT.'images/users/');?>" class="img-circle" style="height:4em;" > 
-                        <h3><?php echo ucfirst($data['Package']['Trainer']['fname']);?></h3>   
+                        <img alt="" width="140" height="140" src="<?php echo $this->Custom->imageUrl($data['Instructor']['image'],WWW_ROOT.'images/users/');?>" class="img-circle" style="height:4em;" > 
+                        <h3><?php echo ucfirst($data['Instructor']['fname']);?></h3>   
                    </div> 
                 </div>
                 

@@ -7,9 +7,9 @@
                 <div class="modal-body">
                     <?php //pr($data);?>
                     <?php 
-                      echo $this->Form->input('package_id',array('options' => $data['Package'],'class'=>'form-control','empty'=>'Select','div'=>false,'label'=>false));
+                      echo $this->Form->input('package_id',array('options' => $data['Package'],'class'=>'form-control','empty'=>'Select Package','div'=>false,'label'=>false));
 
-                      echo $this->Form->input('lession_id',array('options' => $data['LessionData'],'class'=>'form-control','empty'=>'Select','div'=>false,'label'=>false));
+                      echo $this->Form->input('lession_id',array('options' => $data['LessionData'],'class'=>'form-control','empty'=>'Select Lession','div'=>false,'label'=>false));
 
                       echo $this->Form->input('amount',array('class'=>'form-control','value'=>'','div'=>false,'label'=>false,'readonly'=>'readonly'));
 
