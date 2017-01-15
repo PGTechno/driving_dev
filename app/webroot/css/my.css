@@ -68,14 +68,6 @@ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
- .img-circle
- {
- border-style:groove;border:5px outset #f1f1f1;
- }
- .img-circle:hover{
- border-style:groove;border:5px outset green;
- 
- }
  .driver{
  border-style:groove;
  margin-left:50px;

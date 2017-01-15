@@ -56,7 +56,7 @@ $register = Router::url(array('controller' => 'users', 'action' => 'register'));
 					<button type="submit" class="btn btn-default btn-lg btn-login" >LOGIN</button> 
 					<br><br>
 					<h6 style="text-align:center;"><b>OR</b></h6>
-					<button type="button" class="btn btn-info btn-fab" onclick="chkLoginStatus()">
+					<button type="button" class="btn btn-info btn-fab" onclick="chkLoginStatus()" style="background-color:#3d556d;color:#fff;">
 						<?php echo $this->Html->image('front/login_with_facebook.png', array());?>&nbsp;&nbsp;LOGIN WITH FACEBOOK
 					</button>
 					
@@ -71,9 +71,9 @@ $register = Router::url(array('controller' => 'users', 'action' => 'register'));
 									<?php echo $this->Html->image('front/close_popup.png', array("class"=>"img-reg"));?>
 								</a>
 								
-								<div style="margin-top:25%;">	
+								<div style="margin-top:35%;">	
 									<h4 class="reg-heading" ><b>REGISTER  NOW</b></h4>
-									<p class="reg-p">Nulla eu urna elementum nunc lacinia<br><span> egestas.Quisque interdum ,</span>dolor a <br><span>eleifend imperdiet.</span></p>
+									<p class="reg-p" style="height:10%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 									<button type="button" class="openRegister btn btn-default btn-lg btn-reg ins"><b>REGISTER AS AN INSTRUCTOR</b></button><br><br>
 									<button type="button" class="openRegister btn btn-default btn-lg btn-reg std"><b>REGISTER AS A STUDENT</b></button>
 								</div><br><br>

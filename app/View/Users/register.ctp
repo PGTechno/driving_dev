@@ -8,7 +8,7 @@
 						<?php echo $this->Html->image('front/close_popup_black.png', array('class'=>''));?>
 					</button> 
 					<h2 class="h2-reg-now" ><b>REGISTER NOW</b></h2>
-					<p class="reg-para" >Nulla eu urna elementum nunc lacinia egestas.Quisque interdum ,<br><span>dolor a eleifend imperdiet.</span></p>
+				<!--	<p class="reg-para" >Nulla eu urna elementum nunc lacinia egestas.Quisque interdum ,<br><span>dolor a eleifend imperdiet.</span></p>-->
 					
 					<div class="btn-registers">
 							<div class="btn-group  btn-lg btn-round" >

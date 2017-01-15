@@ -13,8 +13,7 @@
                            <div class="tab-pane" id="users">
                               <div class="search-item">
                                  <div style="margin-left:85%;margin-top:6%;">
-<!--
-                                    <img src="<?php echo $this->webroot?>img/front/facebook_dash.png">&nbsp;&nbsp;<img src="<?php echo $this->webroot?>img/front/google_plus_dash.png">&nbsp;&nbsp;<img src="<?php echo $this->webroot?>img/front/twitter_dash.png">-->
+                                    <img src="<?php echo $this->webroot?>img/front/facebook_dash.png">&nbsp;&nbsp;<img src="<?php echo $this->webroot?>img/front/google_plus_dash.png">&nbsp;&nbsp;<img src="<?php echo $this->webroot?>img/front/twitter_dash.png">
                                  </div>
                                  <div class="media" style="margin-top:-7%;margin-left:2%;">
                                     <div class="media-body" >
@@ -24,7 +23,7 @@
                                           </a>
                                        </div>
                                        <div class="media-left" >
-                                          <h4 class="media-heading" ><a href="#" class="text-muted" style="color: #124b6d;"><?php echo $this->request->data['User']['fname'].' '.$this->request->data['User']['lname'];?></a></h4>
+                                          <h4 class="media-heading" ><a href="#" class="text-muted" style="color: #124b6d;"><?php echo $this->request->data['User']['fname'];?></a></h4>
                                           <p>
                                              <b>Email:</b> 
                                              <span><a href="#" class="text-muted"><?php echo $this->request->data['User']['email'];?></a></span><br>
@@ -163,7 +162,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                       <label class="col-sm-3 control"><b>Driving Experience</b></label>
+                                       <label class="col-sm-3 control"><b>Drive Experience</b></label>
                                        <div class="col-sm-6">
                                           <?php echo $this->Form->input('DriveExperience', array(
                                              'multiple' => 'multiple',
@@ -254,7 +253,7 @@
                                     <?php } ?>
                                     
                                     <div class="form-group">
-                                       <label class="col-sm-3 control"><b>Driving License</b></label>
+                                       <label class="col-sm-3 control"><b>D/L</b></label>
                                        <div class="col-sm-6">
                                           <?php echo $this->Form->file('driving_licence_file',array('class'=>'form-control','div'=>false,'label'=>false));
                                              echo $this->Form->hidden('driving_licence',array());

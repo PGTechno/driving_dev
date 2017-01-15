@@ -443,6 +443,9 @@ class BookingsController extends AppController {
 			}else{
 				try{
 
+					$res['err'] = 0; $res['msg'] = 'Booking Confirmed.'; $res['data'] = array('id'=>50);
+					echo json_encode($res,true); exit;	
+
 					$token = \Stripe\Token::create(array(
 						"card" => array(
 							"number" => $req['Booking']['card'],
@@ -526,9 +529,28 @@ class BookingsController extends AppController {
 			$mydata['price']  = $inst['User']['hourly_rate'] * $data['lession_id'];
 			$mydata['title'] = $data['lession_id'].' hours lession';
 		}		
-
+		$data['instructor'] = $inst['User'];
 		$this->set(compact('mydata','data'));
 		//$this->render('payment');
+	}
+
+	public function duration($booking_id='@') {
+		$req = $this->request->data;
+		$isExist = $this->Booking->find('first',array(
+			'conditiond'=>array(
+				'Booking.id'=>$booking_id,
+				'Booking.payment_status'=>1,
+				'Booking.status'=>array(1)
+			)
+		));
+		
+		if($this->request->is('post')){
+			if(empty($isExist)){
+				$res['err'] = 1; $res['msg'] = 'There is no booking,';
+			}else{
+				
+			}	
+		}
 	}
 
 	public function display() {

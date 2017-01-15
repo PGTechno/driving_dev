@@ -1,18 +1,8 @@
-<script src="https://maps.googleapis.com/maps/api/js?key=<?php echo Configure::read('GoogleKey');?>"
-    async defer></script>
-<style>
-blockquote {
-    padding: 10px 20px;
-    margin: 0 0 20px;
-    font-size: 17.5px;
-    border-left: 5px solid #eee;
-    line-height: 26px;
-}
-hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid #eee;
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">  
+ <style type="text/css">
+.btn-grey{
+    background-color:#D8D8D8;
+	color:#FFF;
 }
 .rating-block{
 	background-color:#FAFAFA;
@@ -20,7 +10,20 @@ hr {
 	padding:15px 15px 20px 15px;
 	border-radius:3px;
 }
+.bold{
+	font-weight:700;
+}
+.padding-bottom-7{
+	padding-bottom:7px;
+}
 
+.review-block{
+	background-color:#FAFAFA;
+	border:1px solid #EFEFEF;
+	padding:15px;
+	border-radius:3px;
+	margin-bottom:15px;
+}
 .review-block-name{
 	font-size:12px;
 	margin:10px 0;
@@ -40,7 +43,6 @@ hr {
 .review-block-description{
 	font-size:13px;
 }
-
 .rate{
 margin-left:25px;
 font-size:18px;
@@ -50,27 +52,34 @@ font-weight:550;
 font-weight:600;
 font-size:19px;
 }
-</style>
+    </style>
+  
+
+<script src="https://maps.googleapis.com/maps/api/js?key=<?php echo Configure::read('GoogleKey');?>"
+    async defer></script>
 <?php $paginator = $this->Paginator;?>
 <?php if(isset($this->request->data['User']['response'][0])){ ?>
 		<section class="section white no-padding-bottom">
 			<div class="inner">
 				<div class="container">
-
-<div class="row">
-			<div class="col-sm-12">
-										<div class="review-block">
-		
-				
+				<div class="row">
+							<div class="col-sm-12">
+								<div class="review-block">
+			
+<?php 
+/*echo "<pre>";
+print_r($this->request->data['User']['response']);
+die();*/
+?>
 					<?php foreach ($this->request->data['User']['response'] as $k => $v) { ?>
 								<div class="row">
-<div class="col-sm-2 text-center">
+						<div class="col-sm-2 text-center">
 							<img style="height:5em;width:5em;" class="img-circle" alt="64x64" src="<?php echo $this->Custom->imageUrl($v['User']['image'],WWW_ROOT.'images/users/');?>">
 							<div class="review-block-name"><?php if($v['User']['gender']==1)echo "Male";
 else echo "Female";?></div>
 							<div class="review-block-date"><?php echo ucfirst($v['User']['city']).",  ".ucfirst($v['User']['zip'])?></div>
 						</div>
-										<div class="col-sm-7">
+						<div class="col-sm-7">
 							<div class="review-block-rate">
 								<button type="button" class="btn btn-warning btn-xs" aria-label="Left Align">
 								  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -102,7 +111,7 @@ margin-left:25px;">Hourly Rate:</span><span class="rate">  &#8364; <?php echo uc
 </blockquote>
 							</div>
 						</div>
-		<div class="col-sm-3">
+						<div class="col-sm-3">
 							<?php 
 						            	echo $this->Form->button('Message',array('class'=>'','div'=>false,'label'=>false,'onclick'=>"chkLogin('message',".$v['User']['id'].")"));
 						            	echo $this->Form->button('Book',array('class'=>'','div'=>false,'label'=>false,'onclick'=>"chkLogin('book',".$v['User']['id'].")"));
@@ -110,14 +119,15 @@ margin-left:25px;">Hourly Rate:</span><span class="rate">  &#8364; <?php echo uc
 <br>
 <!--  <small>Company Name<br> <cite title="Source Title">www.Website.com </cite></small>-->
 						</div>
-						</div>
-<hr>
+					</div>
+					<hr/>
+					
 					<?php } ?>
-</div>
-</div>
+					</div>
 
-</div>
-
+					        </div>
+						</div>
+				
 					<div class="pagination pagination-large" style="float:right;">
 				    	<ul class="pagination">
 				            <?php
@@ -131,7 +141,7 @@ margin-left:25px;">Hourly Rate:</span><span class="rate">  &#8364; <?php echo uc
 			</div> <!-- end .inner -->			
 		</section> <!-- end .section -->						
 <?php }else{ ?>
-	<section class="section white no-padding-bottom text-center">
+	<section class="section white no-padding-bottom">
 		<div class="inner">
 			<div class="container">
 				<div class="row">
@@ -157,7 +167,7 @@ margin-left:25px;">Hourly Rate:</span><span class="rate">  &#8364; <?php echo uc
 							 <!-- end .sub-icon -->
 							<br><br>
 							<h4><b>FIND AN INSTRUCTOR</b></h4>
-							<h6>Find the perfect instructor by quickly and easily comparing location, popularity, price, and service offering.</h6>					
+							<h6>Campare instructors based on their ratings and reviews and find the perfect instructor who meets all your specific requirements.</h6>					
 						</div> <!-- end .icon -->					
 					</div> <!-- end .service -->
 					
@@ -166,7 +176,7 @@ margin-left:25px;">Hourly Rate:</span><span class="rate">  &#8364; <?php echo uc
 							<i ><img src="<?=$this->webroot?>img/front/book_lesson.png"></i>
 							<br><br>
 							<h4><b>BOOK YOUR LESSONS</b></h4>
-							<h6>Check the working hours and availability of our instructors before making a booking to ensure they suit your schedule and lifestyle.<h6>					
+							<h6>Check the working hours and availability of your instructor and your lessons  which suit your schedule and lifestyle.<h6>					
 						</div> <!-- end .sub-icon -->
 					</div> <!-- end .icon -->
 												
@@ -175,7 +185,7 @@ margin-left:25px;">Hourly Rate:</span><span class="rate">  &#8364; <?php echo uc
 							<i><img src="<?=$this->webroot?>img/front/start_learning.png"></i>
 							<br><br>
 							<h4><b>START LEARNING</b></h4>
-							<h6>Take as many lessons as you need with the instructor of your choice to ensure that you are fully prepared to drive with confidence</h6>
+							<h6>Take as many lessons on as you need,with the instructor of yourschoice to help you bacome as prepared as you can be to pass yours with flying colors</h6>
 						</div> <!-- end sub icon -->
 					</div> <!-- end service icon -->
 				</div>	

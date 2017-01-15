@@ -114,20 +114,6 @@ class CustomComponent extends Component {
         }
     }
 
-    function sendNotification($sender , $receiver, $message, $params=array()){
-        $model = ClassRegistry::init('Notification');
-        //$isExist = $model->findByTitle($title);
-        $model->sender = $sender;
-        $model->receiver = $receiver;      
-        $model->message = $message;
-        $model->is_read = 0;
-        $model->created = date('Y-m-d H:i:s');
-        if($model->save()){
-            return true;
-        }
-        return false;
-    }
-
     function generateRandomString($length = 10) {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);

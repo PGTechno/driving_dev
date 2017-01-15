@@ -36,6 +36,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			'front/owl.theme.default',
 			'front/jquery.nouislider.min',
 			'front/style',
+			'front/timeline',
 			'bootstrap-datetimepicker',
 			'jquery.dataTables',
 			'star-rating',

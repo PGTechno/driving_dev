@@ -1,4 +1,3 @@
-
    <div class="tab-content">
          <div id="home" class="tab-pane fade in active" style="margin-left:5%;">
             <div class="fixed" style="margin-top:-6%;">
@@ -12,7 +11,8 @@
                               <div class="tab-pane" id="users">
                                  <div class="search-item">
                                     <div style="margin-left:80%;margin-top:6%;">
-                                       <img src="<?=$this->webroot?>img/front/facebook_dash.png">&nbsp;&nbsp;<img src="<?=$this->webroot?>img/front/google_plus_dash.png">&nbsp;&nbsp;<img src="<?=$this->webroot?>img/front/twitter_dash.png">
+<!--
+                                       <img src="<?=$this->webroot?>img/front/facebook_dash.png">&nbsp;&nbsp;<img src="<?=$this->webroot?>img/front/google_plus_dash.png">&nbsp;&nbsp;<img src="<?=$this->webroot?>img/front/twitter_dash.png">-->
                                     </div>
                                     <div class="media" style="margin-top:-7%;">
                                        <div class="media-body" >
@@ -20,7 +20,7 @@
                                              <a href="#"> <img class="media-object img-thumbnail" alt="64x64" src="<?php echo $this->Custom->imageUrl($authData['image'],WWW_ROOT.'images/users/');?>" style="width: 150px; height: 170px; "> </a>
                                           </div>
                                           <div class="media-left" >
-                                             <h4 class="media-heading" ><a href="#" class="text-muted" style="color: #124b6d;" ><?php echo $authData['fname'];?></a></h4>
+                                             <h4 class="media-heading" ><a href="#" class="text-muted" style="color: #124b6d;" ><?php echo $authData['fname'].' '.$authData['lname'];?></a></h4>
                                              <p>
                                                 <b>Email:</b> 
                                                 <span><a href="#" class="text-muted"><?php echo $authData['email'];?></a></span><br>
@@ -28,8 +28,10 @@
                                                 <span><a href="#" class="text-muted"><?php echo $authData['address']." ".$authData['state'];?></a></span><br>
                                                 <b>Member Since</b>
                                                 <span class="text-muted"><?php echo date('M Y',strtotime($authData['created']));?></span><br>
-                                                <b>Working Hours</b> 
+                                                <?php if($authData['role']==2){ ?>
+                                    <b>Working Hours</b> 
                                                 <span class="text-muted"><?php echo date('h:i A',strtotime($authData['start_time']))." to ".date('h:i A',strtotime($authData['end_time']))?></span>
+<?php }?>
                                              </p>
                                           </div>
                                        </div>

@@ -8,45 +8,6 @@ $about = Router::url(array('controller' => 'pages', 'action' => 'about'));
 $faq = Router::url(array('controller' => 'pages', 'action' => 'faq'));
 $contact = Router::url(array('controller' => 'pages', 'action' => 'contact'));
 ?>
-<link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
-<script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
-
-<style>
-.video-section .pattern-overlay {
-background-color: rgba(71, 71, 71, 0.59);
-padding: 110px 0 32px;
-min-height: 496px; 
-/* Incase of overlay problems just increase the min-height*/
-}
-.video-section h1, .video-section h3{
-text-align:center;
-color:#fff;
-}
-.video-section h1{
-font-size:110px;
-font-family: 'Buenard', serif;
-font-weight:bold;
-text-transform: uppercase;
-margin: 40px auto 0px;
-text-shadow: 1px 1px 1px #000;
--webkit-text-shadow: 1px 1px 1px #000;
--moz-text-shadow: 1px 1px 1px #000;
-}
-.video-section h3{
-font-size: 25px;
-font-weight:lighter;
-margin: 0px auto 15px;
-}
-.video-section .buttonBar{display:none;}
-.player {font-size: 1px;}
-</style>
-<script>
-$(document).ready(function () {
-
-    $(".player").mb_YTPlayer();
-
-});
-</script>
 <header class="header" >
 	<div class="container">
 		<div class="navigation clearfix">
@@ -82,32 +43,18 @@ $(document).ready(function () {
 </div> <!-- end .responsive-menu -->
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-	<!-- Warming Up -->
-<link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
-<script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<h1 class="header-line">Sed ex nisi, faucibus in dui mattis</h1>			
+	</ol>
 
-<!--Video Section-->
-<section class="content-section video-section">
-  <div class="pattern-overlay">
-  <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=fdJc1_IBKJA',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-        <!--<h1>Full Width Video</h1> --> 
-<br>
-        <h1>Learn Driving</h1>
-	   </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Video Section Ends Here-->
-
-
-</div> 
-
-
-<!-- end .welcome -->
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner" role="listbox">
+		<div class="item active">
+		  <img src="<?=$this->webroot?>img/front/background.jpg" alt="" width="" height="100" class="img-responsive center-block ">
+		</div>
+	</div>
+</div> <!-- end .welcome -->
 <!-- end .welcome -->
 					
 <section class="section dark tiny">
