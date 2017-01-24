@@ -443,7 +443,7 @@ class BookingsController extends AppController {
 			}else{
 				try{
 
-					$res['err'] = 0; $res['msg'] = 'Booking Confirmed.'; $res['data'] = array('id'=>50);
+					$res['err'] = 0; $res['msg'] = 'Booking Confirmed.'; $res['data'] = array('id'=>16);
 					echo json_encode($res,true); exit;	
 
 					$token = \Stripe\Token::create(array(
@@ -479,8 +479,15 @@ class BookingsController extends AppController {
 						$save['Booking']['payment_status'] =1;
 						$save['Booking']['created'] = date('Y-m-d H:i:s');
 						$save['Booking']['modified'] = date('Y-m-d H:i:s');
-						if($this->Booking->save($save,false)){
-							$res['err'] = 0; $res['msg'] = 'Booking Confirmed.'; $res['data'] = $req['Booking'];	
+
+						if($isPackage = $this->Package->findById($req['Booking']['package_id'])){
+							$save['Booking']['hours_count'] = $isPackage['Package']['duration'];
+						}else{
+							$save['Booking']['hours_count'] = $req['Booking']['lession_id'];
+						}
+
+						if($booking_data = $this->Booking->save($save,false)){
+							$res['err'] = 0; $res['msg'] = 'Booking Confirmed.'; $res['data'] = $booking_data['Booking'];	
 						}else{
 							$res['err'] = 1; $res['msg'] = 'If Your payment is deducted, Please contact to admin.';	
 						}
@@ -520,12 +527,12 @@ class BookingsController extends AppController {
 			echo json_encode($res,true); exit;
 		}
 
+		$inst = $this->User->find('first',array('conditions'=>array('User.id'=>$data['u_id'])));
 		if($data['package_id']!=""){
 			$package = $this->Package->find('first',array('conditions'=>array('Package.id'=>$data['package_id'])));
 			$mydata['price'] = $package['Package']['price'];
 			$mydata['title'] = $package['Package']['title'];
 		}else if($data['lession_id']!=""){
-			$inst = $this->User->find('first',array('conditions'=>array('User.id'=>$data['u_id'])));
 			$mydata['price']  = $inst['User']['hourly_rate'] * $data['lession_id'];
 			$mydata['title'] = $data['lession_id'].' hours lession';
 		}		
@@ -535,23 +542,55 @@ class BookingsController extends AppController {
 	}
 
 	public function duration($booking_id='@') {
-		$req = $this->request->data;
-		$isExist = $this->Booking->find('first',array(
-			'conditiond'=>array(
+		$booking = $this->Booking->find('first',array(
+			'conditions'=>array(
 				'Booking.id'=>$booking_id,
 				'Booking.payment_status'=>1,
-				'Booking.status'=>array(1)
+				'Booking.status'=>1
 			)
 		));
 		
 		if($this->request->is('post')){
-			if(empty($isExist)){
-				$res['err'] = 1; $res['msg'] = 'There is no booking,';
+			$this->loadModel('Schedule');
+			$req = $this->request->data;		
+			if(empty($booking)){
+				$res['err'] = 1; $res['msg'] = 'There is no booking'; 
+			}elseif($req['Schedule']['booking_id']==""){
+				$res['err'] = 1; $res['msg'] = 'There is no booking'; 
+			}else if($req['Schedule']['date']==""){
+				$res['err'] = 1; $res['msg'] = 'Please select date to schedule your appointment'; 
+			}else if($req['Schedule']['duration']==""){
+				$res['err'] = 1; $res['msg'] = 'Please select duration to schedule your appointment';
 			}else{
-				
-			}	
+				$req['Schedule']['date'] = date('Y-m-d H:i:s',strtotime($req['Schedule']['date']));
+				if($this->Schedule->save($req,false)){
+					$o['Booking']['id'] = $booking['Booking']['id'];
+					$o['Booking']['hours_count'] = $booking['Booking']['hours_count'] - $req['Schedule']['duration'];
+					$this->Booking->save($o,false);	
+					$res['err'] = 0; $res['msg'] = 'Your appointment scheduled successfully'; $res['data'] = $req;
+				}
+					
+			}
+			echo json_encode($res,true); exit;
 		}
+
+		$this->set(compact('booking'));
 	}
+
+	public function thanks($booking_id='@') {
+		$booking = $this->Booking->find('first',array(
+			'conditions'=>array(
+				'Booking.id'=>$booking_id,
+				'Booking.payment_status'=>1,
+				'Booking.status'=>1
+			)
+		));		
+		if($this->request->is('post')){		
+		}
+		
+		$this->set(compact('booking'));
+	}
+
 
 	public function display() {
 		$path = func_get_args();

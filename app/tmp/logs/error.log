@@ -54109,3 +54109,854 @@ Request URL: /driving/js/front/bootstrap-select.js.map
 Stack Trace:
 #0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2017-01-15 18:55:15 Error: [MissingActionException] Action PagesController::avatar-1.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'avatar-1.jpg',
+)
+Request URL: /driving/pages/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-15 19:42:28 Error: [MissingActionException] Action PagesController::avatar-1.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'avatar-1.jpg',
+)
+Request URL: /driving/pages/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-15 19:44:42 Error: [MissingActionException] Action PagesController::avatar-1.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'avatar-1.jpg',
+)
+Request URL: /driving/pages/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-15 19:45:37 Error: [MissingActionException] Action PagesController::avatar-1.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'avatar-1.jpg',
+)
+Request URL: /driving/pages/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-15 19:50:37 Error: [MissingActionException] Action PagesController::avatar-1.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'avatar-1.jpg',
+)
+Request URL: /driving/pages/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-15 19:51:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 19:52:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 19:52:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 19:52:29 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 20:53:05 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 20:53:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 20:53:25 Error: [MissingActionException] Action PagesController::avatar-1.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'avatar-1.jpg',
+)
+Request URL: /driving/pages/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-15 20:59:18 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 20:59:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 20:59:50 Error: [MissingActionException] Action PagesController::avatar-1.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'avatar-1.jpg',
+)
+Request URL: /driving/pages/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-15 21:00:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 21:01:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 21:01:28 Error: [MissingActionException] Action PagesController::avatar-1.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'avatar-1.jpg',
+)
+Request URL: /driving/pages/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-15 21:13:44 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 21:14:06 Error: [MissingActionException] Action PagesController::avatar-1.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'avatar-1.jpg',
+)
+Request URL: /driving/pages/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-15 21:17:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 21:18:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 21:18:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 21:18:41 Error: [MissingActionException] Action PagesController::avatar-1.jpg() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'avatar-1.jpg',
+)
+Request URL: /driving/pages/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-15 23:18:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 23:18:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 23:18:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 23:18:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 23:19:14 Error: Fatal Error (4): syntax error, unexpected '=' in [/var/www/html/driving/app/View/Bookings/duration.ctp, line 45]
+2017-01-15 23:19:14 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /driving/bookings/duration/26
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-15 23:19:28 Error: Fatal Error (4): syntax error, unexpected '=' in [/var/www/html/driving/app/View/Bookings/duration.ctp, line 45]
+2017-01-15 23:19:28 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /driving/bookings/duration/26
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-15 23:20:04 Error: Fatal Error (4): syntax error, unexpected '=' in [/var/www/html/driving/app/View/Bookings/duration.ctp, line 45]
+2017-01-15 23:20:04 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /driving/bookings/duration/26
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-15 23:20:36 Error: Fatal Error (4): syntax error, unexpected '=' in [/var/www/html/driving/app/View/Bookings/duration.ctp, line 45]
+2017-01-15 23:20:36 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /driving/bookings/duration/26
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-15 23:20:36 Error: Fatal Error (4): syntax error, unexpected '=' in [/var/www/html/driving/app/View/Bookings/duration.ctp, line 45]
+2017-01-15 23:20:36 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /driving/bookings/duration/26
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-15 23:20:44 Error: Fatal Error (4): syntax error, unexpected '=' in [/var/www/html/driving/app/View/Bookings/duration.ctp, line 45]
+2017-01-15 23:20:44 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /driving/bookings/duration/26
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-15 23:20:44 Error: Fatal Error (4): syntax error, unexpected '=' in [/var/www/html/driving/app/View/Bookings/duration.ctp, line 45]
+2017-01-15 23:20:44 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /driving/bookings/duration/26
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-15 23:21:14 Error: Fatal Error (4): syntax error, unexpected '=' in [/var/www/html/driving/app/View/Bookings/duration.ctp, line 45]
+2017-01-15 23:21:14 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /driving/bookings/duration/26
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-15 23:21:14 Error: Fatal Error (4): syntax error, unexpected '=' in [/var/www/html/driving/app/View/Bookings/duration.ctp, line 45]
+2017-01-15 23:21:14 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /driving/bookings/duration/26
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-15 23:21:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 23:22:02 Error: Fatal Error (4): syntax error, unexpected '=' in [/var/www/html/driving/app/View/Bookings/duration.ctp, line 45]
+2017-01-15 23:22:02 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /driving/bookings/duration/26
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-15 23:22:11 Error: Fatal Error (4): syntax error, unexpected '=' in [/var/www/html/driving/app/View/Bookings/duration.ctp, line 45]
+2017-01-15 23:22:11 Error: [FatalErrorException] syntax error, unexpected '='
+Request URL: /driving/bookings/duration/26
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 45, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-15 23:23:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 23:23:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 23:41:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-15 23:45:44 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-16 22:00:24 Error: Fatal Error (1): Call to undefined function chklogin() in [/var/www/html/driving/app/View/Bookings/payment.ctp, line 87]
+2017-01-16 22:00:24 Error: [FatalErrorException] Call to undefined function chklogin()
+Request URL: /driving/Bookings/payment?package_id=&lession_id=1&amount=10&u_id=11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/d...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/d...', 87, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/d...', 87, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-16 22:00:26 Error: Fatal Error (1): Call to undefined function chklogin() in [/var/www/html/driving/app/View/Bookings/payment.ctp, line 87]
+2017-01-16 22:00:26 Error: [FatalErrorException] Call to undefined function chklogin()
+Request URL: /driving/Bookings/payment?package_id=&lession_id=1&amount=10&u_id=11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/d...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/d...', 87, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/d...', 87, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-16 22:00:30 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-16 22:00:32 Error: Fatal Error (1): Call to undefined function chklogin() in [/var/www/html/driving/app/View/Bookings/payment.ctp, line 87]
+2017-01-16 22:00:32 Error: [FatalErrorException] Call to undefined function chklogin()
+Request URL: /driving/Bookings/payment?package_id=&lession_id=1&amount=10&u_id=11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/d...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/d...', 87, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/d...', 87, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-16 22:00:55 Error: Fatal Error (1): Call to undefined function chklogin() in [/var/www/html/driving/app/View/Bookings/payment.ctp, line 87]
+2017-01-16 22:00:55 Error: [FatalErrorException] Call to undefined function chklogin()
+Request URL: /driving/Bookings/payment?package_id=&lession_id=1&amount=10&u_id=11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/html/d...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/html/d...', 87, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/html/d...', 87, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-16 22:05:34 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-16 22:05:37 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-16 22:06:32 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-16 22:08:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-16 22:18:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-16 22:19:13 Error: Fatal Error (4): syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in [/var/www/html/driving/app/View/Bookings/payment.ctp, line 91]
+2017-01-16 22:19:13 Error: [FatalErrorException] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+Request URL: /driving/Bookings/payment?package_id=&lession_id=1&amount=10&u_id=11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 91)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 91, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 91, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-16 22:22:24 Error: Fatal Error (4): syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in [/var/www/html/driving/app/View/Bookings/payment.ctp, line 91]
+2017-01-16 22:22:24 Error: [FatalErrorException] syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+Request URL: /driving/Bookings/payment?package_id=&lession_id=1&amount=10&u_id=11
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 91)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 91, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 91, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-16 22:39:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-16 22:39:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-16 22:40:20 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-16 22:43:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-16 22:44:36 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-16 22:50:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-17 23:14:42 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-17 23:14:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-17 23:15:11 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-17 23:16:29 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-17 23:16:30 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-17 23:16:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-18 00:00:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-18 00:00:25 Error: [MissingActionException] Action PagesController::assest() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'assest',
+)
+Request URL: /driving/pages/assest/images/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-18 00:02:20 Error: [MissingActionException] Action PagesController::assest() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'assest',
+)
+Request URL: /driving/pages/assest/images/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-18 00:02:22 Error: [MissingActionException] Action PagesController::assest() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'assest',
+)
+Request URL: /driving/pages/assest/images/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-18 22:35:46 Error: [MissingActionException] Action PagesController::assest() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'assest',
+)
+Request URL: /driving/pages/assest/images/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-18 22:36:30 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-18 22:36:39 Error: [MissingActionException] Action PagesController::assest() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'assest',
+)
+Request URL: /driving/pages/assest/images/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-18 22:36:47 Error: [MissingActionException] Action PagesController::assest() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'assest',
+)
+Request URL: /driving/pages/assest/images/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-18 22:40:03 Error: [MissingActionException] Action PagesController::assest() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'assest',
+)
+Request URL: /driving/pages/assest/images/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-18 22:42:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-18 22:42:39 Error: [MissingActionException] Action PagesController::assest() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'assest',
+)
+Request URL: /driving/pages/assest/images/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-18 22:46:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-18 22:46:44 Error: [MissingActionException] Action PagesController::assest() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'assest',
+)
+Request URL: /driving/pages/assest/images/avatar-1.jpg
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/driving/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-01-18 22:53:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-18 23:33:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-18 23:33:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /driving/js/front/bootstrap-select.js.map
+Stack Trace:
+#0 /var/www/html/driving/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-01-22 14:38:03 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/html/driving/app/Controller/Component/CustomComponent.php, line 144]
+2017-01-22 14:38:03 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /driving/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 144)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 144, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 144, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-22 14:38:14 Error: Fatal Error (1): Call to a member function chkBookingDuplicacy() on a non-object in [/var/www/html/driving/app/Controller/AppController.php, line 61]
+2017-01-22 14:38:14 Error: [FatalErrorException] Call to a member function chkBookingDuplicacy() on a non-object
+Request URL: /driving/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/d...', 61)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/d...', 61, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/d...', 61, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-22 16:00:54 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/html/driving/app/Controller/Component/CustomComponent.php, line 146]
+2017-01-22 16:00:54 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /driving/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 146)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 146, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 146, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-01-22 16:01:03 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/html/driving/app/Controller/Component/CustomComponent.php, line 146]
+2017-01-22 16:01:03 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /driving/
+Stack Trace:
+#0 /var/www/html/driving/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/d...', 146)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/d...', 146, Array)
+#2 /var/www/html/driving/lib/Cake/Core/App.php(970): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/d...', 146, Array)
+#3 /var/www/html/driving/lib/Cake/Core/App.php(943): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

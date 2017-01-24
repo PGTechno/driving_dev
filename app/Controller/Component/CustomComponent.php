@@ -133,4 +133,25 @@ class CustomComponent extends Component {
         $result3[]=$result2[0]['location'];
         return $result3[0];        
     }
+
+    function chkBookingDuplicacy($booking_id='', $dateTime = "2016-12-20 20:15:00", $duration=5,$params=array()){
+        $model = ClassRegistry::init('Booking');
+        /*$params['to'] = "aman@mailinator.com";
+        $params['from'] = "company@mailinator.com";*/
+        
+        $isExist = $model->findById($booking_id);
+        if($isExist){
+            if(!$duration || $duration > $isExist['Booking']['hours_count']){
+                $res['err'] = 1; $res['msg'] = 'Please select hours below or equal to '.$isExist['Booking']['hours_count'];
+            }else if($dateTime < date('H:i:s',strtotime($isExist['Instructor']['start_time']))  ||  $dateTime >date('H:i:s',strtotime($isExist['Instructor']['end_time']))){
+                $res['err'] = 1; $res['msg'] = 'Sorry, Instructor available b/w'.date('H:i:s',strtotime($isExist['Instructor']['start_time'])).' to '.date('H:i:s',strtotime($isExist['Instructor']['end_time']));
+            }else if(1){
+
+            }    
+            //$res['err'] = 1; $res['msg'] = 'Please'; $res['data']= $isExist;
+        }else{
+            $res['err'] = 1; $res['msg'] = 'Please provide booking detail';
+        }
+        return $res;
+    }
 }

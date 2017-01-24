@@ -15,6 +15,17 @@ ADD `payment_token` VARCHAR( 100 ) NOT NULL AFTER `amount` ;
 ==============================================
 ALTER TABLE `bookings` ADD `instructor_id` INT( 11 ) NOT NULL AFTER `user_id` ;
 ==============================================
+==============================
+==========================
+=======================
+
+
+
+
+
+
+
+
 
 2017 updates
 =============================================
@@ -35,3 +46,18 @@ INSERT INTO `driving`.`acoos` (`aro_rule`, `user_role`, `created`) VALUES ('Book
 =========================
 ALTER TABLE `bookings` CHANGE `status` `status` TINYINT( 3 ) NOT NULL COMMENT '0=>Pending; 1=>accept and paid; 2=>declined; 3=>Completed; 4=>''Deleted';
 ====================================
+ALTER TABLE `bookings` ADD `hours_count` VARCHAR( 5 ) NOT NULL DEFAULT '0' AFTER `payment_token` ;
+====================================
+
+CREATE TABLE IF NOT EXISTS `schedules` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `booking_id` int(11) NOT NULL,
+  `date` datetime NOT NULL,
+  `duration` varchar(5) NOT NULL COMMENT 'in hours',
+  `status` tinyint(3) NOT NULL COMMENT '0=>Pending; 1=>Accepted; 2=> Denied',
+  `created` datetime NOT NULL,
+  `modfied` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+===========================================

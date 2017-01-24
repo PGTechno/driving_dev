@@ -211,6 +211,7 @@ function chkLogin(from,inst_id){
 				},
 				*/
 				success : function(data){ 
+					$('#myModal').html('');
 					$('#myModal').append(data);
 					$('#myModal').modal();
 					/*if(data.err ==1 ) {    

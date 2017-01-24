@@ -55,8 +55,10 @@ class AppController extends Controller{
 	public function beforeFilter(){
 		parent::beforeFilter();
         //$this->Auth->allow(array('admin_login', 'admin_logout','home'));
-        $this->Auth->allow(array('admin_login', 'admin_logout','home','login','logout','register','fblogin','about','faq','contact','varify','wizard'));
+        $this->Auth->allow(array('admin_login', 'admin_logout','home','login','logout','register','fblogin','about','faq','contact','varify','wizard','thanks'));
         $this->Auth->authorize = 'Controller';
+
+        //prd($this->Custom->chkBookingDuplicacy(26,'2017-01-12 08:00:00')); 
 		
 		if(isset($this->request->params['admin'])){
 			$this->layout = "admin";

@@ -84,7 +84,15 @@
                                                                             <h2>Selected Instructor</h2>
                                                                             <div class="timeline-content">
                                                                                 <img class="timeline-img pull-left" alt="64x64" src="<?php echo $this->Custom->imageUrl($data['instructor']['image'],WWW_ROOT.'images/users/');?>" style="width: 150px; height: 170px; ">  onion corn plantain garbanzo.
-                                                                                <br><span><a href="">Change Instructor  </a></span>
+                                                                                <br><span>
+                                                                                
+                                                                                <?php echo $this->Html->link(
+                                                                                    "Change Package",
+                                                                                    'javascript:void(0)',
+                                                                                    array('onclick' => "chkLogin('book',".$data['instructor']['id'].")") // This line will parse rather then output HTML
+                                                                                ); ?>
+                                                                                
+                                                                            </span>
                                                                             </div>
                                                                         </div>
                                                                     </li>
@@ -146,6 +154,7 @@
    <?php $paymentUrl = Router::url(array('controller' => 'Bookings', 'action' => 'payment'));
          $homeUrl = Router::url(array('controller' => 'pages', 'action' => 'home'));   
          $duration = Router::url(array('controller' => 'bookings', 'action' => 'duration'));   
+         
     ?> 
 </div>  
 <script type="text/javascript">
@@ -158,6 +167,7 @@
             url : paymntUrl,
             type: "POST",
             dataType : 'JSON',
+            async: true,
             data : $(this).serialize(),
             success : function(data){ 
                 if(data.err ==1 ) {    
