@@ -61,3 +61,24 @@ CREATE TABLE IF NOT EXISTS `schedules` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 ===========================================
+
+ALTER TABLE `users` CHANGE `country` `country` INT( 11 ) NOT NULL DEFAULT '225';
+================================================
+
+ALTER TABLE `users` ADD `car_modal` TEXT NOT NULL AFTER `profile_update` ,
+ADD `car_registration` TEXT NOT NULL AFTER `car_modal` ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+=====================
+INSERT INTO `driving`.`acoos` (`aro_rule`, `user_role`, `created`) VALUES ('BookingsFindslots', '3', '2017-02-01 00:00:00');

@@ -43,12 +43,13 @@
                                         <div class="form-body">
                                             <div class="">
                                                 <div class="tab-pane" id="tab4">
-                                                    <h3 class="block">SELECT PAYMENT</h3>
                                                     <div class="row">
-                                                        <div class="col-sm-5 col-sm-offset-1">
+                                                        <div class="col-sm-5 col-sm-offset-0">
                                                             <div class="row">
                                                                 
                                                                 <div class="form-group">
+<h4 class="block" style="color:gray;font-size:18px;margin-left:20px;">SELECT PAYMENT</h4>
+                                                    
                                                                     <label class="col-sm-offset-1">Card Number</label>
                                                                     <label class="col-sm-offset-1">Security Code</label>
                                                                     <div class="input-group">
@@ -78,14 +79,16 @@
                                                                 <ul class="timeline">
                                                                     <li class="timeline-white stepdone">
                                                                         <div class="timeline-icon comp" style="background:#72c35d;box-shadow: 0 0 0 8px #72c35d">
-                                                                            <i class="glyphicon glyphicon-ok"></i>
-                                                                        </div>
+                                                                            <i class="glyphicon glyphicon-ok" style="top:-5px;"></i>
+                                                                            </div>
                                                                         <div class="timeline-body">
-                                                                            <h2>Selected Instructor</h2>
+                                                                               <h4 style="font-size:18px;font-weight:500;color:black">Selected Instructor</h4>
                                                                             <div class="timeline-content">
-                                                                                <img class="timeline-img pull-left" alt="64x64" src="<?php echo $this->Custom->imageUrl($data['instructor']['image'],WWW_ROOT.'images/users/');?>" style="width: 150px; height: 170px; ">  onion corn plantain garbanzo.
-                                                                                <br><span>
-                                                                                
+                                                                                <img class="timeline-img pull-left" alt="64x64" src="<?php echo $this->Custom->imageUrl($data['instructor']['image'],WWW_ROOT.'images/users/');?>" style="width: 70px; height: 70px; ">
+<span class="dname"><?php echo ucfirst($data['instructor']['fname'].' '.$data['instructor']['lname']);?></span>
+<br><span style="color:gray; font-size:10px;"><?php echo date('H: A',strtotime($data['instructor']['start_time'])).' | '.date('H: A',strtotime($data['instructor']['end_time']));?></span>
+<br>
+<span style="color:black;font-size:14px;">   
                                                                                 <?php echo $this->Html->link(
                                                                                     "Change Package",
                                                                                     'javascript:void(0)',
@@ -98,14 +101,13 @@
                                                                     </li>
                                                                     <li class="timeline-white stepdone">
                                                                         <div class="timeline-icon comp" style="background:#72c35d;box-shadow: 0 0 0 8px #72c35d">
-                                                                            <i class="glyphicon glyphicon-ok"></i>
+                                                                            <i class="glyphicon glyphicon-ok" style="top:-5px;"></i>
                                                                         </div>
                                                                         <div class="timeline-body">
-                                                                            <h2>Selected PACKAGE</h2>
+                                                                            <h4 style="font-size:18px;font-weight:500;color:black">Selected PACKAGE</h2>
                                                                             <div class="timeline-content">
-                                                                                <h4><?php echo ucfirst($mydata['title']);?></h4>
-                                                                                60 Minutes (6 lesson) <span style="color:#72c35d;">$<?php echo $mydata['price'];?></span>
-                                                                                <br><span><a href="">Change package </a></span>
+                                                                                <h4 style="color:gray;"><?php echo ucfirst($mydata['title']);?></h4>
+                                                                                <!-- <span style="color:gray">60 Minutes (6 lesson)</span> --><br> <span style="color:#72c35d;">£ <?php echo $mydata['price'];?></span>
                                                                             </div>
                                                                         </div>
                                                                     </li>
@@ -114,7 +116,7 @@
                                                                             <i class="glyphicon glyphicon-ok"></i>
                                                                         </div>
                                                                         <div class="timeline-body">
-                                                                            <h2>Select Payment</h2>
+                                                                            <h4 style="font-size:18px;color:gray;font-weight:500;">Select Payment</h2>
                                                                         </div>
                                                                     </li>
                                                                 </ul>
@@ -179,6 +181,7 @@
                         $( ".modal-dialog " ).html( data );                        
                     });
                 }
+                return true;
             }
         });  
     });

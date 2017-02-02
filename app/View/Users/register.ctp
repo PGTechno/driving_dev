@@ -35,7 +35,7 @@
 														<span class="input-group-addon input-color-text" >
 														<?php echo $this->Html->image('front/email_address.png', array('class'=>''));?>
 														</span>
-														<?php echo $this->Form->input('fname',array('label'=>false,'div'=>false,'placeholder'=>'Full Name','style'=>'border-radius:3%;background-color: #e5e5e5;width:90%;','error'=>false,'class'=>'fname form-control add-input-reg'));?>
+														<?php echo $this->Form->input('fname',array('label'=>false,'div'=>false,'placeholder'=>'First Name','style'=>'border-radius:3%;background-color: #e5e5e5;width:90%;','error'=>false,'class'=>'fname form-control add-input-reg'));?>
 												</div>
 												<?php echo $this->Form->error('fname', null, array('class' => 'error-message'));?>
 											</div> 
@@ -46,14 +46,28 @@
 														<span class="input-group-addon input-color-text" >
 															<?php echo $this->Html->image('front/email_address.png', array('class'=>''));?>
 														</span>
-														<?php echo $this->Form->input('email',array('label'=>false,'div'=>false,'placeholder'=>'Email Address','style'=>'border-radius:3%;background-color: #e5e5e5;width:90%','error'=>false,'class'=>'form-control email'));?>
+														<?php echo $this->Form->input('lname',array('label'=>false,'div'=>false,'placeholder'=>'Last Name','style'=>'border-radius:3%;background-color: #e5e5e5;width:90%;','error'=>false,'class'=>'lname form-control add-input-reg'));?>
+														
 												</div>
-												<?php echo $this->Form->error('email', null, array('class' => 'error-message'));?>
+												<?php echo $this->Form->error('lname', null, array('class' => 'error-message'));?>
 											</div> 
 										</div> 
 										</div> 
 									
 									<div class="row" > 
+										<div class="col-md-6"> 
+											<div class="form-group"> 
+												<div class="input-group">
+														<span class="input-group-addon input-color-text" >
+															<?php echo $this->Html->image('front/email_address.png', array('class'=>''));?>
+														</span>													
+
+														<?php echo $this->Form->input('email',array('label'=>false,'div'=>false,'placeholder'=>'Email Address','style'=>'border-radius:3%;background-color: #e5e5e5;width:90%','error'=>false,'class'=>'form-control email'));?>
+												</div>
+												<?php echo $this->Form->error('email', null, array('class' => 'error-message'));?>
+											</div> 
+										</div> 
+
 										<div class="col-md-6"> 
 											<div class="form-group"> 
 												<div class="input-group">
@@ -65,7 +79,7 @@
 												<?php echo $this->Form->error('password', null, array('class' => 'error-message'));?>
 											</div> 
 										</div> 
-										<div class="col-md-6"> 
+										<!-- <div class="col-md-6"> 
 											<div class="form-group"> 
 												<div class="input-group">
 														<span class="input-group-addon input-color-text" >
@@ -75,7 +89,7 @@
 												</div>
 												<?php echo $this->Form->error('cpassword', null, array('class' => 'error-message'));?>
 											</div> 
-										</div> 
+										</div>  -->
 									</div> 
 									<br>
 									

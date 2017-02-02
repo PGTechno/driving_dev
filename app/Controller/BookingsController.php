@@ -562,7 +562,9 @@ class BookingsController extends AppController {
 			}else if($req['Schedule']['duration']==""){
 				$res['err'] = 1; $res['msg'] = 'Please select duration to schedule your appointment';
 			}else{
-				$req['Schedule']['date'] = date('Y-m-d H:i:s',strtotime($req['Schedule']['date']));
+				$durationArr = explode("-", $req['Schedule']['duration']);
+				$req['Schedule']['duration'] = round(abs(strtotime($durationArr[1]) - strtotime($durationArr[0])) / 3600,2);
+				$req['Schedule']['date'] = date('Y-m-d H:i:s',strtotime($req['Schedule']['date'].' '.$durationArr[0]));
 				if($this->Schedule->save($req,false)){
 					$o['Booking']['id'] = $booking['Booking']['id'];
 					$o['Booking']['hours_count'] = $booking['Booking']['hours_count'] - $req['Schedule']['duration'];
@@ -791,5 +793,11 @@ class BookingsController extends AppController {
         $packageData = $this->Package->find('all',array('conditions'=>$conditions));
 		prd($driverData);*/
         $this->set(compact('driverData'));
+    }
+
+    public function findslots($instructor,$schedule_date){
+    	$this->layout = false;
+    	$res = $this->Custom->chkBookingAvailablity($instructor,$schedule_date);
+    	echo json_encode($res,true); exit;
     }
 }

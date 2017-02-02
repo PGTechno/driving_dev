@@ -8,25 +8,45 @@ $about = Router::url(array('controller' => 'pages', 'action' => 'about'));
 $faq = Router::url(array('controller' => 'pages', 'action' => 'faq'));
 $contact = Router::url(array('controller' => 'pages', 'action' => 'contact'));
 ?>
-    <style type="text/css">
-        #background {
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -webkit-transform: translateX(-1%) translateY(-1%);
-    transform: translateX(0%) translateY(0%);
-    background: url(polina.jpg) no-repeat;
-    background-size: cover;
-}
-.container h1 {
-    color: white;
-}
-    </style>
+<link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
+<script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
 
+<style>
+.video-section .pattern-overlay {
+background-color: rgba(71, 71, 71, 0.59);
+padding: 110px 0 32px;
+min-height: 496px; 
+/* Incase of overlay problems just increase the min-height*/
+}
+.video-section h1, .video-section h3{
+text-align:center;
+color:#fff;
+}
+.video-section h1{
+font-size:110px;
+font-family: 'Buenard', serif;
+font-weight:bold;
+text-transform: uppercase;
+margin: 40px auto 0px;
+text-shadow: 1px 1px 1px #000;
+-webkit-text-shadow: 1px 1px 1px #000;
+-moz-text-shadow: 1px 1px 1px #000;
+}
+.video-section h3{
+font-size: 25px;
+font-weight:lighter;
+margin: 0px auto 15px;
+}
+.video-section .buttonBar{display:none;}
+.player {font-size: 1px;}
+</style>
+<script>
+$(document).ready(function () {
+
+    $(".player").mb_YTPlayer();
+
+});
+</script>
 <header class="header" >
 	<div class="container">
 		<div class="navigation clearfix">
@@ -62,17 +82,36 @@ $contact = Router::url(array('controller' => 'pages', 'action' => 'contact'));
 </div> <!-- end .responsive-menu -->
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-	<!-- Indicators -->
-	
-	<!-- Wrapper for slides -->
-    <video autoplay loop muted poster="screenshot.jpg" id="background">
-        <source src="http://kookyapps.com/driving/Homepage Video Small (480p).mp4" type="video/mp4">
-    </video>
-</div> <!-- end .welcome -->
+	<!-- Warming Up -->
+<link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
+<script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+
+<!--Video Section-->
+<section class="content-section video-section">
+  <div class="pattern-overlay">
+  <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=fdJc1_IBKJA',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+        <!--<h1>Full Width Video</h1> --> 
+<br>
+        <h1>Learn Driving</h1>
+	   </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Video Section Ends Here-->
+
+
+</div> 
+
+
+<!-- end .welcome -->
 <!-- end .welcome -->
 					
-<section class="section dark tiny" style="margin-top:-15px;">
-	<div class="inner"  style="margin-top:-15px; background-color:#72c35d;">
+<section class="section dark tiny">
+	<div class="inner"  style="background-color:#72c35d;">
 		<div class="container" >
 			<div class="tabpanel border section-tab" role="tabpanel">
 				<div class="tab-content">

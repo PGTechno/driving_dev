@@ -170,7 +170,7 @@ class PagesController extends AppController {
 		
 		$this->request->data['User']['response'] = $this->paginate('User');
 		if(empty($this->request->data['User']['response'])){
-			$this->Session->setFlash("Sorry, There is not record.",'error');
+			//$this->Session->setFlash("Sorry, There is not record.",'error');
 		}
 		//prd($this->paginate('User'));			
 		

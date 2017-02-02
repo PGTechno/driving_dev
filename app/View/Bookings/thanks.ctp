@@ -41,11 +41,12 @@
                                                                             <i class="glyphicon glyphicon-ok"></i>
                                                                         </div>
                                                                         <div class="timeline-body">
-                                                                            <h2>Selected Instructor</h2>
-                                                                            <div class="timeline-content">
-                                                                                <img class="timeline-img pull-left" src="assest/images/avatar-1.jpg" alt="">  onion corn plantain garbanzo.
-                                                                                    <br><span><a href="">Change Instructor  </a></span>
-                                                                            </div>
+                                                                                  <h4 style="font-size:18px;font-weight:500;color:gray;">Selected Instructor</h4>
+                                                               <div class="timeline-content">
+                                                                                <img class="timeline-img pull-left" alt="64x64" src="<?php echo $this->Custom->imageUrl($booking['Instructor']['image'],WWW_ROOT.'images/users/');?>" style="width: 70px; height: 70px; "> 
+<span class="dname">garbanzo.</span>
+<br><span style="color:gray; font-size:10px;">Mon-Sat  | 9:00 AM</span>
+  </div>
                                                                         </div>
                                                                     </li>
                                                                     <li class="timeline-white stepdone">
@@ -53,9 +54,9 @@
                                                                             <i class="glyphicon glyphicon-ok"></i>
                                                                         </div>
                                                                         <div class="timeline-body">
-                                                                            <h2>Selected PACKAGE</h2>
-                                                                            <div class="timeline-content" >
-                                                                                <h4>Silver PACKAGE</h4>
+                                                                       <h3 class="notdone" style="font-size:18px;color:gray;">Selected Packages</h3>
+                                                                       <div class="timeline-content" >
+                                                                                <h4 style="color:green; font-size:16px;">Silver PACKAGE</h4>
                                                                                 60 Minutes (6 lesson) <span style="color:#72c35d;">$555.00</span>
                                                                                     <br><span><a href="">Change package </a></span>
                                                                             </div>
@@ -66,8 +67,8 @@
                                                                             <i class="glyphicon glyphicon-ok"></i>
                                                                         </div>
                                                                         <div class="timeline-body">
-                                                                            <h2>Selected Date & Time</h2>
-                                                                            <div class="timeline-content">
+                                                                                              <h3 class="notdone" style="font-size:16px;color:gray;">Selected Date & Time</h3>
+                                                       <div class="timeline-content">
                                                                              <h4 style="color:black;width:25%;">Date<span class="pul-right">Time</h4>
                                                                              <h5 style="color:black;width:25%;">07/09/2016  <span class="pul-right">21:00</h5>
                                                                                     <br><span><a href="">Change package </a></span>
@@ -80,7 +81,7 @@
                                                                             <i class="glyphicon glyphicon-ok"></i>
                                                                         </div>
                                                                         <div class="timeline-body">
-                                                                            <h2>Select Payment</h2>
+                                                                            <h3 style="font-size:16px;color:gray;">Select Payment</h2>
                                                                         </div>
                                                                     </li>
                                                                     

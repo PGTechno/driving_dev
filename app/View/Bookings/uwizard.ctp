@@ -25,47 +25,46 @@
                                                     <div class="form-group">
                                                         <div class="row">
                                                             <div class="col-md-4 col-sm-offset-1">
-                                                                <h3 class="block">SELECT PACKAGES</h3>
-                                                                <div class="panel panel-default">
+                                                                <h5 class="block">SELECT PACKAGES</h5>
                                                                     <div class="panel-body">
                                                                         <?php echo $this->Form->input('package_id',array('options' => $data['Package'],'class'=>'form-control','empty'=>'Select Package','div'=>false,'label'=>false));
                                                                         ?>
                                                                     </div>
-                                                                </div>
                                                                 <br>
-                                                                <h4 class="text-center">----- Or ----- </h4>
-                                                                <h3> Select lesson</h3>
-                                                                <div class="panel panel-default">
+                                                                <h5 class="text-center">----- Or ----- </h5>
+                                                                <h5> Select lesson</h5>
                                                                     <div class="panel-body">
                                                                         <?php echo $this->Form->input('lession_id',array('options' => $data['LessionData'],'class'=>'form-control','empty'=>'Select Lession','div'=>false,'label'=>false));
 
                                                                             echo $this->Form->input('amount',array('class'=>'form-control','value'=>'','div'=>false,'label'=>false,'readonly'=>'readonly','style'=>'display:none;'));
                                                                         ?>
-                                                                    </div>
                                                                     <h3 id="priceHeading"> </h3>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-sm-5 col-sm-offset-1">
+                                                            <div class="col-sm-5 col-sm-offset-0">
                                                                 <blockquote>
                                                                     <ul class="timeline">
                                                                         <li class="timeline-white stepdone">
                                                                             <div class="timeline-icon comp" style="background:#72c35d;box-shadow: 0 0 0 0px #72c35d">
-                                                                                <i class="glyphicon glyphicon-ok"></i>
+                                                                                <i class="glyphicon glyphicon-ok" style="top:-5px;"></i>
                                                                             </div>
                                                                             <div class="timeline-body">
-                                                                                <h2>Selected Instructor</h2>
+                                                                                <h4 style="font-size:18px;font-weight:500;color:gray;">Selected Instructor</h4>
                                                                                 <div class="timeline-content">
-                                                                                    <img class="timeline-img pull-left" alt="64x64" src="<?php echo $this->Custom->imageUrl($data['UserData']['image'],WWW_ROOT.'images/users/');?>" style="width: 150px; height: 170px; ">  onion corn plantain garbanzo.
-                                                                                    <br><span><a href="">Change Instructor  </a></span>
+                                                                                    <img class="timeline-img pull-left" alt="64x64" src="<?php echo $this->Custom->imageUrl($data['UserData']['image'],WWW_ROOT.'images/users/');?>" style="width: 70px; height: 70px; ">
+<span class="dname"><?php echo ucfirst($data['UserData']['fname'].' '.$data['UserData']['lname']);?></span>
+<br><span style="color:gray; font-size:10px;"><?php echo date('H: A',strtotime($data['UserData']['start_time'])).' | '.date('H: A',strtotime($data['UserData']['end_time']));?></span>
+
                                                                                 </div>
+
                                                                             </div>
                                                                         </li>
                                                                         <li class="timeline-white steppend">
                                                                             <div class="timeline-icon">
-                                                                                <i class="glyphicon glyphicon-ok"></i>
+                                                                                <i class="glyphicon glyphicon-ok"style="top:-5px;"></i>
                                                                             </div>
                                                                             <div class="timeline-body">
-                                                                                <h3>Selected PACKAGES</h3>
+                                                                                <h3 class="notdone" style="font-size:18px;color:gray;">Selected Packages</h3>
                                                                             </div>
                                                                         </li>
                                                                     </ul>

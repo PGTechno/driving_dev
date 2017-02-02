@@ -1,3 +1,8 @@
+<style type="text/css">
+   input[type="checkbox"]{
+   display: block;
+ }
+</style>
 <script src="https://maps.googleapis.com/maps/api/js?key=<?php echo Configure::read('GoogleKey');?>"
     async defer></script>
 <div class="tab-content">
@@ -33,7 +38,13 @@
                                              <b>Member Since</b>
                                              <span class="text-muted"><?php echo date('M Y',strtotime($this->request->data['User']['created']));?></span><br>
                                              <b>Working Hours</b> 
-                                             <span class="text-muted"><?php echo date('h:i A',strtotime($this->request->data['User']['start_time']))." to ".date('h:i A',strtotime($this->request->data['User']['end_time']))?></span>
+                                             <span class="text-muted">
+                                                <?php 
+                                                if(isset($this->request->data['User']['start_time'])){
+                                                   echo date('h:i A',strtotime($this->request->data['User']['start_time']))." to ".date('h:i A',strtotime($this->request->data['User']['end_time']));
+                                                }
+                                                ?>
+                                             </span>
                                           </p>
                                        </div>
                                     </div>
@@ -103,7 +114,7 @@
                                        <label class="col-sm-3 control"><b>Country</b></label>
                                        <div class="col-sm-6">
                                           <?php 
-                                          echo $this->Form->input('country',array('options' => $country,'class'=>'form-control','placeholder'=>'Name','div'=>false,'label'=>false));?>
+                                          echo $this->Form->input('country',array('options' => $country,'class'=>'form-control','placeholder'=>'Name','div'=>false,'label'=>false,'disabled'=>true));?>
                                        </div>
                                     </div>
                                     
@@ -117,7 +128,10 @@
                                     <div class="form-group">
                                        <label class="col-sm-3 control"><b>Phone</b></label>
                                        <div class="col-sm-6">
-                                          <?php echo $this->Form->input('phone',array('class'=>'form-control','placeholder'=>'Phone','div'=>false,'label'=>false));?>
+                                          
+                                          <?php echo $this->Form->input('phone_prefix',array('class'=>'form-control','placeholder'=>'+44','div'=>false,'label'=>false,'style'=>'float:left;width: 60px;','disabled'=>true,'value'=>'+44'));?>
+
+                                          <?php echo $this->Form->input('phone',array('class'=>'form-control','placeholder'=>'Phone','div'=>false,'label'=>false,'style'=>'float: right;width: 202px;'));?>
                                        </div>
                                     </div>
 
@@ -142,10 +156,11 @@
                                        <label class="col-sm-3 control"><b>Cars</b></label>
                                        <div class="col-sm-6">
                                           <?php echo $this->Form->input('Car', array(
-                                             'multiple' => 'multiple',
+                                             //'multiple' => 'multiple',
                                              'type' => 'select',
                                              'options'=>$cars,
-                                             'div'=>false,'label'=>false
+                                             'multiple' => 'checkbox',
+                                             'div'=>false,'label'=>false,
                                           ));?>
                                        </div>
                                     </div>
@@ -154,10 +169,11 @@
                                        <label class="col-sm-3 control"><b>Service</b></label>
                                        <div class="col-sm-6">
                                           <?php echo $this->Form->input('Service', array(
-                                             'multiple' => 'multiple',
+                                             //'multiple' => 'multiple',
                                              'type' => 'select',
                                              'options'=>$services,
-                                             'div'=>false,'label'=>false
+                                             'div'=>false,'label'=>false,
+                                             'multiple' => 'checkbox',
                                           ));?>
                                        </div>
                                     </div>
@@ -166,10 +182,11 @@
                                        <label class="col-sm-3 control"><b>Driving Experience</b></label>
                                        <div class="col-sm-6">
                                           <?php echo $this->Form->input('DriveExperience', array(
-                                             'multiple' => 'multiple',
+                                             //'multiple' => 'multiple',
                                              'type' => 'select',
                                              'options'=>$drive_experiences,
-                                             'div'=>false,'label'=>false
+                                             'div'=>false,'label'=>false,
+                                             'multiple' => 'checkbox',
                                           ));?>
                                        </div>
                                     </div>
@@ -179,10 +196,11 @@
                                        <label class="col-sm-3 control"><b>Working Days</b></label>
                                        <div class="col-sm-6">
                                           <?php echo $this->Form->input('Day', array(
-                                             'multiple' => 'multiple',
+                                             //'multiple' => 'multiple',
                                              'type' => 'select',
                                              'options'=>$days,
-                                             'div'=>false,'label'=>false
+                                             'div'=>false,'label'=>false,
+                                             'multiple' => 'checkbox',
                                           ));?>
                                        </div>
                                     </div>
@@ -251,6 +269,26 @@
                                           ?>
                                        </div>
                                     </div>
+
+                                    <div class="form-group">
+                                       <label class="col-sm-3 control"><b>Car Registration</b></label>
+                                       <div class="col-sm-6">
+                                          <?php echo $this->Form->input('car_registration',array('class'=>'form-control','div'=>false,'label'=>false));
+                                             echo $this->Form->error('User.car_registration', null, array('class' => 'error-message'));
+                                          ?>
+                                       </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                       <label class="col-sm-3 control"><b>Car Modal</b></label>
+                                       <div class="col-sm-6">
+                                          <?php echo $this->Form->input('car_modal',array('class'=>'form-control','div'=>false,'label'=>false));
+                                             echo $this->Form->error('User.car_modal', null, array('class' => 'error-message'));
+                                          ?>
+                                       </div>
+                                    </div>
+
+                                    
                                     <?php } ?>
                                     
                                     <div class="form-group">
@@ -313,5 +351,20 @@
       });
 
    })  
+
+   var now = new Date();
+   $('#UserFnamee').datetimepicker({
+      //format: 'LT'
+      daysOfWeekDisabled:[1],
+      maxDate : now.setMonth(now.getMonth() + 1),
+      minDate : Date(),
+      //format: 'mm/DD/YYYY hh:00',
+      /*stepping : 30,
+      disabledTimeIntervals: [ 
+         [ moment().hour(0), moment().hour(8).minutes(30) ], 
+         [ moment().hour(20).minutes(30),moment().hour(24) ] 
+      ]*/
+
+   });
 </script>
 

@@ -59,6 +59,7 @@ class AppController extends Controller{
         $this->Auth->authorize = 'Controller';
 
         //prd($this->Custom->chkBookingDuplicacy(26,'2017-01-12 08:00:00')); 
+        $this->Custom->chkBookingAvailablity();
 		
 		if(isset($this->request->params['admin'])){
 			$this->layout = "admin";

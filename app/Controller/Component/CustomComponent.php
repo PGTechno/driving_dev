@@ -154,4 +154,121 @@ class CustomComponent extends Component {
         }
         return $res;
     }
+
+    function chkBookingAvailablity($instructor_id='11', $dateTime = "2017-01-29 20:15:00"){
+        $model = ClassRegistry::init('Schedule');
+        $user = ClassRegistry::init('User');
+        /*$params['to'] = "aman@mailinator.com";
+        $params['from'] = "company@mailinator.com";*/
+        $isUser = $user->find('first',array(
+            'conditions'=>array(
+                'User.id'=>$instructor_id ,
+                'User.role'=>2 ,
+                'User.status'=>1 
+            )
+        ));
+
+        $timeStols = array();
+        if($isUser && $isUser['User']['start_time'] && $isUser['User']['end_time']){
+            $instStartTime = strtotime($isUser['User']['start_time']);
+            $instEndTime = strtotime($isUser['User']['end_time']);
+            for($i =  $instStartTime; $i<=$instEndTime;$i=$i+3600){
+                if(($instStartTime + 3600) > $instEndTime){
+                    break;    
+                }else{
+                    $timeStols[] = array(
+                        'start'=>date('H:i:s',$i),
+                        'end'=>date('H:i:s',$i + 3599)
+                    );
+                }
+            }
+        }
+
+        //prd($timeStols);
+
+        $model->virtualFields = array('end_date'=>'DATE_ADD(Schedule.date, INTERVAL Schedule.duration * 60 -1 MINUTE)');
+        $isExist = $model->find('all',array(
+            //'conditions'=>array('')
+            'fields'=>array(
+                'Schedule.*'
+            ),
+            'joins'=>array(
+                array(
+                    'table' => 'bookings',
+                    'alias' => 'Booking',
+                    'type' => 'INNER',
+                    'conditions' => array(
+                        'Schedule.booking_id = Booking.id',
+                        'Booking.instructor_id ='.$instructor_id,
+                        'DATE(Schedule.date) = "'.date('Y-m-d',strtotime($dateTime)).'"'
+                        //'Schedule.date >="'.date('Y-m-d H:i:s').'" and DATE(Schedule.date) = "'.date('Y-m-d',strtotime($dateTime)).'"'
+                    )
+                ),
+            ),
+            'order'=>array(
+                'Schedule.date'=>'ASC'
+            )
+        ));
+
+        foreach ($timeStols as $k => $v) {
+            //$v['start']
+            //$v['end']
+            foreach ($isExist as $k1 => $v1) {
+                $stime = date("H:i:s",strtotime($v1['Schedule']['date']));
+                $etime = date("H:i:s",strtotime($v1['Schedule']['end_date']));
+                if(
+                    ($v['start'] >= $stime && $v['end'] <= $etime) ||
+                    ($v['start'] >= $stime && $v['start'] <= $etime) ||
+                    ($v['end'] >= $stime && $v['end'] <= $etime) 
+                ){
+                    unset($timeStols[$k]);
+                }
+                //prd($v1);  
+            }
+        }
+
+        /*prd($timeStols);
+        prd($isExist);*/
+        if($timeStols){
+            $schedule = array();
+            
+            foreach ($timeStols as $k2 => $v2) {
+                $schedule[$v2['start']] =  $v2['start'].' To '. date("H:i:s",strtotime($v2['start']." +1 hour"));
+            }
+            //prd($schedule);
+            $r = array();
+            foreach ($schedule as $k => $v) {
+                $st = $k;
+                $count = 1;
+                unset($schedule[$k]);
+                foreach ($schedule as $k => $v) {
+                    $et = date('H:i:s',strtotime($st.' +'.$count.' hour'));
+                    if($k==$et){
+                        $r[$count][] = $st."-".$et;
+                        $count++;                        
+                    }else{
+                        break;
+                    }
+                    
+                }   
+            }
+            //prd($r);
+            $finalArray = array();
+            foreach($r as $k => $v){
+              if(isset($v))
+                {
+                   $finalArray = array_merge($finalArray, (array) $v);
+                   //unset($a[$key]['fields']);
+                }
+            }
+            
+            /*--------------------*/
+            $res['err'] = 0; $res['msg'] = 'Schedule available'; $res['schedule'] = $finalArray ;
+        }else{
+            $res['err'] = 1; $res['msg'] = 'Soory, Instructor having busy schedule';
+        }
+        return $res;
+    }
+
+    
 }

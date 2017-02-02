@@ -35,7 +35,50 @@ Timeline UI Base
   left: 20%;
   margin-left: -10px;
 }
+.stepdone:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    bottom: 0;
+    width: 5px;
+    background: #72c35d;
+    left: 20%;
+    margin-left: -10px;
+}
+.steppend:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: white;
+    left: 20%;
+    margin-left: -10px;
+}
+/* The line */
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ccc;
+  left: 20%;
+  margin-left: -10px;
+}
 
+.stepdone{
+margin-top: 5px;
+
+}
+.notdone{
+color:gray;
+}
+.dname{
+font-weight:600;
+font-size:18px;
+color:#000;
+}
 /* The date/time */
 .timeline > li .timeline-time {
   display: block;
@@ -117,6 +160,8 @@ Timeline UI Base
 }
 
 /* The triangle */
+/*
+
 .timeline > li .timeline-body:after {
   right: 100%;
   border: solid transparent;
@@ -128,7 +173,7 @@ Timeline UI Base
   border-right-color: #3594cb;
   border-width: 10px;
   top: 19px;
-}
+}*/
 
 .timeline > li .timeline-content:after,
 .timeline > li .timeline-content:before {
@@ -154,8 +199,8 @@ Timeline UI Base
 
 /* The icons */
 .timeline > li .timeline-icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -168,10 +213,10 @@ Timeline UI Base
   color: #fff;
   background: #aaa;
   border-radius: 50%;
-  box-shadow: 0 0 0 8px #ccc;
+/*  box-shadow: 0 0 0 8px #ccc; */
   text-align: center;
   left: 20%;
-  top: 0;
+  top: -10px;
   margin: 5px 0 0 -25px;
   padding-bottom: 3px;
   padding-right: 1px;
